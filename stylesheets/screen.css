@@ -1,0 +1,217 @@
+@charset "UTF-8";
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 5, ../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block;
+}
+
+/* line 2, ../sass/_common.scss */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Helvetica, Arial, "LiHei Pro", "Meiryo", "微軟正黑體";
+  height: 100%;
+  width: 100%;
+  background: #ddd;
+  letter-spacing: 2px;
+}
+
+/* line 12, ../sass/_common.scss */
+a:hover {
+  text-decoration: none;
+}
+
+/* line 16, ../sass/_common.scss */
+.clear {
+  zoom: 1;
+  clear: both;
+}
+/* line 19, ../sass/_common.scss */
+.clear:after {
+  content: '';
+  display: block;
+  clear: both;
+  visibility: hidden;
+  height: 0;
+}
+
+/* Left */
+/* line 31, ../sass/_common.scss */
+.left {
+  float: left;
+  display: inline-flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Right */
+/* line 41, ../sass/_common.scss */
+.right {
+  float: right;
+  display: -webkit-inline-flex;
+  display: inline-flex;
+  -webkit-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+/* line 49, ../sass/_common.scss */
+.container {
+  width: 1000px;
+  margin: auto;
+  padding: 0;
+}
+
+/* line 55, ../sass/_common.scss */
+.container2 {
+  width: 100%;
+}
+
+/* line 59, ../sass/_common.scss */
+.highlight {
+  color: darkred;
+}
+
+/* line 63, ../sass/_common.scss */
+.area1_3 {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-justify-content: space-around;
+  justify-content: space-around;
+  text-align: flex-end;
+}
+
+/* line 69, ../sass/_common.scss */
+.area1_2 {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-direction: row;
+  flex-direction: row;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+
+/* line 76, ../sass/_common.scss */
+.withIcon {
+  position: relative;
+}
+
+/* line 80, ../sass/_common.scss */
+.icon {
+  position: absolute;
+}
+
+@media screen and (max-width: 720px) {
+  /* line 85, ../sass/_common.scss */
+  .container {
+    width: 100%;
+  }
+}
+/* line 1, ../sass/_header.scss */
+.header {
+  background-color: rgba(255, 255, 255, 0.8);
+  padding: 5px 0;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  border-bottom: 1px solid #ccc;
+}
+
+/* line 9, ../sass/screen.scss */
+body {
+  background: white;
+  height: 2000px;
+}
+
+/* line 14, ../sass/screen.scss */
+div {
+  height: 100px;
+}
+/* line 16, ../sass/screen.scss */
+div.ng-enter {
+  transition: 0.3s ease all;
+  opacity: 0;
+  transform: translateX(-100%);
+}
+/* line 20, ../sass/screen.scss */
+div.ng-enter.ng-enter-active {
+  opacity: 1;
+  transform: translateX(0);
+}
+/* line 25, ../sass/screen.scss */
+div.ng-leave {
+  transition: 0.3s ease all;
+  opacity: 1;
+  transform: translateX(0);
+}
+/* line 29, ../sass/screen.scss */
+div.ng-leave.ng-leave-active {
+  opacity: 0;
+  transform: translateX(100%);
+}
