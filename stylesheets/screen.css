@@ -3,28 +3,32 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-/* line 2, ../sass/_common.scss */
+@font-face {
+  font-family: "文鼎中圓";
+  src: url('../fonts/bGTR00M.ttf?1088364250') format('truetype');
+}
+/* line 3, ../sass/_common.scss */
 body {
   margin: 0;
   padding: 0;
-  font-family: Helvetica, Arial, "LiHei Pro", "Meiryo", "微軟正黑體";
+  font-family: Helvetica, Arial, "文鼎中圓", "LiHei Pro", "Meiryo", "微軟正黑體";
   height: 100%;
   width: 100%;
   background: #ddd;
   letter-spacing: 2px;
 }
 
-/* line 12, ../sass/_common.scss */
+/* line 13, ../sass/_common.scss */
 a:hover {
   text-decoration: none;
 }
 
-/* line 16, ../sass/_common.scss */
+/* line 17, ../sass/_common.scss */
 .clear {
   zoom: 1;
   clear: both;
 }
-/* line 19, ../sass/_common.scss */
+/* line 20, ../sass/_common.scss */
 .clear:after {
   content: '';
   display: block;
@@ -34,7 +38,7 @@ a:hover {
 }
 
 /* Left */
-/* line 31, ../sass/_common.scss */
+/* line 32, ../sass/_common.scss */
 .left {
   float: left;
   display: inline-flex;
@@ -43,7 +47,7 @@ a:hover {
 }
 
 /* Right */
-/* line 41, ../sass/_common.scss */
+/* line 42, ../sass/_common.scss */
 .right {
   float: right;
   display: -webkit-inline-flex;
@@ -54,24 +58,24 @@ a:hover {
   align-items: center;
 }
 
-/* line 49, ../sass/_common.scss */
+/* line 50, ../sass/_common.scss */
 .container {
   width: 1000px;
   margin: auto;
   padding: 0;
 }
 
-/* line 55, ../sass/_common.scss */
+/* line 56, ../sass/_common.scss */
 .container2 {
   width: 100%;
 }
 
-/* line 59, ../sass/_common.scss */
+/* line 60, ../sass/_common.scss */
 .highlight {
   color: darkred;
 }
 
-/* line 63, ../sass/_common.scss */
+/* line 64, ../sass/_common.scss */
 .area1_3 {
   display: -webkit-flex;
   display: flex;
@@ -80,7 +84,7 @@ a:hover {
   text-align: flex-end;
 }
 
-/* line 69, ../sass/_common.scss */
+/* line 70, ../sass/_common.scss */
 .area1_2 {
   display: -webkit-flex;
   display: flex;
@@ -92,18 +96,18 @@ a:hover {
   justify-content: space-between;
 }
 
-/* line 76, ../sass/_common.scss */
+/* line 77, ../sass/_common.scss */
 .withIcon {
   position: relative;
 }
 
-/* line 80, ../sass/_common.scss */
+/* line 81, ../sass/_common.scss */
 .icon {
   position: absolute;
 }
 
 @media screen and (max-width: 720px) {
-  /* line 85, ../sass/_common.scss */
+  /* line 86, ../sass/_common.scss */
   .container {
     width: 100%;
   }
@@ -119,58 +123,70 @@ a:hover {
 }
 
 /* line 15, ../sass/_banner.scss */
+.Box {
+  opacity: 0;
+}
+
+/* line 19, ../sass/_banner.scss */
 .banner {
   position: relative;
 }
-/* line 17, ../sass/_banner.scss */
-.banner .bannerImg {
+/* line 21, ../sass/_banner.scss */
+.banner .firstbannerImg {
   width: 100%;
   -moz-animation: fadein 2s;
   -webkit-animation: fadein 2s;
   animation: fadein 2s;
 }
-/* line 21, ../sass/_banner.scss */
+/* line 25, ../sass/_banner.scss */
+.banner .bannerImg {
+  width: 100%;
+  -moz-animation: bottomIn 2s;
+  -webkit-animation: bottomIn 2s;
+  animation: bottomIn 2s;
+}
+/* line 29, ../sass/_banner.scss */
 .banner .title {
   position: absolute;
   z-index: 2;
   top: 30%;
   left: 10%;
 }
-/* line 26, ../sass/_banner.scss */
+/* line 34, ../sass/_banner.scss */
 .banner .title p {
   width: 30%;
   text-align: justify;
   margin: 10px 0;
   opacity: 0;
-  -moz-animation: textIn 1s forwards;
-  -webkit-animation: textIn 1s forwards;
-  animation: textIn 1s forwards;
+  -moz-animation: bottomIn 1s forwards;
+  -webkit-animation: bottomIn 1s forwards;
+  animation: bottomIn 1s forwards;
   -moz-animation-delay: 1s;
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
-/* line 29, ../sass/_banner.scss */
+/* line 37, ../sass/_banner.scss */
 .banner .title h1 {
   width: 30%;
   text-align: justify;
   margin: 10px 0;
   opacity: 0;
-  -moz-animation: textIn 1s forwards;
-  -webkit-animation: textIn 1s forwards;
-  animation: textIn 1s forwards;
+  -moz-animation: bottomIn 1s forwards;
+  -webkit-animation: bottomIn 1s forwards;
+  animation: bottomIn 1s forwards;
   -moz-animation-delay: 2s;
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
 }
-/* line 32, ../sass/_banner.scss */
+/* line 40, ../sass/_banner.scss */
 .banner .title a {
   width: 30%;
   text-align: justify;
   margin: 10px 0;
   opacity: 0;
-  -moz-animation: textIn 1s forwards;
-  -webkit-animation: textIn 1s forwards;
-  animation: textIn 1s forwards;
+  -moz-animation: bottomIn 1s forwards;
+  -webkit-animation: bottomIn 1s forwards;
+  animation: bottomIn 1s forwards;
   -moz-animation-delay: 3s;
   -webkit-animation-delay: 3s;
   animation-delay: 3s;
@@ -204,7 +220,7 @@ a:hover {
     opacity: 1;
   }
 }
-@-moz-keyframes textIn {
+@-moz-keyframes bottomIn {
   from {
     opacity: 0;
     -moz-transform: translateY(100%);
@@ -216,7 +232,7 @@ a:hover {
     transform: translateY(0);
   }
 }
-@-webkit-keyframes textIn {
+@-webkit-keyframes bottomIn {
   from {
     opacity: 0;
     -webkit-transform: translateY(100%);
@@ -228,7 +244,7 @@ a:hover {
     transform: translateY(0);
   }
 }
-@keyframes textIn {
+@keyframes bottomIn {
   from {
     opacity: 0;
     -moz-transform: translateY(100%);

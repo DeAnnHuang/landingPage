@@ -8,15 +8,23 @@ $delay:2s;
     text-align: justify;
     margin: $margin 0;
     opacity: 0;
-    @include animation(textIn $dur forwards);
+    @include animation(bottomIn $dur forwards);
     @include animation-delay($delay);
+}
+
+.Box {
+    opacity: 0;
 }
 
 .banner {
     position: relative;
-    .bannerImg {
+    .firstbannerImg {
         width: 100%;
         @include animation(fadein $delay);
+    }
+    .bannerImg {
+        width: 100%;
+        @include animation(bottomIn $delay);
     }
     .title {
         position: absolute;
@@ -48,7 +56,7 @@ $delay:2s;
     }
 }
 
-@include keyframes(textIn) {
+@include keyframes(bottomIn) {
     from {
         opacity: 0;
         @include transform(translateY(100%));
