@@ -1,0 +1,60 @@
+$Twidth:30%;
+$position:20%;
+$margin:10px;
+$dur:1s;
+$delay:2s;
+@mixin TextDefault($delay) {
+    width: $Twidth;
+    text-align: justify;
+    margin: $margin 0;
+    opacity: 0;
+    @include animation(textIn $dur forwards);
+    @include animation-delay($delay);
+}
+
+.banner {
+    position: relative;
+    .bannerImg {
+        width: 100%;
+        @include animation(fadein $delay);
+    }
+    .title {
+        position: absolute;
+        z-index: 2;
+        top: $position + 10%;
+        left: $position - 10%;
+        p {
+            @include TextDefault($delay - 1s);
+        }
+        h1 {
+            @include TextDefault($delay);
+        }
+        a {
+            @include TextDefault($delay + 1s);
+            display: block;
+            border: 2px #aaa solid;
+            padding: 15px 20px;
+            text-align: center;
+        }
+    }
+}
+
+@include keyframes(fadein) {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@include keyframes(textIn) {
+    from {
+        opacity: 0;
+        @include transform(translateY(100%));
+    }
+    to {
+        opacity: 1;
+        @include transform(translateY(0));
+    }
+}
