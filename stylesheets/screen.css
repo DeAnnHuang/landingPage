@@ -122,37 +122,38 @@ a:hover {
   z-index: 10;
 }
 
-/* line 15, ../sass/_banner.scss */
-.Box {
+/* line 16, ../sass/_banner.scss */
+.bannerBox,
+.footerBox {
   opacity: 0;
 }
 
-/* line 19, ../sass/_banner.scss */
+/* line 21, ../sass/_banner.scss */
 .banner {
   position: relative;
 }
-/* line 21, ../sass/_banner.scss */
+/* line 23, ../sass/_banner.scss */
 .banner .firstbannerImg {
   width: 100%;
   -moz-animation: fadein 2s;
   -webkit-animation: fadein 2s;
   animation: fadein 2s;
 }
-/* line 25, ../sass/_banner.scss */
+/* line 27, ../sass/_banner.scss */
 .banner .bannerImg {
   width: 100%;
   -moz-animation: bottomIn 2s;
   -webkit-animation: bottomIn 2s;
   animation: bottomIn 2s;
 }
-/* line 29, ../sass/_banner.scss */
+/* line 31, ../sass/_banner.scss */
 .banner .title {
   position: absolute;
   z-index: 2;
   top: 30%;
   left: 10%;
 }
-/* line 34, ../sass/_banner.scss */
+/* line 36, ../sass/_banner.scss */
 .banner .title p {
   width: 30%;
   text-align: justify;
@@ -165,7 +166,7 @@ a:hover {
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
-/* line 37, ../sass/_banner.scss */
+/* line 39, ../sass/_banner.scss */
 .banner .title h1 {
   width: 30%;
   text-align: justify;
@@ -178,7 +179,7 @@ a:hover {
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
 }
-/* line 40, ../sass/_banner.scss */
+/* line 42, ../sass/_banner.scss */
 .banner .title a {
   width: 30%;
   text-align: justify;
@@ -194,6 +195,25 @@ a:hover {
   border: 2px #aaa solid;
   padding: 15px 20px;
   text-align: center;
+}
+
+/* line 52, ../sass/_banner.scss */
+.floatBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 25px;
+  z-index: 9;
+  opacity: 0;
+  -moz-animation: bottomIn 1s forwards;
+  -webkit-animation: bottomIn 1s forwards;
+  animation: bottomIn 1s forwards;
+  -moz-animation-delay: 4s;
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+/* line 60, ../sass/_banner.scss */
+.floatBtn img {
+  border: 1px solid #aaa;
 }
 
 @-moz-keyframes fadein {
@@ -260,7 +280,44 @@ a:hover {
     transform: translateY(0);
   }
 }
-/* line 10, ../sass/screen.scss */
+/* line 10, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
+html, body {
+  height: 100%;
+}
+
+/* line 12, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
+#root {
+  clear: both;
+  min-height: 100%;
+  height: auto !important;
+  height: 100%;
+  margin-bottom: -100px;
+}
+/* line 18, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
+#root #root_footer {
+  height: 100px;
+}
+
+/* line 20, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
+#footer {
+  clear: both;
+  position: relative;
+  height: 100px;
+}
+
+/* line 2, ../sass/_footer.scss */
+#footer {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  padding-left: 40px;
+  background: #ddd;
+  color: white;
+}
+
+/* line 12, ../sass/screen.scss */
 body {
   background: white;
+  overflow-x: hidden;
 }

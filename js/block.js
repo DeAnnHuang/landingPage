@@ -8,18 +8,17 @@ function isScrolledIntoView(elem) {
 }
 
 $(document).ready(function() {
-    showBanner();
-
+    show("banner");
     $(document).on('scroll', function() {
-        showBanner();
+        show("banner");
     });
 });
 
-function showBanner() {
+function show(className) {
 
-    $(".Box").each(function() {
+    $("." + className + "Box").each(function() {
         if (isScrolledIntoView($(this))) {
-            $(this).removeClass('Box').addClass('banner');
+            $(this).removeClass(className + 'Box').addClass(className);
             // console.log("ok");
         }
         // else console.log("opps");å

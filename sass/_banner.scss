@@ -3,6 +3,7 @@ $position:20%;
 $margin:10px;
 $dur:1s;
 $delay:2s;
+$distance:25px;
 @mixin TextDefault($delay) {
     width: $Twidth;
     text-align: justify;
@@ -12,7 +13,8 @@ $delay:2s;
     @include animation-delay($delay);
 }
 
-.Box {
+.bannerBox,
+.footerBox {
     opacity: 0;
 }
 
@@ -44,6 +46,19 @@ $delay:2s;
             padding: 15px 20px;
             text-align: center;
         }
+    }
+}
+
+.floatBtn {
+    position: fixed;
+    bottom: $distance+5px;
+    right: $distance;
+    z-index: 9;
+    opacity: 0;
+    @include animation(bottomIn $dur forwards);
+    @include animation-delay($delay+2s);
+    img {
+        border: 1px solid #aaa;
     }
 }
 
