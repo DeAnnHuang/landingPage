@@ -1,0 +1,8 @@
+@include sticky-footer(100px);
+#footer {
+    @include display-flex();
+    @include align-items(center);
+    padding-left: 40px;
+    background: #ddd;
+    color: white;
+}
