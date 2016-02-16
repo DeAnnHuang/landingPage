@@ -421,8 +421,8 @@ a:hover {
   -webkit-animation: Slider 32s infinite linear;
   animation: Slider 32s infinite linear;
 }
-/* line 8, ../sass/_classification.scss */
-.classification .person {
+/* line 9, ../sass/_classification.scss */
+.classification .data .person {
   position: absolute;
   top: 30%;
   left: 10%;
@@ -435,16 +435,16 @@ a:hover {
   -webkit-animation-delay: 0;
   animation-delay: 0;
 }
-/* line 15, ../sass/_classification.scss */
-.classification .title {
+/* line 16, ../sass/_classification.scss */
+.classification .data .title {
   position: absolute;
   z-index: 2;
   top: 30%;
   right: 10%;
   width: 30%;
 }
-/* line 21, ../sass/_classification.scss */
-.classification .title h1 {
+/* line 22, ../sass/_classification.scss */
+.classification .data .title h1 {
   margin: 10px 0;
   opacity: 0;
   -moz-animation: bottomIn 1s forwards;
@@ -454,8 +454,8 @@ a:hover {
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
-/* line 24, ../sass/_classification.scss */
-.classification .title p {
+/* line 25, ../sass/_classification.scss */
+.classification .data .title p {
   margin: 10px 0;
   opacity: 0;
   -moz-animation: bottomIn 1s forwards;
@@ -465,8 +465,8 @@ a:hover {
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
 }
-/* line 27, ../sass/_classification.scss */
-.classification .title a {
+/* line 28, ../sass/_classification.scss */
+.classification .data .title a {
   margin: 10px 0;
   opacity: 0;
   -moz-animation: bottomIn 1s forwards;
