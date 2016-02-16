@@ -1,0 +1,55 @@
+$Twidth:30%;
+$position:20%;
+$margin:10px;
+$dur:1s;
+$delay:2s;
+$distance:25px;
+@mixin TextDefault($delay) {
+    // text-align: justify;
+    margin: $margin 0;
+    opacity: 0;
+    @include animation(bottomIn $dur forwards);
+    @include animation-delay($delay);
+}
+@mixin myAnimation($aniName, $dur, $delay) {
+    opacity: 0;
+    @include animation($aniName $dur forwards);
+    @include animation-delay($delay);
+}
+
+/**dynamic**/
+
+.bottomIn {
+    @include myAnimation(bottomIn, $dur + 1s, 0);
+}
+
+@include keyframes(fadein) {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@include keyframes(bottomIn) {
+    from {
+        opacity: 0;
+        @include transform(translateY(100%));
+    }
+    to {
+        opacity: 1;
+        @include transform(translateY(0));
+    }
+}
+
+@include keyframes(Slider) {
+    from {
+    	
+        background-position: 0 0;
+    }
+    to {
+    
+        background-position: 1280px 0;
+    }
+}

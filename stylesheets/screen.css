@@ -146,98 +146,16 @@ a:hover {
   z-index: 10;
 }
 
-/* line 16, ../sass/_banner.scss */
-.bannerBox,
-.footerBox {
+/**dynamic**/
+/* line 22, ../sass/_setting.scss */
+.bottomIn {
   opacity: 0;
-}
-
-/* line 21, ../sass/_banner.scss */
-.banner {
-  position: relative;
-}
-/* line 23, ../sass/_banner.scss */
-.banner .firstbannerImg {
-  width: 100%;
-  -moz-animation: fadein 2s;
-  -webkit-animation: fadein 2s;
-  animation: fadein 2s;
-}
-/* line 27, ../sass/_banner.scss */
-.banner .bannerImg {
-  width: 100%;
-  -moz-animation: bottomIn 2s;
-  -webkit-animation: bottomIn 2s;
-  animation: bottomIn 2s;
-}
-/* line 31, ../sass/_banner.scss */
-.banner .title {
-  position: absolute;
-  z-index: 2;
-  top: 30%;
-  left: 10%;
-}
-/* line 36, ../sass/_banner.scss */
-.banner .title p {
-  width: 30%;
-  text-align: justify;
-  margin: 10px 0;
-  opacity: 0;
-  -moz-animation: bottomIn 1s forwards;
-  -webkit-animation: bottomIn 1s forwards;
-  animation: bottomIn 1s forwards;
-  -moz-animation-delay: 1s;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
-}
-/* line 39, ../sass/_banner.scss */
-.banner .title h1 {
-  width: 30%;
-  text-align: justify;
-  margin: 10px 0;
-  opacity: 0;
-  -moz-animation: bottomIn 1s forwards;
-  -webkit-animation: bottomIn 1s forwards;
-  animation: bottomIn 1s forwards;
-  -moz-animation-delay: 2s;
-  -webkit-animation-delay: 2s;
-  animation-delay: 2s;
-}
-/* line 42, ../sass/_banner.scss */
-.banner .title a {
-  width: 30%;
-  text-align: justify;
-  margin: 10px 0;
-  opacity: 0;
-  -moz-animation: bottomIn 1s forwards;
-  -webkit-animation: bottomIn 1s forwards;
-  animation: bottomIn 1s forwards;
-  -moz-animation-delay: 3s;
-  -webkit-animation-delay: 3s;
-  animation-delay: 3s;
-  display: block;
-  border: 2px #aaa solid;
-  padding: 15px 20px;
-  text-align: center;
-}
-
-/* line 52, ../sass/_banner.scss */
-.floatBtn {
-  position: fixed;
-  bottom: 30px;
-  right: 25px;
-  z-index: 9;
-  opacity: 0;
-  -moz-animation: bottomIn 1s forwards;
-  -webkit-animation: bottomIn 1s forwards;
-  animation: bottomIn 1s forwards;
-  -moz-animation-delay: 4s;
-  -webkit-animation-delay: 4s;
-  animation-delay: 4s;
-}
-/* line 60, ../sass/_banner.scss */
-.floatBtn img {
-  border: 1px solid #aaa;
+  -moz-animation: bottomIn 3s forwards;
+  -webkit-animation: bottomIn 3s forwards;
+  animation: bottomIn 3s forwards;
+  -moz-animation-delay: 0;
+  -webkit-animation-delay: 0;
+  animation-delay: 0;
 }
 
 @-moz-keyframes fadein {
@@ -304,12 +222,197 @@ a:hover {
     transform: translateY(0);
   }
 }
-/* line 10, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
+@-moz-keyframes Slider {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 1280px 0;
+  }
+}
+@-webkit-keyframes Slider {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 1280px 0;
+  }
+}
+@keyframes Slider {
+  from {
+    background-position: 0 0;
+  }
+  to {
+    background-position: 1280px 0;
+  }
+}
+/* line 1, ../sass/_banner.scss */
+.bannerBox,
+.footerBox,
+.classificationBox {
+  opacity: 0;
+}
+
+/* line 7, ../sass/_banner.scss */
+.banner {
+  position: relative;
+}
+/* line 9, ../sass/_banner.scss */
+.banner .firstbannerImg {
+  width: 100%;
+  -moz-animation: fadein 2s;
+  -webkit-animation: fadein 2s;
+  animation: fadein 2s;
+}
+/* line 13, ../sass/_banner.scss */
+.banner .bannerImg {
+  width: 100%;
+  -moz-animation: bottomIn 2s;
+  -webkit-animation: bottomIn 2s;
+  animation: bottomIn 2s;
+}
+/* line 17, ../sass/_banner.scss */
+.banner .title {
+  position: absolute;
+  z-index: 2;
+  top: 30%;
+  left: 10%;
+  width: 30%;
+}
+/* line 23, ../sass/_banner.scss */
+.banner .title h1 {
+  margin: 10px 0;
+  opacity: 0;
+  -moz-animation: bottomIn 1s forwards;
+  -webkit-animation: bottomIn 1s forwards;
+  animation: bottomIn 1s forwards;
+  -moz-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+/* line 26, ../sass/_banner.scss */
+.banner .title p {
+  margin: 10px 0;
+  opacity: 0;
+  -moz-animation: bottomIn 1s forwards;
+  -webkit-animation: bottomIn 1s forwards;
+  animation: bottomIn 1s forwards;
+  -moz-animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+/* line 29, ../sass/_banner.scss */
+.banner .title a {
+  margin: 10px 0;
+  opacity: 0;
+  -moz-animation: bottomIn 1s forwards;
+  -webkit-animation: bottomIn 1s forwards;
+  animation: bottomIn 1s forwards;
+  -moz-animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  display: block;
+  border: 2px #aaa solid;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+/* line 39, ../sass/_banner.scss */
+.floatBtn {
+  position: fixed;
+  bottom: 30px;
+  right: 25px;
+  z-index: 9;
+  opacity: 0;
+  -moz-animation: bottomIn 1s forwards;
+  -webkit-animation: bottomIn 1s forwards;
+  animation: bottomIn 1s forwards;
+  -moz-animation-delay: 4s;
+  -webkit-animation-delay: 4s;
+  animation-delay: 4s;
+}
+/* line 47, ../sass/_banner.scss */
+.floatBtn img {
+  border: 1px solid #aaa;
+}
+
+/* line 1, ../sass/_classification.scss */
+.classification {
+  position: relative;
+  background: url(http://placehold.it/1280x800) center repeat-x;
+  background-size: cover;
+  min-height: 800px;
+  height: 100%;
+  -moz-animation: Slider 32s infinite linear;
+  -webkit-animation: Slider 32s infinite linear;
+  animation: Slider 32s infinite linear;
+}
+/* line 12, ../sass/_classification.scss */
+.classification .person {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  overflow: hidden;
+  opacity: 0;
+  -moz-animation: bottomIn 3s forwards;
+  -webkit-animation: bottomIn 3s forwards;
+  animation: bottomIn 3s forwards;
+  -moz-animation-delay: 0;
+  -webkit-animation-delay: 0;
+  animation-delay: 0;
+}
+/* line 19, ../sass/_classification.scss */
+.classification .title {
+  position: absolute;
+  z-index: 2;
+  top: 30%;
+  right: 10%;
+  width: 30%;
+}
+/* line 25, ../sass/_classification.scss */
+.classification .title h1 {
+  margin: 10px 0;
+  opacity: 0;
+  -moz-animation: bottomIn 1s forwards;
+  -webkit-animation: bottomIn 1s forwards;
+  animation: bottomIn 1s forwards;
+  -moz-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+/* line 28, ../sass/_classification.scss */
+.classification .title p {
+  margin: 10px 0;
+  opacity: 0;
+  -moz-animation: bottomIn 1s forwards;
+  -webkit-animation: bottomIn 1s forwards;
+  animation: bottomIn 1s forwards;
+  -moz-animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+/* line 31, ../sass/_classification.scss */
+.classification .title a {
+  margin: 10px 0;
+  opacity: 0;
+  -moz-animation: bottomIn 1s forwards;
+  -webkit-animation: bottomIn 1s forwards;
+  animation: bottomIn 1s forwards;
+  -moz-animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  display: block;
+  border: 2px #aaa solid;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+/* line 10, ../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
 html, body {
   height: 100%;
 }
 
-/* line 12, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
+/* line 12, ../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
 #root {
   clear: both;
   min-height: 100%;
@@ -317,12 +420,12 @@ html, body {
   height: 100%;
   margin-bottom: -100px;
 }
-/* line 18, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
+/* line 18, ../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
 #root #root_footer {
   height: 100px;
 }
 
-/* line 20, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
+/* line 20, ../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
 #footer {
   clear: both;
   position: relative;
@@ -340,8 +443,13 @@ html, body {
   color: white;
 }
 
-/* line 12, ../sass/screen.scss */
+/* line 14, ../sass/screen.scss */
 body {
   background: white;
   overflow-x: hidden;
+}
+
+/* line 19, ../sass/screen.scss */
+h1 {
+  font-size: 28px;
 }

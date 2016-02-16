@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="App">
 
 <head>
     <meta charset="UTF-8">
     <title>Lading Page</title>
     <!-- css -->
+    <link rel="stylesheet" href="sass/screen.css">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/screen.css">
     <!-- JS -->
@@ -13,11 +14,11 @@
     <!-- Angular -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-animate.js"></script>
-    <script src="js/directory.js"></script>
+    <script src="js/c.js"></script>
     <script src="js/block.js"></script>
 </head>
 
-<body>
+<body ng-controller="Controller as c">
     <div class="header">
         <img src="http://placehold.it/255x70" alt="myMusic線上音樂">
     </div>
@@ -28,28 +29,34 @@
     <div class="bannerBox">
         <img src="http://placehold.it/1280x800" class="firstbannerImg">
         <div class="title">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, doloremque sunt eligendi sequi ad quia nobis provident quis molestiae sit.</p>
             <h1>myMusic線上音樂</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, doloremque sunt eligendi sequi ad quia nobis provident quis molestiae sit.</p>
             <a href="#">立刻下載</a>
         </div>
     </div>
     <div class="bannerBox">
         <img src="http://placehold.it/1280x800" class="bannerImg">
         <div class="title">
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, doloremque sunt eligendi sequi ad quia nobis provident quis molestiae sit.</p>
             <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, doloremque sunt eligendi sequi ad quia nobis provident quis molestiae sit.</p>
         </div>
     </div>
+    <div class="bottomInBox">
+        <div class="classification">
+            <div class="data" ng-repeat="item in c.list" ng-hide="!c.isCurrentSlideIndex($index)">
+                <img src="http://placehold.it/400x600" class="person">
+                <div class="title">
+                    <h1>{{$index + 1}}.{{item.title}}</h1>
+                    <p>{{item.detail}}</p>
+                    <a href="＃">{{item.btn_text}}</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
     <div id="footer">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     </div>
-    <!--  <div class="banner" ng-include="'person.html'">ㄆ</div>
-    <div class="cycle" ng-include="'person.html'">ㄇ</div>
-    <div class="interact" ng-include="'person.html'">ㄈ</div>
-    <div class="ball" ng-include="'person.html'">ㄉ</div>
-    <div class="across" ng-include="'person.html'">ㄊ</div>
-    <div class="banner2"></div>
-    <div class="footer"></div> -->
 </body>
 
 </html>

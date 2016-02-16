@@ -1,42 +1,23 @@
-$Twidth:30%;
-$position:20%;
-$margin:10px;
-$dur:1s;
-$delay:2s;
-$distance:25px;
-@mixin TextDefault($delay) {
-    width: $Twidth;
-    text-align: justify;
-    margin: $margin 0;
-    opacity: 0;
-    @include animation(bottomIn $dur forwards);
-    @include animation-delay($delay);
-}
-
-.bannerBox,
-.footerBox {
-    opacity: 0;
-}
-
 .banner {
     position: relative;
     .firstbannerImg {
         width: 100%;
-        @include animation(fadein $delay);
+        @include animation(fadein $dur + 1s);
     }
     .bannerImg {
         width: 100%;
-        @include animation(bottomIn $delay);
+        @include animation(bottomIn $dur + 1s);
     }
     .title {
         position: absolute;
         z-index: 2;
         top: $position + 10%;
         left: $position - 10%;
-        p {
+        width: $Twidth;
+        h1 {
             @include TextDefault($delay - 1s);
         }
-        h1 {
+        p {
             @include TextDefault($delay);
         }
         a {
@@ -59,25 +40,5 @@ $distance:25px;
     @include animation-delay($delay+2s);
     img {
         border: 1px solid #aaa;
-    }
-}
-
-@include keyframes(fadein) {
-    from {
-        opacity: 0;
-    }
-    to {
-        opacity: 1;
-    }
-}
-
-@include keyframes(bottomIn) {
-    from {
-        opacity: 0;
-        @include transform(translateY(100%));
-    }
-    to {
-        opacity: 1;
-        @include transform(translateY(0));
     }
 }

@@ -11,6 +11,7 @@ $(document).ready(function() {
     show("banner");
     $(document).on('scroll', function() {
         show("banner");
+        show("bottomIn");
     });
 });
 

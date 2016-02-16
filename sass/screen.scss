@@ -7,9 +7,15 @@
 @import "compass/layout.scss";
 @import "common.scss";
 @import "header.scss";
+@import "setting.scss";
 @import "banner.scss";
+@import "classification.scss";
 @import "footer.scss";
 body {
     background: white;
     overflow-x: hidden;
+}
+
+h1 {
+    font-size: 28px;
 }
