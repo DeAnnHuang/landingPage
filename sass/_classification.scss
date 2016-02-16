@@ -5,10 +5,6 @@
     min-height: 800px;
     height:100%;
     @include animation(Slider 32s infinite linear);
-    // .bg {
-    //     height: 800px;
-    //     @include myAnimation(LIRO, 8s, 0);
-    // }
     .person {
         position: absolute;
         top: $position + 10%;

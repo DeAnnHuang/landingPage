@@ -19,9 +19,6 @@
 </head>
 
 <body ng-controller="Controller as c">
- <!--    <div class="header">
-        <img src="http://placehold.it/255x70" alt="myMusic線上音樂">
-    </div> -->
     <div class="floatBtn">
         <a href="#"><img src="http://placehold.it/115x40" alt="android 下載"></a>
         <a href="#"><img src="http://placehold.it/115x40" alt="IOS 下載"></a>
@@ -53,10 +50,18 @@
             </div>
         </div>
     </div>
-    
-    
-
-
+    <div class="wall">
+        <div class="wPhone">
+            <img src="http://placehold.it/350x200" class="wCard" ng-if="c.wClick">
+            <img src="http://placehold.it/350x200" class="wCard" ng-if="!c.wClick">
+            <img src="http://placehold.it/50x50" class="wClick" ng-click="c.wClick = !c.wClick">
+        </div>
+        <div class="title">
+            <h1>Lorem ipsum dolor sit amet.</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, doloremque sunt eligendi sequi ad quia nobis provident quis molestiae sit.</p>
+            <a href="#">立刻下載</a>
+        </div>
+    </div>
     <div id="footer">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
     </div>

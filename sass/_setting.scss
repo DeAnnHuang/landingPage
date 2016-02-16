@@ -11,11 +11,13 @@ $distance:25px;
     @include animation(bottomIn $dur forwards);
     @include animation-delay($delay);
 }
+
 @mixin myAnimation($aniName, $dur, $delay) {
     opacity: 0;
     @include animation($aniName $dur forwards);
     @include animation-delay($delay);
 }
+
 
 /**dynamic**/
 
@@ -43,13 +45,40 @@ $distance:25px;
     }
 }
 
+@include keyframes(topIn) {
+    from {
+        opacity: 0;
+        @include transform(translateY(-100%));
+    }
+    to {
+        opacity: 1;
+        @include transform(translateY(0));
+    }
+}
+
 @include keyframes(Slider) {
     from {
-    	
         background-position: 0 0;
     }
     to {
-    
         background-position: 1280px 0;
+    }
+}
+
+@include keyframes(rotate) {
+    0% {
+        transform: rotate(0) scale(1);
+    }
+    25% {
+        transform: rotate(180deg) scale(1.1);
+    }
+    50% {
+        transform: rotate(180deg) scale(1);
+    }
+    75% {
+        transform: rotate(360deg) scale(1.1);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
     }
 }

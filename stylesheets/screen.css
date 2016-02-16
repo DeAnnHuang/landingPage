@@ -137,7 +137,7 @@ a:hover {
 }
 
 /**dynamic**/
-/* line 22, ../sass/_setting.scss */
+/* line 24, ../sass/_setting.scss */
 .bottomIn {
   opacity: 0;
   -moz-animation: bottomIn 2s forwards;
@@ -212,6 +212,46 @@ a:hover {
     transform: translateY(0);
   }
 }
+@-moz-keyframes topIn {
+  from {
+    opacity: 0;
+    -moz-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    -moz-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@-webkit-keyframes topIn {
+  from {
+    opacity: 0;
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+@keyframes topIn {
+  from {
+    opacity: 0;
+    -moz-transform: translateY(-100%);
+    -ms-transform: translateY(-100%);
+    -webkit-transform: translateY(-100%);
+    transform: translateY(-100%);
+  }
+  to {
+    opacity: 1;
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
 @-moz-keyframes Slider {
   from {
     background-position: 0 0;
@@ -234,6 +274,57 @@ a:hover {
   }
   to {
     background-position: 1280px 0;
+  }
+}
+@-moz-keyframes rotate {
+  0% {
+    transform: rotate(0) scale(1);
+  }
+  25% {
+    transform: rotate(180deg) scale(1.1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1);
+  }
+  75% {
+    transform: rotate(360deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+@-webkit-keyframes rotate {
+  0% {
+    transform: rotate(0) scale(1);
+  }
+  25% {
+    transform: rotate(180deg) scale(1.1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1);
+  }
+  75% {
+    transform: rotate(360deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0) scale(1);
+  }
+  25% {
+    transform: rotate(180deg) scale(1.1);
+  }
+  50% {
+    transform: rotate(180deg) scale(1);
+  }
+  75% {
+    transform: rotate(360deg) scale(1.1);
+  }
+  100% {
+    transform: rotate(360deg) scale(1);
   }
 }
 /* line 1, ../sass/_banner.scss */
@@ -330,7 +421,7 @@ a:hover {
   -webkit-animation: Slider 32s infinite linear;
   animation: Slider 32s infinite linear;
 }
-/* line 12, ../sass/_classification.scss */
+/* line 8, ../sass/_classification.scss */
 .classification .person {
   position: absolute;
   top: 30%;
@@ -344,7 +435,7 @@ a:hover {
   -webkit-animation-delay: 0;
   animation-delay: 0;
 }
-/* line 19, ../sass/_classification.scss */
+/* line 15, ../sass/_classification.scss */
 .classification .title {
   position: absolute;
   z-index: 2;
@@ -352,7 +443,7 @@ a:hover {
   right: 10%;
   width: 30%;
 }
-/* line 25, ../sass/_classification.scss */
+/* line 21, ../sass/_classification.scss */
 .classification .title h1 {
   margin: 10px 0;
   opacity: 0;
@@ -363,7 +454,7 @@ a:hover {
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
-/* line 28, ../sass/_classification.scss */
+/* line 24, ../sass/_classification.scss */
 .classification .title p {
   margin: 10px 0;
   opacity: 0;
@@ -374,8 +465,125 @@ a:hover {
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
 }
-/* line 31, ../sass/_classification.scss */
+/* line 27, ../sass/_classification.scss */
 .classification .title a {
+  margin: 10px 0;
+  opacity: 0;
+  -moz-animation: bottomIn 1s forwards;
+  -webkit-animation: bottomIn 1s forwards;
+  animation: bottomIn 1s forwards;
+  -moz-animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  display: block;
+  border: 2px #aaa solid;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+/* line 20, ../sass/screen.scss */
+.wall {
+  position: relative;
+  background: gray;
+  min-height: 800px;
+  height: 100%;
+}
+/* line 25, ../sass/screen.scss */
+.wall .wPhone {
+  background: url(http://placehold.it/400x600);
+  height: 600px;
+  width: 400px;
+  position: absolute;
+  top: 30%;
+  left: 10%;
+  overflow: hidden;
+  -moz-animation: bottomIn 1s;
+  -webkit-animation: bottomIn 1s;
+  animation: bottomIn 1s;
+}
+/* line 32, ../sass/screen.scss */
+.wall .wCard {
+  border: 1px red solid;
+  position: absolute;
+  top: 6%;
+  left: 6%;
+  overflow: hidden;
+}
+/* line 35, ../sass/screen.scss */
+.wall .wCard.ng-enter {
+  opacity: 0;
+  -moz-transition: ease 0.5s all;
+  -o-transition: ease 0.5s all;
+  -webkit-transition: ease 0.5s all;
+  transition: ease 0.5s all;
+  -moz-transform: translateY(-100%);
+  -ms-transform: translateY(-100%);
+  -webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+}
+/* line 39, ../sass/screen.scss */
+.wall .wCard.ng-enter.ng-enter-active {
+  opacity: 1;
+  -moz-transform: translateY(0);
+  -ms-transform: translateY(0);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
+}
+/* line 45, ../sass/screen.scss */
+.wall .wCard.ng-leave {
+  opacity: 1;
+  -moz-transition: ease 0.5s all;
+  -o-transition: ease 0.5s all;
+  -webkit-transition: ease 0.5s all;
+  transition: ease 0.5s all;
+}
+/* line 49, ../sass/screen.scss */
+.wall .wCard.ng-leave.ng-leave-active {
+  opacity: 0;
+}
+/* line 55, ../sass/screen.scss */
+.wall .wClick {
+  border: 1px yellow solid;
+  position: absolute;
+  top: 10%;
+  left: 75%;
+  overflow: hidden;
+  -moz-animation: rotate 8s infinite;
+  -webkit-animation: rotate 8s infinite;
+  animation: rotate 8s infinite;
+}
+/* line 60, ../sass/screen.scss */
+.wall .title {
+  position: absolute;
+  z-index: 2;
+  top: 30%;
+  right: 10%;
+  width: 30%;
+}
+/* line 66, ../sass/screen.scss */
+.wall .title h1 {
+  margin: 10px 0;
+  opacity: 0;
+  -moz-animation: bottomIn 1s forwards;
+  -webkit-animation: bottomIn 1s forwards;
+  animation: bottomIn 1s forwards;
+  -moz-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+/* line 69, ../sass/screen.scss */
+.wall .title p {
+  margin: 10px 0;
+  opacity: 0;
+  -moz-animation: bottomIn 1s forwards;
+  -webkit-animation: bottomIn 1s forwards;
+  animation: bottomIn 1s forwards;
+  -moz-animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+/* line 72, ../sass/screen.scss */
+.wall .title a {
   margin: 10px 0;
   opacity: 0;
   -moz-animation: bottomIn 1s forwards;
@@ -426,13 +634,13 @@ html, body {
   color: white;
 }
 
-/* line 14, ../sass/screen.scss */
+/* line 83, ../sass/screen.scss */
 body {
   background: white;
   overflow-x: hidden;
 }
 
-/* line 19, ../sass/screen.scss */
+/* line 88, ../sass/screen.scss */
 h1 {
   font-size: 28px;
 }

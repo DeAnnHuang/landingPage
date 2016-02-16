@@ -1,14 +1,15 @@
 var app = angular.module('App', ['ngAnimate']);
 app.controller('Controller', function($scope) {
     var c = this;
+    var wClick = 2;
 
     c.timer = 0;
     setInterval(function() {
         c.timer++;
         c.timer = c.timer % 4;
-        $scope.$apply();//check ng all data binding.
+        $scope.$apply(); //check ng all data binding.
     }, 8000);
-    
+
     c.isCurrentSlideIndex = function(index) {
         return c.timer === index;
     };
