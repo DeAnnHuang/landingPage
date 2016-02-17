@@ -11,8 +11,8 @@
     .title {
         position: absolute;
         z-index: 2;
-        top: $position + 10%;
-        left: $position - 10%;
+        top: $position - 15%;
+        left: $position - 15%;
         width: $Twidth;
         h1 {
             @include TextDefault($delay - 1s);
@@ -26,6 +26,10 @@
             border: 2px #aaa solid;
             padding: 15px 20px;
             text-align: center;
+        }
+        img {
+            @include myAnimation(bund, 1.5s, $delay - 0.5s);
+            border: red 1px solid;
         }
     }
 }

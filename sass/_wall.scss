@@ -1,0 +1,62 @@
+.wall {
+    position: relative;
+    background: gray;
+    min-height: 800px;
+    height: 100%;
+    .wPhone {
+        background: url(http://placehold.it/400x600);
+        height: 600px;
+        width: 400px;
+        @include wDefault($position + 10%, $position - 10%);
+        @include animation(bottomIn $dur);
+    }
+    .wCard {
+        border: 1px red solid;
+        @include wDefault(6%, 6%);
+        &.ng-enter {
+            opacity: 0;
+            @include transition(0.5s ease all);
+            @include transform(translateY(-100%));
+            &.ng-enter-active {
+                opacity: 1;
+                @include transform(translateY(0));
+                // @include box-shadow(#ccc 15px 15px 20px);
+            }
+        }
+        &.ng-leave {
+            opacity: 1;
+            @include transition(0.5s ease all);
+            // @include transform(translateY(0));
+            &.ng-leave-active {
+                opacity: 0;
+                // @include transform(translateY(-100%));
+            }
+        }
+    }
+    .wClick {
+        border: 1px yellow solid;
+        @include wDefault(10%, 75%);
+        @include animation(rotate 8s infinite);
+        cursor: pointer;
+    }
+    .title {
+        position: absolute;
+        z-index: 2;
+        top: $position + 10%;
+        right: $position - 10%;
+        width: $Twidth;
+        h1 {
+            @include TextDefault($delay - 1s);
+        }
+        p {
+            @include TextDefault($delay);
+        }
+        a {
+            @include TextDefault($delay + 1s);
+            display: block;
+            border: 2px #aaa solid;
+            padding: 15px 20px;
+            text-align: center;
+        }
+    }
+}

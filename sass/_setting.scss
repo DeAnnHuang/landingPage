@@ -18,11 +18,47 @@ $distance:25px;
     @include animation-delay($delay);
 }
 
+@mixin wDefault($top, $left) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    overflow: hidden;
+}
+
 
 /**dynamic**/
 
 .bottomIn {
     @include myAnimation(bottomIn, $dur + 1s, 0);
+}
+
+@include keyframes(bund) {
+    0% {
+        opacity: 0;
+        transform: scale(0.5) rotate(0deg);
+    }
+    40% {
+        transform: scale(1) rotate(360deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    60% {
+        transform: rotate(10deg);
+    }
+    70% {
+        transform: rotate(0deg);
+    }
+    80% {
+        transform: rotate(0deg);
+    }
+    90% {
+        transform: rotate(5deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
 }
 
 @include keyframes(fadein) {
