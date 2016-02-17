@@ -15,7 +15,7 @@ body {
   height: 100%;
   width: 100%;
   background: #ddd;
-  letter-spacing: 2px;
+  letter-spacing: 1px;
 }
 
 /* line 13, ../sass/_common.scss */
@@ -137,7 +137,7 @@ a:hover {
 }
 
 /**dynamic**/
-/* line 31, ../sass/_setting.scss */
+/* line 38, ../sass/_setting.scss */
 .bottomIn {
   opacity: 0;
   -moz-animation: bottomIn 2s forwards;
@@ -411,6 +411,39 @@ a:hover {
     transform: rotate(360deg) scale(1);
   }
 }
+@-moz-keyframes heart {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@-webkit-keyframes heart {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes heart {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
 /* line 1, ../sass/_banner.scss */
 .banner {
   position: relative;
@@ -508,15 +541,16 @@ a:hover {
 /* line 1, ../sass/_classification.scss */
 .classification {
   position: relative;
-  background: url(http://placehold.it/1280x800) center repeat-x;
-  background-size: cover;
   min-height: 800px;
   height: 100%;
+  overflow: hidden;
+  background: url(http://placehold.it/1280x800) center repeat-x;
+  background-size: cover;
   -moz-animation: Slider 32s infinite linear;
   -webkit-animation: Slider 32s infinite linear;
   animation: Slider 32s infinite linear;
 }
-/* line 9, ../sass/_classification.scss */
+/* line 7, ../sass/_classification.scss */
 .classification .data .person {
   position: absolute;
   top: 30%;
@@ -530,7 +564,7 @@ a:hover {
   -webkit-animation-delay: 0;
   animation-delay: 0;
 }
-/* line 16, ../sass/_classification.scss */
+/* line 14, ../sass/_classification.scss */
 .classification .data .title {
   position: absolute;
   z-index: 2;
@@ -538,7 +572,7 @@ a:hover {
   right: 10%;
   width: 30%;
 }
-/* line 22, ../sass/_classification.scss */
+/* line 20, ../sass/_classification.scss */
 .classification .data .title h1 {
   margin: 10px 0;
   opacity: 0;
@@ -549,7 +583,7 @@ a:hover {
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
-/* line 25, ../sass/_classification.scss */
+/* line 23, ../sass/_classification.scss */
 .classification .data .title p {
   margin: 10px 0;
   opacity: 0;
@@ -560,7 +594,7 @@ a:hover {
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
 }
-/* line 28, ../sass/_classification.scss */
+/* line 26, ../sass/_classification.scss */
 .classification .data .title a {
   margin: 10px 0;
   opacity: 0;
@@ -579,11 +613,12 @@ a:hover {
 /* line 1, ../sass/_wall.scss */
 .wall {
   position: relative;
-  background: gray;
   min-height: 800px;
   height: 100%;
+  overflow: hidden;
+  background: gray;
 }
-/* line 6, ../sass/_wall.scss */
+/* line 4, ../sass/_wall.scss */
 .wall .wPhone {
   background: url(http://placehold.it/400x600);
   height: 600px;
@@ -596,7 +631,7 @@ a:hover {
   -webkit-animation: bottomIn 1s;
   animation: bottomIn 1s;
 }
-/* line 13, ../sass/_wall.scss */
+/* line 11, ../sass/_wall.scss */
 .wall .wCard {
   border: 1px red solid;
   position: absolute;
@@ -604,7 +639,7 @@ a:hover {
   left: 6%;
   overflow: hidden;
 }
-/* line 16, ../sass/_wall.scss */
+/* line 14, ../sass/_wall.scss */
 .wall .wCard.ng-enter {
   opacity: 0;
   -moz-transition: ease 0.5s all;
@@ -616,7 +651,7 @@ a:hover {
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
 }
-/* line 20, ../sass/_wall.scss */
+/* line 18, ../sass/_wall.scss */
 .wall .wCard.ng-enter.ng-enter-active {
   opacity: 1;
   -moz-transform: translateY(0);
@@ -624,7 +659,7 @@ a:hover {
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
-/* line 26, ../sass/_wall.scss */
+/* line 24, ../sass/_wall.scss */
 .wall .wCard.ng-leave {
   opacity: 1;
   -moz-transition: ease 0.5s all;
@@ -632,11 +667,11 @@ a:hover {
   -webkit-transition: ease 0.5s all;
   transition: ease 0.5s all;
 }
-/* line 30, ../sass/_wall.scss */
+/* line 28, ../sass/_wall.scss */
 .wall .wCard.ng-leave.ng-leave-active {
   opacity: 0;
 }
-/* line 36, ../sass/_wall.scss */
+/* line 34, ../sass/_wall.scss */
 .wall .wClick {
   border: 1px yellow solid;
   position: absolute;
@@ -648,7 +683,7 @@ a:hover {
   animation: rotate 8s infinite;
   cursor: pointer;
 }
-/* line 42, ../sass/_wall.scss */
+/* line 40, ../sass/_wall.scss */
 .wall .title {
   position: absolute;
   z-index: 2;
@@ -656,7 +691,7 @@ a:hover {
   right: 10%;
   width: 30%;
 }
-/* line 48, ../sass/_wall.scss */
+/* line 46, ../sass/_wall.scss */
 .wall .title h1 {
   margin: 10px 0;
   opacity: 0;
@@ -667,7 +702,7 @@ a:hover {
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
 }
-/* line 51, ../sass/_wall.scss */
+/* line 49, ../sass/_wall.scss */
 .wall .title p {
   margin: 10px 0;
   opacity: 0;
@@ -678,8 +713,255 @@ a:hover {
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
 }
-/* line 54, ../sass/_wall.scss */
+/* line 52, ../sass/_wall.scss */
 .wall .title a {
+  margin: 10px 0;
+  opacity: 0;
+  -moz-animation: bottomIn 1s forwards;
+  -webkit-animation: bottomIn 1s forwards;
+  animation: bottomIn 1s forwards;
+  -moz-animation-delay: 3s;
+  -webkit-animation-delay: 3s;
+  animation-delay: 3s;
+  display: block;
+  border: 2px #aaa solid;
+  padding: 15px 20px;
+  text-align: center;
+}
+
+/* line 36, ../sass/screen.scss */
+.dots {
+  position: relative;
+  min-height: 800px;
+  height: 100%;
+  overflow: hidden;
+  background: url(http://placehold.it/1280x800) center;
+  background-size: cover;
+}
+/* line 40, ../sass/screen.scss */
+.dots .dot1 {
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  font-weight: lighter;
+  font-size: 1.3em;
+  position: absolute;
+  cursor: pointer;
+  margin: 15px 30px;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 1;
+  background-color: #fff;
+  color: #fff;
+  border-color: #fff;
+  box-shadow: 0 0 0 3px #fff;
+  -moz-transition: color 0.3s;
+  -o-transition: color 0.3s;
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+/* line 45, ../sass/screen.scss */
+.dots .dot1:after {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  content: '';
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  top: -2px;
+  left: -2px;
+  padding: 2px;
+  z-index: -1;
+  background: #fff;
+  -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+  -o-transition: -o-transform 0.2s, opacity 0.2s;
+  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
+}
+/* line 62, ../sass/screen.scss */
+.dots .dot1:hover:after {
+  -moz-transform: scale(0.9);
+  -ms-transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+}
+/* line 68, ../sass/screen.scss */
+.dots .dot1.ng-enter {
+  opacity: 0;
+  -moz-transition: ease 0.3s all;
+  -o-transition: ease 0.3s all;
+  -webkit-transition: ease 0.3s all;
+  transition: ease 0.3s all;
+  -moz-transform: translateY(10px) rotate(0) scale(1);
+  -ms-transform: translateY(10px) rotate(0) scale(1);
+  -webkit-transform: translateY(10px) rotate(0) scale(1);
+  transform: translateY(10px) rotate(0) scale(1);
+}
+/* line 72, ../sass/screen.scss */
+.dots .dot1.ng-enter.ng-enter-active {
+  opacity: 1;
+  -moz-transform: translateY(0) rotate(360deg) scale(1.2);
+  -ms-transform: translateY(0) rotate(360deg) scale(1.2);
+  -webkit-transform: translateY(0) rotate(360deg) scale(1.2);
+  transform: translateY(0) rotate(360deg) scale(1.2);
+}
+/* line 77, ../sass/screen.scss */
+.dots .dot1.ng-leave {
+  opacity: 1;
+  -moz-transition: ease 0.3s all;
+  -o-transition: ease 0.3s all;
+  -webkit-transition: ease 0.3s all;
+  transition: ease 0.3s all;
+}
+/* line 80, ../sass/screen.scss */
+.dots .dot1.ng-leave.ng-leave-active {
+  opacity: 0;
+}
+/* line 85, ../sass/screen.scss */
+.dots .dot2 {
+  height: 100px;
+  width: 100px;
+  padding: 10px;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  font-weight: lighter;
+  font-size: 1.3em;
+  position: absolute;
+  cursor: pointer;
+  margin: 15px 30px;
+  border-radius: 50%;
+  text-align: center;
+  z-index: 1;
+  background-color: #fff;
+  color: #fff;
+  border-color: #fff;
+  -moz-transition: background 0.2s, color 0.2s;
+  -o-transition: background 0.2s, color 0.2s;
+  -webkit-transition: background 0.2s, color 0.2s;
+  transition: background 0.2s, color 0.2s;
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+}
+/* line 89, ../sass/screen.scss */
+.dots .dot2:after {
+  pointer-events: none;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  content: '';
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+  top: -7px;
+  left: -7px;
+  padding: 7px;
+  box-shadow: 0 0 0 4px #fff;
+  -moz-transition: -moz-transform 0.2s, opacity 0.2s;
+  -o-transition: -o-transform 0.2s, opacity 0.2s;
+  -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
+  transition: transform 0.2s, opacity 0.2s;
+  -moz-transform: scale(1.2);
+  -ms-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  opacity: 0;
+}
+/* line 106, ../sass/screen.scss */
+.dots .dot2:hover {
+  background: white;
+}
+/* line 108, ../sass/screen.scss */
+.dots .dot2:hover:after {
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  opacity: 1;
+}
+/* line 115, ../sass/screen.scss */
+.dots .dot2.ng-enter {
+  opacity: 0;
+  -moz-transition: ease 0.3s all;
+  -o-transition: ease 0.3s all;
+  -webkit-transition: ease 0.3s all;
+  transition: ease 0.3s all;
+  -moz-transform: translateY(10px) rotate(0) scale(1.2);
+  -ms-transform: translateY(10px) rotate(0) scale(1.2);
+  -webkit-transform: translateY(10px) rotate(0) scale(1.2);
+  transform: translateY(10px) rotate(0) scale(1.2);
+}
+/* line 119, ../sass/screen.scss */
+.dots .dot2.ng-enter.ng-enter-active {
+  opacity: 1;
+  -moz-transform: translateY(0) rotate(-360deg) scale(1);
+  -ms-transform: translateY(0) rotate(-360deg) scale(1);
+  -webkit-transform: translateY(0) rotate(-360deg) scale(1);
+  transform: translateY(0) rotate(-360deg) scale(1);
+}
+/* line 124, ../sass/screen.scss */
+.dots .dot2.ng-leave {
+  opacity: 1;
+  -moz-transition: ease 0.3s all;
+  -o-transition: ease 0.3s all;
+  -webkit-transition: ease 0.3s all;
+  transition: ease 0.3s all;
+}
+/* line 127, ../sass/screen.scss */
+.dots .dot2.ng-leave.ng-leave-active {
+  opacity: 0;
+}
+/* line 132, ../sass/screen.scss */
+.dots .title {
+  position: absolute;
+  z-index: 2;
+  top: 30%;
+  right: 10%;
+  width: 30%;
+}
+/* line 138, ../sass/screen.scss */
+.dots .title h1 {
+  margin: 10px 0;
+  opacity: 0;
+  -moz-animation: bottomIn 1s forwards;
+  -webkit-animation: bottomIn 1s forwards;
+  animation: bottomIn 1s forwards;
+  -moz-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
+}
+/* line 141, ../sass/screen.scss */
+.dots .title p {
+  margin: 10px 0;
+  opacity: 0;
+  -moz-animation: bottomIn 1s forwards;
+  -webkit-animation: bottomIn 1s forwards;
+  animation: bottomIn 1s forwards;
+  -moz-animation-delay: 2s;
+  -webkit-animation-delay: 2s;
+  animation-delay: 2s;
+}
+/* line 144, ../sass/screen.scss */
+.dots .title a {
   margin: 10px 0;
   opacity: 0;
   -moz-animation: bottomIn 1s forwards;
@@ -730,13 +1012,13 @@ html, body {
   color: white;
 }
 
-/* line 15, ../sass/screen.scss */
+/* line 155, ../sass/screen.scss */
 body {
   background: white;
   overflow-x: hidden;
 }
 
-/* line 20, ../sass/screen.scss */
+/* line 160, ../sass/screen.scss */
 h1 {
   font-size: 28px;
 }

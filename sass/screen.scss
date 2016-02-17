@@ -11,6 +11,146 @@
 @import "banner.scss";
 @import "classification.scss";
 @import "wall.scss";
+$dot:100px;
+@mixin dotDefault() {
+    height: $dot;
+    width: $dot;
+    padding: $dot/10;
+    @include display-flex();
+    @include align-items(center);
+    @include justify-content(center);
+    font-weight: lighter;
+    font-size: 1.3em;
+    position: absolute;
+    cursor: pointer;
+    margin: 15px 30px;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 1;
+    // change dynamic
+    background-color: #fff;
+    color: #fff;
+    border-color: #fff;
+}
+
+.dots {
+    @include blockDefault();
+    background: url(http://placehold.it/1280x800) center;
+    background-size: cover;
+    .dot1 {
+        @include dotDefault();
+        // ====
+        box-shadow: 0 0 0 3px #fff;
+        @include transition(color 0.3s);
+        &:after {
+            pointer-events: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            content: '';
+            @include box-sizing(content-box);
+            // ====
+            top: -2px;
+            left: -2px;
+            padding: 2px;
+            z-index: -1;
+            background: #fff;
+            @include transition(transform 0.2s, opacity 0.2s);
+        }
+        &:hover {
+            &:after {
+                @include transform(scale(0.9));
+            }
+        }
+        // ng
+        @include transform(scale(1.2));
+        &.ng-enter {
+            opacity: 0;
+            @include transition(0.3s ease all);
+            @include transform(translateY(10px) rotate(0) scale(1));
+            &.ng-enter-active {
+                opacity: 1;
+                @include transform(translateY(0) rotate(360deg) scale(1.2));
+            }
+        }
+        &.ng-leave {
+            opacity: 1;
+            @include transition(0.3s ease all);
+            &.ng-leave-active {
+                opacity: 0;
+            }
+        }
+    }
+    .dot2 {
+        @include dotDefault();
+        // =====
+        @include transition(background 0.2s, color 0.2s);
+        &:after {
+            pointer-events: none;
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border-radius: 50%;
+            content: '';
+            @include box-sizing(content-box);
+            // ====
+            top: -7px;
+            left: -7px;
+            padding: 7px;
+            box-shadow: 0 0 0 4px #fff;
+            @include transition(transform 0.2s, opacity 0.2s);
+            @include transform(scale(1.2));
+            opacity: 0;
+        }
+        &:hover {
+            background: rgba(255, 255, 255, 1);
+            &:after {
+                @include transform(scale(1));
+                opacity: 1;
+            }
+        }
+        // ng
+        @include transform(scale(1));
+        &.ng-enter {
+            opacity: 0;
+            @include transition(0.3s ease all);
+            @include transform(translateY(10px) rotate(0) scale(1.2));
+            &.ng-enter-active {
+                opacity: 1;
+                @include transform(translateY(0) rotate(-360deg) scale(1));
+            }
+        }
+        &.ng-leave {
+            opacity: 1;
+            @include transition(0.3s ease all);
+            &.ng-leave-active {
+                opacity: 0;
+            }
+        }
+    }
+    .title {
+        position: absolute;
+        z-index: 2;
+        top: $position + 10%;
+        right: $position - 10%;
+        width: $Twidth;
+        h1 {
+            @include TextDefault($delay - 1s);
+        }
+        p {
+            @include TextDefault($delay);
+        }
+        a {
+            @include TextDefault($delay + 1s);
+            display: block;
+            border: 2px #aaa solid;
+            padding: 15px 20px;
+            text-align: center;
+        }
+    }
+}
+
 @import "footer.scss";
 body {
     background: white;

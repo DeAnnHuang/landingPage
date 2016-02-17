@@ -1,8 +1,6 @@
 .wall {
-    position: relative;
+    @include blockDefault();
     background: gray;
-    min-height: 800px;
-    height: 100%;
     .wPhone {
         background: url(http://placehold.it/400x600);
         height: 600px;

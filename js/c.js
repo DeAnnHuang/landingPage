@@ -14,7 +14,10 @@ app.controller('Controller', function($scope) {
         return c.timer === index;
     };
 
-
+    /**
+     * [list description]for Clissification
+     * @type {Array}
+     */
     c.list = [{
         title: '分類1',
         detail: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Reiciendis id molestiae quo excepturi odio in officia corporis eligendi repellat quam.',
@@ -35,16 +38,43 @@ app.controller('Controller', function($scope) {
         btn_text: '免費試聽30天'
     }];
 
+    /**
+     * [DotList description]for Dots
+     * @type {Array}
+     */
+
+    c.DotList = [{
+        content: '流行',
+        btn_text: '免費試聽30天',
+        color: 'darkorange',
+        top: '10%',
+        left: '20%',
+        click:false
+    }, {
+        content: '搖滾',
+        btn_text: '免費試聽30天',
+        color: 'darkred',
+        top: '20%',
+        left: '10%',
+        click:false
+
+    }, {
+        content: '國語',
+        btn_text: '免費試聽30天',
+        color: 'darkorange',
+        top: '30%',
+        left: '50%',
+        click:false
+
+    }, {
+        content: '亞洲',
+        btn_text: '免費試聽30天',
+        color: 'darkorange',
+        top: '10%',
+        left: '30%',
+        click:false
+    }];
 
 
 
-    // TList.addPerson = function() {
-    //     TList.list.push({
-    //         name: dirList.name,
-    //         age: dirList.age,
-    //         img: 'http://placehold.it/55x55'
-    //     });
-    //     TList.name = '';
-    //     TList.age = 0;
-    // };
 });

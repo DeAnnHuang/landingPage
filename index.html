@@ -19,14 +19,11 @@
 </head>
 
 <body ng-controller="Controller as c">
-    <div class="floatBtn">
-        <a href="#"><img src="http://placehold.it/115x40" alt="android 下載"></a>
-        <a href="#"><img src="http://placehold.it/115x40" alt="IOS 下載"></a>
-    </div>
     <div class="bannerBox">
         <img src="http://placehold.it/1280x800" class="firstbannerImg">
         <div class="title">
-            <h1>myMusic線上音樂</h1>
+            <img src="http://placehold.it/180x180" alt="">
+            <!-- <h1>myMusic線上音樂</h1> -->
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, doloremque sunt eligendi sequi ad quia nobis provident quis molestiae sit.</p>
             <a href="#">立刻下載</a>
         </div>
@@ -36,6 +33,7 @@
         <div class="title">
             <h1>Lorem ipsum dolor sit amet.</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, doloremque sunt eligendi sequi ad quia nobis provident quis molestiae sit.</p>
+            <a href="#">立刻下載</a>
         </div>
     </div>
     <div class="bottomInBox">
@@ -50,17 +48,35 @@
             </div>
         </div>
     </div>
-    <div class="wall">
-        <div class="wPhone">
-            <img src="http://placehold.it/350x200" class="wCard" ng-if="c.wClick">
-            <img src="http://placehold.it/350x200" class="wCard" ng-if="!c.wClick">
-            <img src="http://placehold.it/50x50" class="wClick" ng-click="c.wClick = !c.wClick">
+    <div class="bottomInBox">
+        <div class="wall">
+            <div class="wPhone">
+                <img src="http://placehold.it/350x200" class="wCard" ng-if="c.wClick">
+                <img src="http://placehold.it/350x200" class="wCard" ng-if="!c.wClick">
+                <img src="http://placehold.it/50x50" class="wClick" ng-click="c.wClick = !c.wClick">
+            </div>
+            <div class="title">
+                <h1>Lorem ipsum dolor sit amet.</h1>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, doloremque sunt eligendi sequi ad quia nobis provident quis molestiae sit.</p>
+                <a href="#">立刻下載</a>
+            </div>
+        </div>
+    </div>
+    <div class="dots">
+        <div class="dot2" ng-repeat="item in c.DotList" ng-if="!item.click" style="background-color:{{item.color}};top:{{item.top}};left:{{item.left}};}" ng-click="item.click = !item.click">
+            <span>{{item.content}}</span>
+        </div>
+        <div class="dot1" ng-repeat="item in c.DotList" ng-if="item.click" style="background-color:{{item.color}};color:{{item.color}};top:{{item.top}};left:{{item.left}};box-shadow: 0 0 15px #aaa;" ng-click="item.click = !item.click">
+            <span>{{item.content}}</span>
         </div>
         <div class="title">
             <h1>Lorem ipsum dolor sit amet.</h1>
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, doloremque sunt eligendi sequi ad quia nobis provident quis molestiae sit.</p>
             <a href="#">立刻下載</a>
         </div>
+    </div>
+    <div class="bannerBox">
+        <img src="http://placehold.it/1280x800" class="bannerImg">
     </div>
     <div id="footer">
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>

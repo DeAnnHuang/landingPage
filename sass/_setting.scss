@@ -25,6 +25,13 @@ $distance:25px;
     overflow: hidden;
 }
 
+@mixin blockDefault() {
+    position: relative;
+    min-height: 800px;
+    height: 100%;
+    overflow: hidden;
+}
+
 
 /**dynamic**/
 
@@ -116,5 +123,16 @@ $distance:25px;
     }
     100% {
         transform: rotate(360deg) scale(1);
+    }
+}
+@include keyframes(heart) {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
     }
 }
