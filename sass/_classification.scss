@@ -1,34 +1,34 @@
 .classification {
     @include blockDefault();
-    background: url(http://placehold.it/1280x800) center repeat-x;
+    background: url(../img/Block3/bg.jpg) center repeat-x;
     background-size: cover;
     @include animation(Slider 32s infinite linear);
     .data {
         .person {
             position: absolute;
-            top: $position + 10%;
-            left: $position - 10%;
+            top: $position;
+            left: $position - 12%;
             overflow: hidden;
             @include myAnimation(bottomIn, $dur + 2s, 0);
         }
         .title {
             position: absolute;
             z-index: 2;
-            top: $position + 10%;
-            right: $position - 10%;
+            top: $position - 5%;
+            right: $position - 15%;
             width: $Twidth;
+            color: #fff;
             h1 {
                 @include TextDefault($delay - 1s);
+                @include title_h1();
             }
             p {
                 @include TextDefault($delay);
+                @include title_p();
             }
             a {
                 @include TextDefault($delay + 1s);
-                display: block;
-                border: 2px #aaa solid;
-                padding: 15px 20px;
-                text-align: center;
+                @include title_a();
             }
         }
     }

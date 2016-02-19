@@ -3,6 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=400,user-scalable=0">
     <title>Lading Page</title>
     <!-- css -->
     <link rel="stylesheet" href="sass/screen.css">
@@ -14,34 +15,39 @@
     <!-- Angular -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.4.0/angular.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-animate.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0/angular-sanitize.js"></script>
     <script src="js/c.js"></script>
+    <!-- js -->
     <script src="js/block.js"></script>
+    <!-- <script src="js/mobile.js"></script> -->
 </head>
 
 <body ng-controller="Controller as c">
-    <div class="bannerBox">
-        <img src="http://placehold.it/1280x800" class="firstbannerImg">
+    <div class="banner1">
+        <img src="img/Block1/CrossPlatform.png" alt="支援跨平台">
         <div class="title">
-            <img src="http://placehold.it/180x180" alt="">
-            <!-- <h1>myMusic線上音樂</h1> -->
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, doloremque sunt eligendi sequi ad quia nobis provident quis molestiae sit.</p>
-            <a href="#">立刻下載</a>
+            <img src="img/Block1/logo.png" alt="">
+            <p>個人化設計，比你還了解你的音樂品味。
+                <br> 一個帳號即可手機、平板、電腦盡情聆聽。
+            </p>
+            <a href="#">免費試聽30天</a>
         </div>
     </div>
-    <div class="bannerBox">
-        <img src="http://placehold.it/1280x800" class="bannerImg">
+    <div class="banner2Box">
         <div class="title">
-            <h1>Lorem ipsum dolor sit amet.</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, doloremque sunt eligendi sequi ad quia nobis provident quis molestiae sit.</p>
-            <a href="#">立刻下載</a>
+            <h1>300萬曲庫<br>免費試聽</h1>
+            <p>天天上新歌，300萬豐富曲庫聽到飽。
+                <br> 還有專業音樂編輯為你推薦好歌。
+            </p>
+            <a href="#">免費試聽30天</a>
         </div>
     </div>
     <div class="bottomInBox">
         <div class="classification">
             <div class="data" ng-repeat="item in c.list" ng-hide="!c.isCurrentSlideIndex($index)">
-                <img src="http://placehold.it/400x600" class="person">
+                <img src="{{item.img}}" class="person">
                 <div class="title">
-                    <h1>{{$index + 1}}.{{item.title}}</h1>
+                    <h1 ng-bind-html="item.title"></h1>
                     <p>{{item.detail}}</p>
                     <a href="＃">{{item.btn_text}}</a>
                 </div>
@@ -49,37 +55,53 @@
         </div>
     </div>
     <div class="bottomInBox">
-        <div class="wall">
+        <div class="wallBox">
             <div class="wPhone">
-                <img src="http://placehold.it/350x200" class="wCard" ng-if="c.wClick">
-                <img src="http://placehold.it/350x200" class="wCard" ng-if="!c.wClick">
-                <img src="http://placehold.it/50x50" class="wClick" ng-click="c.wClick = !c.wClick">
+                <img src="img/Block4/card2.jpg" class="wCard" ng-if="c.wClick">
+                <img src="img/Block4/card1.jpg" class="wCard" ng-if="!c.wClick">
+                <img src="img/Block4/cycle.png" class="wClick" ng-click="c.wClick = !c.wClick">
             </div>
             <div class="title">
-                <h1>Lorem ipsum dolor sit amet.</h1>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, doloremque sunt eligendi sequi ad quia nobis provident quis molestiae sit.</p>
-                <a href="#">立刻下載</a>
+                <h1>個人牆<br>懂你想聽的</h1>
+                <p>為你量身打造，隨時隨地懂你想聽的，
+                    <br> 更多個人化體驗歡迎試用。
+                </p>
+                <a href="#">免費試聽30天</a>
             </div>
         </div>
     </div>
-    <div class="dots">
-        <div class="dot2" ng-repeat="item in c.DotList" ng-if="!item.click" style="background-color:{{item.color}};top:{{item.top}};left:{{item.left}};}" ng-click="item.click = !item.click">
-            <span>{{item.content}}</span>
-        </div>
-        <div class="dot1" ng-repeat="item in c.DotList" ng-if="item.click" style="background-color:{{item.color}};color:{{item.color}};top:{{item.top}};left:{{item.left}};box-shadow: 0 0 15px #aaa;" ng-click="item.click = !item.click">
-            <span>{{item.content}}</span>
-        </div>
-        <div class="title">
-            <h1>Lorem ipsum dolor sit amet.</h1>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, doloremque sunt eligendi sequi ad quia nobis provident quis molestiae sit.</p>
-            <a href="#">立刻下載</a>
+    <div class="bottomInBox">
+        <div class="dotsBox">
+            <div ng-if="c.w">
+                <div class="dot2" ng-repeat="item in c.DotPCList" ng-if="!item.click" style="background-color:{{item.color}};top:{{item.top}};left:{{item.left}};}" ng-click="item.click = !item.click">
+                    <span>{{item.content}}</span>
+                </div>
+                <div class="dot1" ng-repeat="item in c.DotPCList" ng-if="item.click" style="background-color:{{item.color}};color:{{item.color}};top:{{item.top}};left:{{item.left}};box-shadow: 0 0 15px #aaa;" ng-click="item.click = !item.click">
+                    <span>{{item.content}}</span>
+                </div>
+            </div>
+            <div ng-if="!c.w">
+                <div class="dot2" ng-repeat="item in c.DotMList" ng-if="!item.click" style="background-color:{{item.color}};top:{{item.top}};left:{{item.left}};}" ng-click="item.click = !item.click">
+                    <span>{{item.content}}</span>
+                </div>
+                <div class="dot1" ng-repeat="item in c.DotMList" ng-if="item.click" style="background-color:{{item.color}};color:{{item.color}};top:{{item.top}};left:{{item.left}};box-shadow: 0 0 15px #aaa;" ng-click="item.click = !item.click">
+                    <span>{{item.content}}</span>
+                </div>
+            </div>
+            <div class="title">
+                <h1>音樂頻道<br>挑歌神器</h1>
+                <p>史上第一款結合遊戲引擎、超好玩的挑歌
+                    <br> 神器，三步驟挑你所愛，越挑越有默契。
+                </p>
+                <a href="#">免費試聽30天</a>
+            </div>
         </div>
     </div>
-    <div class="bannerBox">
-        <img src="http://placehold.it/1280x800" class="bannerImg">
+    <div class="banner3">
     </div>
     <div id="footer">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        <p>台灣酷樂時代 版權所有© 2015 Taiwan Kuro Times Co., Ltd.
+            <br><span ng-if="c.w">建議使用 Internet Explorer 11.0 以上版本，以達網頁最佳瀏覽效果</span></p>
     </div>
 </body>
 

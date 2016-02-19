@@ -4,14 +4,17 @@ function isScrolledIntoView(elem) {
 
     var elemTop = $(elem).offset().top;
     var elemBottom = elemTop + $(elem).height();
-    return (elemTop + 100 <= docViewBottom);
+    return (elemTop + 90 <= docViewBottom);
 }
 
 $(document).ready(function() {
-    show("banner");
+    show("banner1");
     $(document).on('scroll', function() {
-        show("banner");
+        show("banner2");
         show("bottomIn");
+        show("wall");
+        show("dots");
+        show("banner3");
     });
 });
 
@@ -20,8 +23,6 @@ function show(className) {
     $("." + className + "Box").each(function() {
         if (isScrolledIntoView($(this))) {
             $(this).removeClass(className + 'Box').addClass(className);
-            // console.log("ok");
         }
-        // else console.log("opps");å
     });
 }

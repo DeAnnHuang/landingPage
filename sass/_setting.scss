@@ -1,9 +1,10 @@
-$Twidth:30%;
+$Twidth:35%;
 $position:20%;
 $margin:10px;
 $dur:1s;
 $delay:2s;
 $distance:25px;
+$color:darkorange;
 @mixin TextDefault($delay) {
     // text-align: justify;
     margin: $margin 0;
@@ -30,6 +31,13 @@ $distance:25px;
     min-height: 800px;
     height: 100%;
     overflow: hidden;
+}
+
+@mixin LRcenter() {
+    margin:auto;
+    left: 0;
+    right: 0;
+    text-align: center;
 }
 
 
@@ -88,6 +96,17 @@ $distance:25px;
     }
 }
 
+@include keyframes(wPhone_bottomIn) {
+    from {
+        opacity: 0;
+        @include transform(translateY(100%) scale(.8));
+    }
+    to {
+        opacity: 1;
+        @include transform(translateY(0) scale(.8));
+    }
+}
+
 @include keyframes(topIn) {
     from {
         opacity: 0;
@@ -104,7 +123,7 @@ $distance:25px;
         background-position: 0 0;
     }
     to {
-        background-position: 1280px 0;
+        background-position: 2674px 0;
     }
 }
 
@@ -125,6 +144,7 @@ $distance:25px;
         transform: rotate(360deg) scale(1);
     }
 }
+
 @include keyframes(heart) {
     0% {
         transform: scale(1);
@@ -135,4 +155,13 @@ $distance:25px;
     100% {
         transform: scale(1);
     }
+}
+
+// box setting
+.banner2Box,
+.banner3Box,
+.bottomInBox,
+.wallBox,
+.dotsBox {
+    opacity: 0;
 }
