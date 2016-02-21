@@ -1247,7 +1247,7 @@ h1 {
 
   /* line 67, ../sass/screen.scss */
   .banner3 {
-    background: url(../img/Block6/bg_m.png) center;
+    background: url(../img/Block6/bg_m.jpg) center;
     min-height: 600px;
   }
   /* line 70, ../sass/screen.scss */
@@ -1319,7 +1319,7 @@ h1 {
 
   /* line 105, ../sass/screen.scss */
   .dots {
-    background: url(../img/Block5/bg_m.png) center 75% no-repeat;
+    background: url(../img/Block5/bg_m.jpg) center 75% no-repeat;
   }
   /* line 107, ../sass/screen.scss */
   .dots .dot1,
