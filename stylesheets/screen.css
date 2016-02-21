@@ -137,7 +137,7 @@ a:hover {
 }
 
 /**dynamic**/
-/* line 46, ../sass/_setting.scss */
+/* line 59, ../sass/_setting.scss */
 .bottomIn {
   opacity: 0;
   -moz-animation: bottomIn 2s forwards;
@@ -484,7 +484,7 @@ a:hover {
     transform: scale(1);
   }
 }
-/* line 161, ../sass/_setting.scss */
+/* line 174, ../sass/_setting.scss */
 .banner2Box,
 .banner3Box,
 .bottomInBox,
@@ -1183,25 +1183,13 @@ html, body {
   letter-spacing: 0px;
 }
 
-/* line 16, ../sass/screen.scss */
-body {
-  background-color: #fff;
-  font-size: 18px;
-  font-weight: lighter;
-}
-
-/* line 23, ../sass/screen.scss */
-h1 {
-  font-size: 28px;
-}
-
 @media screen and (max-width: 768px) {
-  /* line 41, ../sass/screen.scss */
+  /* line 3, ../sass/_mobile.scss */
   body {
     font-size: 14px;
   }
 
-  /* line 48, ../sass/screen.scss */
+  /* line 10, ../sass/_mobile.scss */
   .banner1 .title,
   .banner2 .title,
   .banner3 .title {
@@ -1211,7 +1199,7 @@ h1 {
     text-align: center;
     width: 85%;
   }
-  /* line 29, ../sass/screen.scss */
+  /* line 45, ../sass/_setting.scss */
   .banner1 .title a,
   .banner2 .title a,
   .banner3 .title a {
@@ -1220,42 +1208,42 @@ h1 {
     padding: 8px 15px;
     font-size: 1em;
   }
-  /* line 35, ../sass/screen.scss */
+  /* line 51, ../sass/_setting.scss */
   .banner1 .title img,
   .banner2 .title img,
   .banner3 .title img {
     width: 40%;
   }
 
-  /* line 53, ../sass/screen.scss */
+  /* line 15, ../sass/_mobile.scss */
   .banner1 {
     background: url(../img/Block1/bg_m.jpg) center;
   }
-  /* line 55, ../sass/screen.scss */
+  /* line 17, ../sass/_mobile.scss */
   .banner1 > img {
     width: 50%;
   }
-  /* line 58, ../sass/screen.scss */
+  /* line 20, ../sass/_mobile.scss */
   .banner1 .title {
     top: 10%;
   }
 
-  /* line 63, ../sass/screen.scss */
+  /* line 25, ../sass/_mobile.scss */
   .banner2 .title {
     top: 20%;
   }
 
-  /* line 67, ../sass/screen.scss */
+  /* line 29, ../sass/_mobile.scss */
   .banner3 {
     background: url(../img/Block6/bg_m.jpg) center;
     min-height: 600px;
   }
-  /* line 70, ../sass/screen.scss */
+  /* line 32, ../sass/_mobile.scss */
   .banner3 .title {
     top: 20%;
   }
 
-  /* line 77, ../sass/screen.scss */
+  /* line 39, ../sass/_mobile.scss */
   .classification .data .person {
     margin: auto;
     left: 0;
@@ -1264,7 +1252,7 @@ h1 {
     width: 100%;
     top: 40%;
   }
-  /* line 83, ../sass/screen.scss */
+  /* line 45, ../sass/_mobile.scss */
   .classification .data .title {
     margin: auto;
     left: 0;
@@ -1273,19 +1261,19 @@ h1 {
     top: 5%;
     width: 85%;
   }
-  /* line 29, ../sass/screen.scss */
+  /* line 45, ../sass/_setting.scss */
   .classification .data .title a {
     margin: auto;
     width: 70%;
     padding: 8px 15px;
     font-size: 1em;
   }
-  /* line 35, ../sass/screen.scss */
+  /* line 51, ../sass/_setting.scss */
   .classification .data .title img {
     width: 40%;
   }
 
-  /* line 92, ../sass/screen.scss */
+  /* line 54, ../sass/_mobile.scss */
   .wall .wPhone {
     margin: auto;
     left: 0;
@@ -1296,7 +1284,7 @@ h1 {
     -webkit-animation: wPhone_bottomIn 1s forwards;
     animation: wPhone_bottomIn 1s forwards;
   }
-  /* line 98, ../sass/screen.scss */
+  /* line 60, ../sass/_mobile.scss */
   .wall .title {
     margin: auto;
     left: 0;
@@ -1305,28 +1293,28 @@ h1 {
     top: 5%;
     width: 85%;
   }
-  /* line 29, ../sass/screen.scss */
+  /* line 45, ../sass/_setting.scss */
   .wall .title a {
     margin: auto;
     width: 70%;
     padding: 8px 15px;
     font-size: 1em;
   }
-  /* line 35, ../sass/screen.scss */
+  /* line 51, ../sass/_setting.scss */
   .wall .title img {
     width: 40%;
   }
 
-  /* line 105, ../sass/screen.scss */
+  /* line 67, ../sass/_mobile.scss */
   .dots {
     background: url(../img/Block5/bg_m.jpg) center 75% no-repeat;
   }
-  /* line 107, ../sass/screen.scss */
+  /* line 69, ../sass/_mobile.scss */
   .dots .dot1,
   .dots .dot2 {
     font-size: 1.2em;
   }
-  /* line 111, ../sass/screen.scss */
+  /* line 73, ../sass/_mobile.scss */
   .dots .title {
     margin: auto;
     left: 0;
@@ -1335,15 +1323,26 @@ h1 {
     top: 5%;
     width: 85%;
   }
-  /* line 29, ../sass/screen.scss */
+  /* line 45, ../sass/_setting.scss */
   .dots .title a {
     margin: auto;
     width: 70%;
     padding: 8px 15px;
     font-size: 1em;
   }
-  /* line 35, ../sass/screen.scss */
+  /* line 51, ../sass/_setting.scss */
   .dots .title img {
     width: 40%;
   }
+}
+/* line 17, ../sass/screen.scss */
+body {
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+/* line 24, ../sass/screen.scss */
+h1 {
+  font-size: 28px;
 }

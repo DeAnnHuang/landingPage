@@ -34,10 +34,23 @@ $color:darkorange;
 }
 
 @mixin LRcenter() {
-    margin:auto;
+    margin: auto;
     left: 0;
     right: 0;
     text-align: center;
+}
+
+@mixin sTitleDefault() {
+    width: $Twidth + 50%;
+    a {
+        margin: auto;
+        width: 70%;
+        padding: 8px 15px;
+        font-size: 1em;
+    }
+    img {
+        width: 40%;
+    }
 }
 
 
