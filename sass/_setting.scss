@@ -11,6 +11,7 @@ $color:darkorange;
     opacity: 0;
     @include animation(bottomIn $dur forwards);
     @include animation-delay($delay);
+    font-size:1.2em;
 }
 
 @mixin myAnimation($aniName, $dur, $delay) {

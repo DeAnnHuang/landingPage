@@ -137,7 +137,7 @@ a:hover {
 }
 
 /**dynamic**/
-/* line 59, ../sass/_setting.scss */
+/* line 60, ../sass/_setting.scss */
 .bottomIn {
   opacity: 0;
   -moz-animation: bottomIn 2s forwards;
@@ -484,7 +484,7 @@ a:hover {
     transform: scale(1);
   }
 }
-/* line 174, ../sass/_setting.scss */
+/* line 175, ../sass/_setting.scss */
 .banner2Box,
 .banner3Box,
 .bottomInBox,
@@ -525,6 +525,7 @@ a:hover {
   -moz-animation-delay: 1s;
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
+  font-size: 1.2em;
   font-size: 2em;
   line-height: 1.5em;
 }
@@ -541,6 +542,7 @@ a:hover {
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
   font-size: 1.2em;
+  font-size: 1.2em;
   line-height: 1.8em;
   margin: 20px auto;
 }
@@ -556,6 +558,7 @@ a:hover {
   -moz-animation-delay: 3s;
   -webkit-animation-delay: 3s;
   animation-delay: 3s;
+  font-size: 1.2em;
   display: block;
   background-color: darkorange;
   color: white;
@@ -693,6 +696,7 @@ a:hover {
   -moz-animation-delay: 1s;
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
+  font-size: 1.2em;
   font-size: 2em;
   line-height: 1.5em;
 }
@@ -707,6 +711,7 @@ a:hover {
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
   font-size: 1.2em;
+  font-size: 1.2em;
   line-height: 1.8em;
   margin: 20px auto;
 }
@@ -720,6 +725,7 @@ a:hover {
   -moz-animation-delay: 3s;
   -webkit-animation-delay: 3s;
   animation-delay: 3s;
+  font-size: 1.2em;
   display: block;
   background-color: darkorange;
   color: white;
@@ -827,6 +833,7 @@ a:hover {
   -moz-animation-delay: 1s;
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
+  font-size: 1.2em;
   font-size: 2em;
   line-height: 1.5em;
 }
@@ -841,6 +848,7 @@ a:hover {
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
   font-size: 1.2em;
+  font-size: 1.2em;
   line-height: 1.8em;
   margin: 20px auto;
 }
@@ -854,6 +862,7 @@ a:hover {
   -moz-animation-delay: 3s;
   -webkit-animation-delay: 3s;
   animation-delay: 3s;
+  font-size: 1.2em;
   display: block;
   background-color: darkorange;
   color: white;
@@ -1096,6 +1105,7 @@ a:hover {
   -moz-animation-delay: 1s;
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
+  font-size: 1.2em;
   font-size: 2em;
   line-height: 1.5em;
 }
@@ -1110,6 +1120,7 @@ a:hover {
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
   font-size: 1.2em;
+  font-size: 1.2em;
   line-height: 1.8em;
   margin: 20px auto;
 }
@@ -1123,6 +1134,7 @@ a:hover {
   -moz-animation-delay: 3s;
   -webkit-animation-delay: 3s;
   animation-delay: 3s;
+  font-size: 1.2em;
   display: block;
   background-color: darkorange;
   color: white;
@@ -1199,7 +1211,7 @@ html, body {
     text-align: center;
     width: 85%;
   }
-  /* line 45, ../sass/_setting.scss */
+  /* line 46, ../sass/_setting.scss */
   .banner1 .title a,
   .banner2 .title a,
   .banner3 .title a {
@@ -1208,7 +1220,7 @@ html, body {
     padding: 8px 15px;
     font-size: 1em;
   }
-  /* line 51, ../sass/_setting.scss */
+  /* line 52, ../sass/_setting.scss */
   .banner1 .title img,
   .banner2 .title img,
   .banner3 .title img {
@@ -1261,14 +1273,14 @@ html, body {
     top: 5%;
     width: 85%;
   }
-  /* line 45, ../sass/_setting.scss */
+  /* line 46, ../sass/_setting.scss */
   .classification .data .title a {
     margin: auto;
     width: 70%;
     padding: 8px 15px;
     font-size: 1em;
   }
-  /* line 51, ../sass/_setting.scss */
+  /* line 52, ../sass/_setting.scss */
   .classification .data .title img {
     width: 40%;
   }
@@ -1293,14 +1305,14 @@ html, body {
     top: 5%;
     width: 85%;
   }
-  /* line 45, ../sass/_setting.scss */
+  /* line 46, ../sass/_setting.scss */
   .wall .title a {
     margin: auto;
     width: 70%;
     padding: 8px 15px;
     font-size: 1em;
   }
-  /* line 51, ../sass/_setting.scss */
+  /* line 52, ../sass/_setting.scss */
   .wall .title img {
     width: 40%;
   }
@@ -1323,14 +1335,14 @@ html, body {
     top: 5%;
     width: 85%;
   }
-  /* line 45, ../sass/_setting.scss */
+  /* line 46, ../sass/_setting.scss */
   .dots .title a {
     margin: auto;
     width: 70%;
     padding: 8px 15px;
     font-size: 1em;
   }
-  /* line 51, ../sass/_setting.scss */
+  /* line 52, ../sass/_setting.scss */
   .dots .title img {
     width: 40%;
   }
