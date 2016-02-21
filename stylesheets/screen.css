@@ -1173,6 +1173,18 @@ html, body {
   letter-spacing: 0px;
 }
 
+/* line 16, ../sass/screen.scss */
+body {
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+/* line 23, ../sass/screen.scss */
+h1 {
+  font-size: 28px;
+}
+
 @media screen and (max-width: 768px) {
   /* line 3, ../sass/_mobile.scss */
   body {
@@ -1324,15 +1336,4 @@ html, body {
   .dots .title img {
     width: 40%;
   }
-}
-/* line 17, ../sass/screen.scss */
-body {
-  background-color: #fff;
-  font-size: 18px;
-  font-weight: lighter;
-}
-
-/* line 24, ../sass/screen.scss */
-h1 {
-  font-size: 28px;
 }

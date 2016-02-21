@@ -13,7 +13,6 @@
 @import "wall.scss";
 @import "dot.scss";
 @import "footer.scss";
-@import "mobile.scss";
 body {
     background-color: #fff;
     // overflow-x: hidden;
@@ -25,3 +24,4 @@ h1 {
     font-size: 28px;
 }
 
+@import "mobile.scss";
