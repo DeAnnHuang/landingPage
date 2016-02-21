@@ -1,0 +1,58 @@
+.wall {
+    @include blockDefault();
+    background: #e9e9e9;
+    .wPhone {
+        background: url(../img/Block4/phone_bg.png);
+        height: 603px;
+        width: 400px;
+        @include wDefault($position + 5%, $position - 5%);
+        @include animation(bottomIn $dur);
+    }
+    .wCard {
+        @include wDefault(16%, 8%);
+        width: 335px;
+        &.ng-enter {
+            opacity: 0;
+            @include transition(0.5s ease all);
+            @include transform(translateY(-100%));
+            &.ng-enter-active {
+                opacity: 1;
+                @include transform(translateY(0));
+                // @include box-shadow(#ccc 15px 15px 20px);
+            }
+        }
+        &.ng-leave {
+            opacity: 1;
+            @include transition(0.5s ease all);
+            // @include transform(translateY(0));
+            &.ng-leave-active {
+                opacity: 0;
+                // @include transform(translateY(-100%));
+            }
+        }
+    }
+    .wClick {
+        @include wDefault(17%, 72%);
+        @include animation(rotate 8s infinite);
+        cursor: pointer;
+    }
+    .title {
+        position: absolute;
+        z-index: 2;
+        top: $position + 5%;
+        right: $position - 15%;
+        width: $Twidth;
+        h1 {
+            @include TextDefault($delay - 1s);
+            @include title_h1();
+        }
+        p {
+            @include TextDefault($delay);
+            @include title_p();
+        }
+        a {
+            @include TextDefault($delay + 1s);
+            @include title_a();
+        }
+    }
+}

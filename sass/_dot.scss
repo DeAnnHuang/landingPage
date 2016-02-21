@@ -1,0 +1,127 @@
+$dot:100px;
+@mixin dotDefault() {
+    height: $dot;
+    width: $dot;
+    padding: $dot/10;
+    @include display-flex();
+    @include align-items(center);
+    @include justify-content(center);
+    position: absolute;
+    cursor: pointer;
+    margin: 15px 30px;
+    border-radius: 50%;
+    text-align: center;
+    z-index: 1;
+    // change dynamic
+    background-color: #fff;
+    border-color: #fff;
+    color: #fff;
+    font-size:1.2em;
+    span {
+        font-weight: lighter;
+        // font-size: 1.2em;
+    }
+}
+
+@mixin dotNg($before, $after) {
+    // ng
+    @include transform(scale($after));
+    &.ng-enter {
+        opacity: 0;
+        @include transition(0.3s ease all);
+        @include transform(translateY(10px) rotate(0) scale($before));
+        &.ng-enter-active {
+            opacity: 1;
+            @include transform(translateY(0) rotate(360deg) scale($after));
+        }
+    }
+    &.ng-leave {
+        opacity: 1;
+        @include transition(0.3s ease all);
+        &.ng-leave-active {
+            opacity: 0;
+        }
+    }
+}
+
+@mixin dotAfterDefault() {
+    pointer-events: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    content: '';
+    @include box-sizing(content-box);
+}
+
+.dots {
+    @include blockDefault();
+    background: url(../img/Block5/bg.jpg) center 75% no-repeat;
+    // background-size: cover;
+    background-color:#fafafa;
+    .dot1 {
+        @include dotDefault();
+        // ====
+        box-shadow: 0 0 0 3px #fff;
+        @include transition(color 0.3s);
+        &:after {
+            @include dotAfterDefault();
+            // ====
+            top: -2px;
+            left: -2px;
+            padding: 2px;
+            z-index: -1;
+            background: #fff;
+            @include transition(transform 0.2s, opacity 0.2s);
+        }
+        &:hover {
+            &:after {
+                @include transform(scale(0.9));
+            }
+        }
+        @include dotNg(1, 1.2);
+    }
+    .dot2 {
+        @include dotDefault();
+        // =====
+        @include transition(background 0.2s, color 0.2s);
+        &:after {
+            @include dotAfterDefault();
+            // ====
+            top: -7px;
+            left: -7px;
+            padding: 7px;
+            box-shadow: 0 0 0 4px #fff;
+            @include transition(transform 0.2s, opacity 0.2s);
+            @include transform(scale(1.2));
+            opacity: 0;
+        }
+        &:hover {
+            background: rgba(255, 255, 255, 1);
+            &:after {
+                @include transform(scale(1));
+                opacity: 1;
+            }
+        }
+        @include dotNg(1.2, 1);
+    }
+    .title {
+        position: absolute;
+        z-index: 2;
+        top: $position - 15%;
+        right: $position - 15%;
+        width: $Twidth;
+        h1 {
+            @include TextDefault($delay - 1s);
+            @include title_h1();
+        }
+        p {
+            @include TextDefault($delay);
+            @include title_p();
+        }
+        a {
+            @include TextDefault($delay + 1s);
+            @include title_a();
+        }
+    }
+}

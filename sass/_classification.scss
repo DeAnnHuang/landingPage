@@ -1,0 +1,35 @@
+.classification {
+    @include blockDefault();
+    background: url(../img/Block3/bg.jpg) center repeat-x;
+    background-size: cover;
+    @include animation(Slider 32s infinite linear);
+    .data {
+        .person {
+            position: absolute;
+            top: $position;
+            left: $position - 12%;
+            overflow: hidden;
+            @include myAnimation(bottomIn, $dur + 2s, 0);
+        }
+        .title {
+            position: absolute;
+            z-index: 2;
+            top: $position - 5%;
+            right: $position - 15%;
+            width: $Twidth;
+            color: #fff;
+            h1 {
+                @include TextDefault($delay - 1s);
+                @include title_h1();
+            }
+            p {
+                @include TextDefault($delay);
+                @include title_p();
+            }
+            a {
+                @include TextDefault($delay + 1s);
+                @include title_a();
+            }
+        }
+    }
+}

@@ -1,0 +1,13 @@
+@include sticky-footer(100px);
+#footer {
+    @include display-flex();
+    @include align-items(center);
+    @include justify-content(center);
+    background: #999;
+    color: white;
+    text-align: center;
+    p {
+        margin: auto;
+        letter-spacing: 0px;
+    }
+}

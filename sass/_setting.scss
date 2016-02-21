@@ -1,0 +1,167 @@
+$Twidth:35%;
+$position:20%;
+$margin:10px;
+$dur:1s;
+$delay:2s;
+$distance:25px;
+$color:darkorange;
+@mixin TextDefault($delay) {
+    // text-align: justify;
+    margin: $margin 0;
+    opacity: 0;
+    @include animation(bottomIn $dur forwards);
+    @include animation-delay($delay);
+}
+
+@mixin myAnimation($aniName, $dur, $delay) {
+    opacity: 0;
+    @include animation($aniName $dur forwards);
+    @include animation-delay($delay);
+}
+
+@mixin wDefault($top, $left) {
+    position: absolute;
+    top: $top;
+    left: $left;
+    overflow: hidden;
+}
+
+@mixin blockDefault() {
+    position: relative;
+    min-height: 800px;
+    height: 100%;
+    overflow: hidden;
+}
+
+@mixin LRcenter() {
+    margin:auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+
+/**dynamic**/
+
+.bottomIn {
+    @include myAnimation(bottomIn, $dur + 1s, 0);
+}
+
+@include keyframes(bund) {
+    0% {
+        opacity: 0;
+        transform: scale(0.5) rotate(0deg);
+    }
+    40% {
+        transform: scale(1) rotate(360deg);
+    }
+    50% {
+        transform: rotate(0deg);
+    }
+    60% {
+        transform: rotate(10deg);
+    }
+    70% {
+        transform: rotate(0deg);
+    }
+    80% {
+        transform: rotate(0deg);
+    }
+    90% {
+        transform: rotate(5deg);
+    }
+    100% {
+        opacity: 1;
+        transform: rotate(0deg);
+    }
+}
+
+@include keyframes(fadein) {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@include keyframes(bottomIn) {
+    from {
+        opacity: 0;
+        @include transform(translateY(100%));
+    }
+    to {
+        opacity: 1;
+        @include transform(translateY(0));
+    }
+}
+
+@include keyframes(wPhone_bottomIn) {
+    from {
+        opacity: 0;
+        @include transform(translateY(100%) scale(.8));
+    }
+    to {
+        opacity: 1;
+        @include transform(translateY(0) scale(.8));
+    }
+}
+
+@include keyframes(topIn) {
+    from {
+        opacity: 0;
+        @include transform(translateY(-100%));
+    }
+    to {
+        opacity: 1;
+        @include transform(translateY(0));
+    }
+}
+
+@include keyframes(Slider) {
+    from {
+        background-position: 0 0;
+    }
+    to {
+        background-position: 2674px 0;
+    }
+}
+
+@include keyframes(rotate) {
+    0% {
+        transform: rotate(0) scale(1);
+    }
+    25% {
+        transform: rotate(180deg) scale(1.1);
+    }
+    50% {
+        transform: rotate(180deg) scale(1);
+    }
+    75% {
+        transform: rotate(360deg) scale(1.1);
+    }
+    100% {
+        transform: rotate(360deg) scale(1);
+    }
+}
+
+@include keyframes(heart) {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+// box setting
+.banner2Box,
+.banner3Box,
+.bottomInBox,
+.wallBox,
+.dotsBox {
+    opacity: 0;
+}

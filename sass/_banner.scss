@@ -1,0 +1,93 @@
+@mixin title_a() {
+    display: block;
+    background-color: $color;
+    color: white;
+    padding: 15px 20px;
+    text-align: center;
+    width: 85%;
+    letter-spacing: 0.2em;
+    @include transition(all .8s);
+    &:hover {
+        letter-spacing: 0.4em;
+    }
+}
+
+@mixin title_h1() {
+    font-size: 2em;
+    line-height: 1.5em;
+}
+
+@mixin title_p() {
+    font-size: 1.2em;
+    line-height: 1.8em;
+    margin: 20px auto;
+}
+
+.banner1,
+.banner2,
+.banner3 {
+    @include blockDefault();
+    background-size: cover;
+    .title {
+        position: absolute;
+        z-index: 2;
+        top: $position - 15%;
+        left: $position - 15%;
+        width: $Twidth;
+        h1 {
+            @include TextDefault($delay - 1s);
+            @include title_h1();
+        }
+        p {
+            @include TextDefault($delay);
+            @include title_p();
+        }
+        a {
+            @include TextDefault($delay + 1s);
+            @include title_a();
+        }
+        img {
+            @include myAnimation(bund, 1.5s, $delay - 0.5s);
+            width: 50%;
+        }
+    }
+}
+
+.banner1 {
+    background: url(../img/Block1/bg.jpg) center;
+    background-size: cover;
+    @include animation(fadein $dur + 1s);
+    &>img {
+        position: absolute;
+        top: 80%;
+        @include LRcenter();
+        @include animation( $dur + 1s);
+    }
+}
+
+.banner2 {
+    background: url(../img/Block2/bg.jpg) center;
+    background-size: cover;
+    @include animation(bottomIn $dur + 1s);
+    color: #fff;
+}
+
+.banner3 {
+    background: url(../img/Block6/bg.jpg) center;
+    min-height:1000px;
+    background-size: cover;
+    @include animation(bottomIn $dur + 1s);
+}
+
+.floatBtn {
+    position: fixed;
+    bottom: $distance+5px;
+    right: $distance;
+    z-index: 9;
+    opacity: 0;
+    @include animation(bottomIn $dur forwards);
+    @include animation-delay($delay+2s);
+    img {
+        border: 1px solid #aaa;
+    }
+}
