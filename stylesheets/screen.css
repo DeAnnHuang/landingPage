@@ -1218,7 +1218,7 @@ html, body {
     margin: auto;
     width: 70%;
     padding: 8px 15px;
-    font-size: 1em;
+    font-size: 1.2em;
   }
   /* line 52, ../sass/_setting.scss */
   .banner1 .title img,
@@ -1278,7 +1278,7 @@ html, body {
     margin: auto;
     width: 70%;
     padding: 8px 15px;
-    font-size: 1em;
+    font-size: 1.2em;
   }
   /* line 52, ../sass/_setting.scss */
   .classification .data .title img {
@@ -1310,7 +1310,7 @@ html, body {
     margin: auto;
     width: 70%;
     padding: 8px 15px;
-    font-size: 1em;
+    font-size: 1.2em;
   }
   /* line 52, ../sass/_setting.scss */
   .wall .title img {
@@ -1340,7 +1340,7 @@ html, body {
     margin: auto;
     width: 70%;
     padding: 8px 15px;
-    font-size: 1em;
+    font-size: 1.2em;
   }
   /* line 52, ../sass/_setting.scss */
   .dots .title img {
