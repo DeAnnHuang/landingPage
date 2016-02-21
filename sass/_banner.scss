@@ -68,7 +68,7 @@
 .banner2 {
     background: url(../img/Block2/bg.jpg) center;
     background-size: cover;
-    @include animation(bottomIn $dur + 1s);
+    @include animation(bottomIn $dur - 0.3s);
     color: #fff;
 }
 
@@ -76,18 +76,6 @@
     background: url(../img/Block6/bg.jpg) center;
     min-height:1000px;
     background-size: cover;
-    @include animation(bottomIn $dur + 1s);
+    // @include animation(bottomIn $dur);
 }
 
-.floatBtn {
-    position: fixed;
-    bottom: $distance+5px;
-    right: $distance;
-    z-index: 9;
-    opacity: 0;
-    @include animation(bottomIn $dur forwards);
-    @include animation-delay($delay+2s);
-    img {
-        border: 1px solid #aaa;
-    }
-}

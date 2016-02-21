@@ -137,12 +137,12 @@ a:hover {
 }
 
 /**dynamic**/
-/* line 46, ../sass/_setting.scss */
+/* line 60, ../sass/_setting.scss */
 .bottomIn {
   opacity: 0;
-  -moz-animation: bottomIn 2s forwards;
-  -webkit-animation: bottomIn 2s forwards;
-  animation: bottomIn 2s forwards;
+  -moz-animation: bottomIn 0.5s forwards;
+  -webkit-animation: bottomIn 0.5s forwards;
+  animation: bottomIn 0.5s forwards;
   -moz-animation-delay: 0;
   -webkit-animation-delay: 0;
   animation-delay: 0;
@@ -484,7 +484,7 @@ a:hover {
     transform: scale(1);
   }
 }
-/* line 161, ../sass/_setting.scss */
+/* line 175, ../sass/_setting.scss */
 .banner2Box,
 .banner3Box,
 .bottomInBox,
@@ -519,12 +519,13 @@ a:hover {
 .banner3 .title h1 {
   margin: 10px 0;
   opacity: 0;
-  -moz-animation: bottomIn 1s forwards;
-  -webkit-animation: bottomIn 1s forwards;
-  animation: bottomIn 1s forwards;
+  -moz-animation: bottomIn 0.8s forwards;
+  -webkit-animation: bottomIn 0.8s forwards;
+  animation: bottomIn 0.8s forwards;
   -moz-animation-delay: 1s;
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
+  font-size: 1.2em;
   font-size: 2em;
   line-height: 1.5em;
 }
@@ -534,12 +535,13 @@ a:hover {
 .banner3 .title p {
   margin: 10px 0;
   opacity: 0;
-  -moz-animation: bottomIn 1s forwards;
-  -webkit-animation: bottomIn 1s forwards;
-  animation: bottomIn 1s forwards;
+  -moz-animation: bottomIn 0.8s forwards;
+  -webkit-animation: bottomIn 0.8s forwards;
+  animation: bottomIn 0.8s forwards;
   -moz-animation-delay: 2s;
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
+  font-size: 1.2em;
   font-size: 1.2em;
   line-height: 1.8em;
   margin: 20px auto;
@@ -550,12 +552,13 @@ a:hover {
 .banner3 .title a {
   margin: 10px 0;
   opacity: 0;
-  -moz-animation: bottomIn 1s forwards;
-  -webkit-animation: bottomIn 1s forwards;
-  animation: bottomIn 1s forwards;
+  -moz-animation: bottomIn 0.8s forwards;
+  -webkit-animation: bottomIn 0.8s forwards;
+  animation: bottomIn 0.8s forwards;
   -moz-animation-delay: 3s;
   -webkit-animation-delay: 3s;
   animation-delay: 3s;
+  font-size: 1.2em;
   display: block;
   background-color: darkorange;
   color: white;
@@ -592,9 +595,9 @@ a:hover {
 .banner1 {
   background: url(../img/Block1/bg.jpg) center;
   background-size: cover;
-  -moz-animation: fadein 2s;
-  -webkit-animation: fadein 2s;
-  animation: fadein 2s;
+  -moz-animation: fadein 1.8s;
+  -webkit-animation: fadein 1.8s;
+  animation: fadein 1.8s;
 }
 /* line 60, ../sass/_banner.scss */
 .banner1 > img {
@@ -604,18 +607,18 @@ a:hover {
   left: 0;
   right: 0;
   text-align: center;
-  -moz-animation: 2s;
-  -webkit-animation: 2s;
-  animation: 2s;
+  -moz-animation: 1.8s;
+  -webkit-animation: 1.8s;
+  animation: 1.8s;
 }
 
 /* line 68, ../sass/_banner.scss */
 .banner2 {
   background: url(../img/Block2/bg.jpg) center;
   background-size: cover;
-  -moz-animation: bottomIn 2s;
-  -webkit-animation: bottomIn 2s;
-  animation: bottomIn 2s;
+  -moz-animation: bottomIn 0.5s;
+  -webkit-animation: bottomIn 0.5s;
+  animation: bottomIn 0.5s;
   color: #fff;
 }
 
@@ -624,28 +627,6 @@ a:hover {
   background: url(../img/Block6/bg.jpg) center;
   min-height: 1000px;
   background-size: cover;
-  -moz-animation: bottomIn 2s;
-  -webkit-animation: bottomIn 2s;
-  animation: bottomIn 2s;
-}
-
-/* line 82, ../sass/_banner.scss */
-.floatBtn {
-  position: fixed;
-  bottom: 30px;
-  right: 25px;
-  z-index: 9;
-  opacity: 0;
-  -moz-animation: bottomIn 1s forwards;
-  -webkit-animation: bottomIn 1s forwards;
-  animation: bottomIn 1s forwards;
-  -moz-animation-delay: 4s;
-  -webkit-animation-delay: 4s;
-  animation-delay: 4s;
-}
-/* line 90, ../sass/_banner.scss */
-.floatBtn img {
-  border: 1px solid #aaa;
 }
 
 /* line 1, ../sass/_classification.scss */
@@ -667,9 +648,9 @@ a:hover {
   left: 8%;
   overflow: hidden;
   opacity: 0;
-  -moz-animation: bottomIn 3s forwards;
-  -webkit-animation: bottomIn 3s forwards;
-  animation: bottomIn 3s forwards;
+  -moz-animation: bottomIn 1.8s forwards;
+  -webkit-animation: bottomIn 1.8s forwards;
+  animation: bottomIn 1.8s forwards;
   -moz-animation-delay: 0;
   -webkit-animation-delay: 0;
   animation-delay: 0;
@@ -687,12 +668,13 @@ a:hover {
 .classification .data .title h1 {
   margin: 10px 0;
   opacity: 0;
-  -moz-animation: bottomIn 1s forwards;
-  -webkit-animation: bottomIn 1s forwards;
-  animation: bottomIn 1s forwards;
+  -moz-animation: bottomIn 0.8s forwards;
+  -webkit-animation: bottomIn 0.8s forwards;
+  animation: bottomIn 0.8s forwards;
   -moz-animation-delay: 1s;
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
+  font-size: 1.2em;
   font-size: 2em;
   line-height: 1.5em;
 }
@@ -700,12 +682,13 @@ a:hover {
 .classification .data .title p {
   margin: 10px 0;
   opacity: 0;
-  -moz-animation: bottomIn 1s forwards;
-  -webkit-animation: bottomIn 1s forwards;
-  animation: bottomIn 1s forwards;
+  -moz-animation: bottomIn 0.8s forwards;
+  -webkit-animation: bottomIn 0.8s forwards;
+  animation: bottomIn 0.8s forwards;
   -moz-animation-delay: 2s;
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
+  font-size: 1.2em;
   font-size: 1.2em;
   line-height: 1.8em;
   margin: 20px auto;
@@ -714,12 +697,13 @@ a:hover {
 .classification .data .title a {
   margin: 10px 0;
   opacity: 0;
-  -moz-animation: bottomIn 1s forwards;
-  -webkit-animation: bottomIn 1s forwards;
-  animation: bottomIn 1s forwards;
+  -moz-animation: bottomIn 0.8s forwards;
+  -webkit-animation: bottomIn 0.8s forwards;
+  animation: bottomIn 0.8s forwards;
   -moz-animation-delay: 3s;
   -webkit-animation-delay: 3s;
   animation-delay: 3s;
+  font-size: 1.2em;
   display: block;
   background-color: darkorange;
   color: white;
@@ -754,9 +738,9 @@ a:hover {
   top: 25%;
   left: 15%;
   overflow: hidden;
-  -moz-animation: bottomIn 1s;
-  -webkit-animation: bottomIn 1s;
-  animation: bottomIn 1s;
+  -moz-animation: bottomIn 0.8s;
+  -webkit-animation: bottomIn 0.8s;
+  animation: bottomIn 0.8s;
 }
 /* line 11, ../sass/_wall.scss */
 .wall .wCard {
@@ -804,9 +788,9 @@ a:hover {
   top: 17%;
   left: 72%;
   overflow: hidden;
-  -moz-animation: rotate 8s infinite;
-  -webkit-animation: rotate 8s infinite;
-  animation: rotate 8s infinite;
+  -moz-animation: rotate 5s infinite;
+  -webkit-animation: rotate 5s infinite;
+  animation: rotate 5s infinite;
   cursor: pointer;
 }
 /* line 39, ../sass/_wall.scss */
@@ -821,12 +805,13 @@ a:hover {
 .wall .title h1 {
   margin: 10px 0;
   opacity: 0;
-  -moz-animation: bottomIn 1s forwards;
-  -webkit-animation: bottomIn 1s forwards;
-  animation: bottomIn 1s forwards;
+  -moz-animation: bottomIn 0.8s forwards;
+  -webkit-animation: bottomIn 0.8s forwards;
+  animation: bottomIn 0.8s forwards;
   -moz-animation-delay: 1s;
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
+  font-size: 1.2em;
   font-size: 2em;
   line-height: 1.5em;
 }
@@ -834,12 +819,13 @@ a:hover {
 .wall .title p {
   margin: 10px 0;
   opacity: 0;
-  -moz-animation: bottomIn 1s forwards;
-  -webkit-animation: bottomIn 1s forwards;
-  animation: bottomIn 1s forwards;
+  -moz-animation: bottomIn 0.8s forwards;
+  -webkit-animation: bottomIn 0.8s forwards;
+  animation: bottomIn 0.8s forwards;
   -moz-animation-delay: 2s;
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
+  font-size: 1.2em;
   font-size: 1.2em;
   line-height: 1.8em;
   margin: 20px auto;
@@ -848,12 +834,13 @@ a:hover {
 .wall .title a {
   margin: 10px 0;
   opacity: 0;
-  -moz-animation: bottomIn 1s forwards;
-  -webkit-animation: bottomIn 1s forwards;
-  animation: bottomIn 1s forwards;
+  -moz-animation: bottomIn 0.8s forwards;
+  -webkit-animation: bottomIn 0.8s forwards;
+  animation: bottomIn 0.8s forwards;
   -moz-animation-delay: 3s;
   -webkit-animation-delay: 3s;
   animation-delay: 3s;
+  font-size: 1.2em;
   display: block;
   background-color: darkorange;
   color: white;
@@ -1090,12 +1077,13 @@ a:hover {
 .dots .title h1 {
   margin: 10px 0;
   opacity: 0;
-  -moz-animation: bottomIn 1s forwards;
-  -webkit-animation: bottomIn 1s forwards;
-  animation: bottomIn 1s forwards;
+  -moz-animation: bottomIn 0.8s forwards;
+  -webkit-animation: bottomIn 0.8s forwards;
+  animation: bottomIn 0.8s forwards;
   -moz-animation-delay: 1s;
   -webkit-animation-delay: 1s;
   animation-delay: 1s;
+  font-size: 1.2em;
   font-size: 2em;
   line-height: 1.5em;
 }
@@ -1103,12 +1091,13 @@ a:hover {
 .dots .title p {
   margin: 10px 0;
   opacity: 0;
-  -moz-animation: bottomIn 1s forwards;
-  -webkit-animation: bottomIn 1s forwards;
-  animation: bottomIn 1s forwards;
+  -moz-animation: bottomIn 0.8s forwards;
+  -webkit-animation: bottomIn 0.8s forwards;
+  animation: bottomIn 0.8s forwards;
   -moz-animation-delay: 2s;
   -webkit-animation-delay: 2s;
   animation-delay: 2s;
+  font-size: 1.2em;
   font-size: 1.2em;
   line-height: 1.8em;
   margin: 20px auto;
@@ -1117,12 +1106,13 @@ a:hover {
 .dots .title a {
   margin: 10px 0;
   opacity: 0;
-  -moz-animation: bottomIn 1s forwards;
-  -webkit-animation: bottomIn 1s forwards;
-  animation: bottomIn 1s forwards;
+  -moz-animation: bottomIn 0.8s forwards;
+  -webkit-animation: bottomIn 0.8s forwards;
+  animation: bottomIn 0.8s forwards;
   -moz-animation-delay: 3s;
   -webkit-animation-delay: 3s;
   animation-delay: 3s;
+  font-size: 1.2em;
   display: block;
   background-color: darkorange;
   color: white;
@@ -1183,25 +1173,13 @@ html, body {
   letter-spacing: 0px;
 }
 
-/* line 16, ../sass/screen.scss */
-body {
-  background-color: #fff;
-  font-size: 18px;
-  font-weight: lighter;
-}
-
-/* line 23, ../sass/screen.scss */
-h1 {
-  font-size: 28px;
-}
-
 @media screen and (max-width: 768px) {
-  /* line 41, ../sass/screen.scss */
+  /* line 3, ../sass/_mobile.scss */
   body {
     font-size: 14px;
   }
 
-  /* line 48, ../sass/screen.scss */
+  /* line 10, ../sass/_mobile.scss */
   .banner1 .title,
   .banner2 .title,
   .banner3 .title {
@@ -1211,51 +1189,51 @@ h1 {
     text-align: center;
     width: 85%;
   }
-  /* line 29, ../sass/screen.scss */
+  /* line 46, ../sass/_setting.scss */
   .banner1 .title a,
   .banner2 .title a,
   .banner3 .title a {
     margin: auto;
     width: 70%;
     padding: 8px 15px;
-    font-size: 1em;
+    font-size: 1.2em;
   }
-  /* line 35, ../sass/screen.scss */
+  /* line 52, ../sass/_setting.scss */
   .banner1 .title img,
   .banner2 .title img,
   .banner3 .title img {
     width: 40%;
   }
 
-  /* line 53, ../sass/screen.scss */
+  /* line 15, ../sass/_mobile.scss */
   .banner1 {
     background: url(../img/Block1/bg_m.jpg) center;
   }
-  /* line 55, ../sass/screen.scss */
+  /* line 17, ../sass/_mobile.scss */
   .banner1 > img {
     width: 50%;
   }
-  /* line 58, ../sass/screen.scss */
+  /* line 20, ../sass/_mobile.scss */
   .banner1 .title {
     top: 10%;
   }
 
-  /* line 63, ../sass/screen.scss */
+  /* line 25, ../sass/_mobile.scss */
   .banner2 .title {
     top: 20%;
   }
 
-  /* line 67, ../sass/screen.scss */
+  /* line 29, ../sass/_mobile.scss */
   .banner3 {
-    background: url(../img/Block6/bg_m.png) center;
+    background: url(../img/Block6/bg_m.jpg) center;
     min-height: 600px;
   }
-  /* line 70, ../sass/screen.scss */
+  /* line 32, ../sass/_mobile.scss */
   .banner3 .title {
     top: 20%;
   }
 
-  /* line 77, ../sass/screen.scss */
+  /* line 39, ../sass/_mobile.scss */
   .classification .data .person {
     margin: auto;
     left: 0;
@@ -1264,7 +1242,7 @@ h1 {
     width: 100%;
     top: 40%;
   }
-  /* line 83, ../sass/screen.scss */
+  /* line 45, ../sass/_mobile.scss */
   .classification .data .title {
     margin: auto;
     left: 0;
@@ -1273,30 +1251,30 @@ h1 {
     top: 5%;
     width: 85%;
   }
-  /* line 29, ../sass/screen.scss */
+  /* line 46, ../sass/_setting.scss */
   .classification .data .title a {
     margin: auto;
     width: 70%;
     padding: 8px 15px;
-    font-size: 1em;
+    font-size: 1.2em;
   }
-  /* line 35, ../sass/screen.scss */
+  /* line 52, ../sass/_setting.scss */
   .classification .data .title img {
     width: 40%;
   }
 
-  /* line 92, ../sass/screen.scss */
+  /* line 54, ../sass/_mobile.scss */
   .wall .wPhone {
     margin: auto;
     left: 0;
     right: 0;
     text-align: center;
     top: 35%;
-    -moz-animation: wPhone_bottomIn 1s forwards;
-    -webkit-animation: wPhone_bottomIn 1s forwards;
-    animation: wPhone_bottomIn 1s forwards;
+    -moz-animation: wPhone_bottomIn 0.8s forwards;
+    -webkit-animation: wPhone_bottomIn 0.8s forwards;
+    animation: wPhone_bottomIn 0.8s forwards;
   }
-  /* line 98, ../sass/screen.scss */
+  /* line 60, ../sass/_mobile.scss */
   .wall .title {
     margin: auto;
     left: 0;
@@ -1305,28 +1283,28 @@ h1 {
     top: 5%;
     width: 85%;
   }
-  /* line 29, ../sass/screen.scss */
+  /* line 46, ../sass/_setting.scss */
   .wall .title a {
     margin: auto;
     width: 70%;
     padding: 8px 15px;
-    font-size: 1em;
+    font-size: 1.2em;
   }
-  /* line 35, ../sass/screen.scss */
+  /* line 52, ../sass/_setting.scss */
   .wall .title img {
     width: 40%;
   }
 
-  /* line 105, ../sass/screen.scss */
+  /* line 67, ../sass/_mobile.scss */
   .dots {
-    background: url(../img/Block5/bg_m.png) center 75% no-repeat;
+    background: url(../img/Block5/bg_m.jpg) center 75% no-repeat;
   }
-  /* line 107, ../sass/screen.scss */
+  /* line 69, ../sass/_mobile.scss */
   .dots .dot1,
   .dots .dot2 {
     font-size: 1.2em;
   }
-  /* line 111, ../sass/screen.scss */
+  /* line 73, ../sass/_mobile.scss */
   .dots .title {
     margin: auto;
     left: 0;
@@ -1335,15 +1313,26 @@ h1 {
     top: 5%;
     width: 85%;
   }
-  /* line 29, ../sass/screen.scss */
+  /* line 46, ../sass/_setting.scss */
   .dots .title a {
     margin: auto;
     width: 70%;
     padding: 8px 15px;
-    font-size: 1em;
+    font-size: 1.2em;
   }
-  /* line 35, ../sass/screen.scss */
+  /* line 52, ../sass/_setting.scss */
   .dots .title img {
     width: 40%;
   }
+}
+/* line 17, ../sass/screen.scss */
+body {
+  background-color: #fff;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+/* line 24, ../sass/screen.scss */
+h1 {
+  font-size: 28px;
 }

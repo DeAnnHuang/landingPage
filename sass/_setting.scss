@@ -1,7 +1,7 @@
 $Twidth:35%;
 $position:20%;
 $margin:10px;
-$dur:1s;
+$dur:.8s;
 $delay:2s;
 $distance:25px;
 $color:darkorange;
@@ -11,6 +11,7 @@ $color:darkorange;
     opacity: 0;
     @include animation(bottomIn $dur forwards);
     @include animation-delay($delay);
+    font-size:1.2em;
 }
 
 @mixin myAnimation($aniName, $dur, $delay) {
@@ -34,17 +35,30 @@ $color:darkorange;
 }
 
 @mixin LRcenter() {
-    margin:auto;
+    margin: auto;
     left: 0;
     right: 0;
     text-align: center;
+}
+
+@mixin sTitleDefault() {
+    width: $Twidth + 50%;
+    a {
+        margin: auto;
+        width: 70%;
+        padding: 8px 15px;
+        font-size: 1.2em;
+    }
+    img {
+        width: 40%;
+    }
 }
 
 
 /**dynamic**/
 
 .bottomIn {
-    @include myAnimation(bottomIn, $dur + 1s, 0);
+    @include myAnimation(bottomIn, $dur - 0.3s, 0);
 }
 
 @include keyframes(bund) {
