@@ -8,7 +8,7 @@ app.controller('Controller', function($scope) {
         c.timer++;
         c.timer = c.timer % 4;
         $scope.$apply(); //check ng all data binding.
-    }, 8000);
+    }, 5000);
 
     c.isCurrentSlideIndex = function(index) {
         return c.timer === index;
