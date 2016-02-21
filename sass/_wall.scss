@@ -33,7 +33,7 @@
     }
     .wClick {
         @include wDefault(17%, 72%);
-        @include animation(rotate 8s infinite);
+        @include animation(rotate 5s infinite);
         cursor: pointer;
     }
     .title {

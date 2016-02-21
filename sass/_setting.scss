@@ -1,7 +1,7 @@
 $Twidth:35%;
 $position:20%;
 $margin:10px;
-$dur:1s;
+$dur:.8s;
 $delay:2s;
 $distance:25px;
 $color:darkorange;
@@ -58,7 +58,7 @@ $color:darkorange;
 /**dynamic**/
 
 .bottomIn {
-    @include myAnimation(bottomIn, $dur + 1s, 0);
+    @include myAnimation(bottomIn, $dur - 0.3s, 0);
 }
 
 @include keyframes(bund) {
