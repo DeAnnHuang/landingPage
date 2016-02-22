@@ -1,4 +1,3 @@
-
 @media screen and (max-width: 768px) {
     body {
         font-size: 14px;
@@ -27,10 +26,14 @@
         }
     }
     .banner3 {
-        background: url(../img/Block6/bg_m.jpg) center;
+        // background: url(../img/Block6/bg_m.jpg) center;
         min-height:600px;
         .title {
             top: $position;
+        }
+        .cancel {
+            top: 45%;
+            width: 100%;
         }
     }
     // 
