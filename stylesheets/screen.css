@@ -5,7 +5,7 @@
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
 @font-face {
   font-family: "文鼎中圓";
-  src: url('../fonts/bGTR00M.ttf?1088364250') format('truetype');
+  src: url('../fonts/bGTR00M.ttf?1456107123') format('truetype');
 }
 /* line 3, ../sass/_common.scss */
 body {
@@ -624,9 +624,24 @@ a:hover {
 
 /* line 75, ../sass/_banner.scss */
 .banner3 {
-  background: url(../img/Block6/bg.jpg) center;
-  min-height: 1000px;
-  background-size: cover;
+  background-color: #fafafa;
+}
+/* line 78, ../sass/_banner.scss */
+.banner3 .title {
+  text-align: center;
+  margin: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+/* line 82, ../sass/_banner.scss */
+.banner3 .cancel {
+  position: absolute;
+  margin: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+  top: 35%;
 }
 
 /* line 1, ../sass/_classification.scss */
@@ -1130,12 +1145,12 @@ a:hover {
   letter-spacing: 0.4em;
 }
 
-/* line 10, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
+/* line 10, ../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
 html, body {
   height: 100%;
 }
 
-/* line 12, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
+/* line 12, ../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
 #root {
   clear: both;
   min-height: 100%;
@@ -1143,12 +1158,12 @@ html, body {
   height: 100%;
   margin-bottom: -100px;
 }
-/* line 18, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
+/* line 18, ../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
 #root #root_footer {
   height: 100px;
 }
 
-/* line 20, ../../../../../../Library/Ruby/Gems/2.0.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
+/* line 20, ../../../../../../usr/local/lib/ruby/gems/2.2.0/gems/compass-core-1.0.3/stylesheets/compass/layout/_sticky-footer.scss */
 #footer {
   clear: both;
   position: relative;
@@ -1186,12 +1201,12 @@ h1 {
 }
 
 @media screen and (max-width: 768px) {
-  /* line 3, ../sass/_mobile.scss */
+  /* line 2, ../sass/_mobile.scss */
   body {
     font-size: 14px;
   }
 
-  /* line 10, ../sass/_mobile.scss */
+  /* line 9, ../sass/_mobile.scss */
   .banner1 .title,
   .banner2 .title,
   .banner3 .title {
@@ -1217,35 +1232,39 @@ h1 {
     width: 40%;
   }
 
-  /* line 15, ../sass/_mobile.scss */
+  /* line 14, ../sass/_mobile.scss */
   .banner1 {
     background: url(../img/Block1/bg_m.jpg) center;
   }
-  /* line 17, ../sass/_mobile.scss */
+  /* line 16, ../sass/_mobile.scss */
   .banner1 > img {
     width: 50%;
   }
-  /* line 20, ../sass/_mobile.scss */
+  /* line 19, ../sass/_mobile.scss */
   .banner1 .title {
     top: 10%;
   }
 
-  /* line 25, ../sass/_mobile.scss */
+  /* line 24, ../sass/_mobile.scss */
   .banner2 .title {
     top: 20%;
   }
 
-  /* line 29, ../sass/_mobile.scss */
+  /* line 28, ../sass/_mobile.scss */
   .banner3 {
-    background: url(../img/Block6/bg_m.jpg) center;
     min-height: 600px;
   }
-  /* line 32, ../sass/_mobile.scss */
+  /* line 31, ../sass/_mobile.scss */
   .banner3 .title {
     top: 20%;
   }
+  /* line 34, ../sass/_mobile.scss */
+  .banner3 .cancel {
+    top: 45%;
+    width: 100%;
+  }
 
-  /* line 39, ../sass/_mobile.scss */
+  /* line 42, ../sass/_mobile.scss */
   .classification .data .person {
     margin: auto;
     left: 0;
@@ -1254,7 +1273,7 @@ h1 {
     width: 100%;
     top: 40%;
   }
-  /* line 45, ../sass/_mobile.scss */
+  /* line 48, ../sass/_mobile.scss */
   .classification .data .title {
     margin: auto;
     left: 0;
@@ -1275,7 +1294,7 @@ h1 {
     width: 40%;
   }
 
-  /* line 54, ../sass/_mobile.scss */
+  /* line 57, ../sass/_mobile.scss */
   .wall .wPhone {
     margin: auto;
     left: 0;
@@ -1286,7 +1305,7 @@ h1 {
     -webkit-animation: wPhone_bottomIn 0.8s forwards;
     animation: wPhone_bottomIn 0.8s forwards;
   }
-  /* line 60, ../sass/_mobile.scss */
+  /* line 63, ../sass/_mobile.scss */
   .wall .title {
     margin: auto;
     left: 0;
@@ -1307,16 +1326,16 @@ h1 {
     width: 40%;
   }
 
-  /* line 67, ../sass/_mobile.scss */
+  /* line 70, ../sass/_mobile.scss */
   .dots {
     background: url(../img/Block5/bg_m.jpg) center 75% no-repeat;
   }
-  /* line 69, ../sass/_mobile.scss */
+  /* line 72, ../sass/_mobile.scss */
   .dots .dot1,
   .dots .dot2 {
     font-size: 1.2em;
   }
-  /* line 73, ../sass/_mobile.scss */
+  /* line 76, ../sass/_mobile.scss */
   .dots .title {
     margin: auto;
     left: 0;
