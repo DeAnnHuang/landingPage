@@ -1245,26 +1245,30 @@ h1 {
     top: 10%;
   }
 
-  /* line 24, ../sass/_mobile.scss */
+  /* line 23, ../sass/_mobile.scss */
+  .banner2 {
+    background: url(../img/Block2/bg_m.jpg) center;
+  }
+  /* line 25, ../sass/_mobile.scss */
   .banner2 .title {
     top: 20%;
   }
 
-  /* line 28, ../sass/_mobile.scss */
+  /* line 29, ../sass/_mobile.scss */
   .banner3 {
     min-height: 600px;
   }
-  /* line 31, ../sass/_mobile.scss */
+  /* line 32, ../sass/_mobile.scss */
   .banner3 .title {
     top: 20%;
   }
-  /* line 34, ../sass/_mobile.scss */
+  /* line 35, ../sass/_mobile.scss */
   .banner3 .cancel {
     top: 45%;
     width: 100%;
   }
 
-  /* line 42, ../sass/_mobile.scss */
+  /* line 43, ../sass/_mobile.scss */
   .classification .data .person {
     margin: auto;
     left: 0;
@@ -1273,7 +1277,7 @@ h1 {
     width: 100%;
     top: 40%;
   }
-  /* line 48, ../sass/_mobile.scss */
+  /* line 49, ../sass/_mobile.scss */
   .classification .data .title {
     margin: auto;
     left: 0;
@@ -1294,7 +1298,7 @@ h1 {
     width: 40%;
   }
 
-  /* line 57, ../sass/_mobile.scss */
+  /* line 58, ../sass/_mobile.scss */
   .wall .wPhone {
     margin: auto;
     left: 0;
@@ -1305,7 +1309,7 @@ h1 {
     -webkit-animation: wPhone_bottomIn 0.8s forwards;
     animation: wPhone_bottomIn 0.8s forwards;
   }
-  /* line 63, ../sass/_mobile.scss */
+  /* line 64, ../sass/_mobile.scss */
   .wall .title {
     margin: auto;
     left: 0;
@@ -1326,16 +1330,16 @@ h1 {
     width: 40%;
   }
 
-  /* line 70, ../sass/_mobile.scss */
+  /* line 71, ../sass/_mobile.scss */
   .dots {
     background: url(../img/Block5/bg_m.jpg) center 75% no-repeat;
   }
-  /* line 72, ../sass/_mobile.scss */
+  /* line 73, ../sass/_mobile.scss */
   .dots .dot1,
   .dots .dot2 {
     font-size: 1.2em;
   }
-  /* line 76, ../sass/_mobile.scss */
+  /* line 77, ../sass/_mobile.scss */
   .dots .title {
     margin: auto;
     left: 0;
