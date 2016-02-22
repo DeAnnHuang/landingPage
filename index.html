@@ -62,18 +62,18 @@
     <div class="bottomInBox">
         <div class="dotsBox">
             <div ng-if="c.w">
-                <div class="dot2" ng-repeat="item in c.DotPCList" ng-if="!item.click" ng-style="background-color:{{item.color}};top:{{item.top}};left:{{item.left}};}" ng-click="item.click = !item.click">
+                <div class="dot2" ng-repeat="item in c.DotPCList" ng-if="!item.click" ng-style="{'background-color':item.color,'top':item.top,'left':item.left}" ng-click="item.click = !item.click">
                     <span>{{item.content}}</span>
                 </div>
-                <div class="dot1" ng-repeat="item in c.DotPCList" ng-if="item.click" ng-style="background-color:{{item.color}};color:{{item.color}};top:{{item.top}};left:{{item.left}};box-shadow: 0 0 15px #aaa;" ng-click="item.click = !item.click">
+                <div class="dot1" ng-repeat="item in c.DotPCList" ng-if="item.click" ng-style="{'background-color':item.color,'color':item.color,'top':item.top,'left':item.left,'box-shadow':'0 0 15px #aaa'}" ng-click="item.click = !item.click">
                     <span>{{item.content}}</span>
                 </div>
             </div>
             <div ng-if="!c.w">
-                <div class="dot2" ng-repeat="item in c.DotMList" ng-if="!item.click" ng-style="background-color:{{item.color}};top:{{item.top}};left:{{item.left}};}" ng-click="item.click = !item.click">
+                <div class="dot2" ng-repeat="item in c.DotMList" ng-if="!item.click" ng-style="{'background-color':item.color,'top':item.top,'left':item.left}" ng-click="item.click = !item.click">
                     <span>{{item.content}}</span>
                 </div>
-                <div class="dot1" ng-repeat="item in c.DotMList" ng-if="item.click" ng-style="background-color:{{item.color}};color:{{item.color}};top:{{item.top}};left:{{item.left}};box-shadow: 0 0 15px #aaa;" ng-click="item.click = !item.click">
+                <div class="dot1" ng-repeat="item in c.DotMList" ng-if="item.click" ng-style="{'background-color':item.color,'color':item.color,'top':item.top,'left':item.left,'box-shadow':'0 0 15px #aaa'}" ng-click="item.click = !item.click">
                     <span>{{item.content}}</span>
                 </div>
             </div>
