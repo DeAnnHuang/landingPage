@@ -1,6 +1,6 @@
 @media screen and (max-width: 768px) {
     body {
-        font-size: 14px;
+        font-size: 22px;
     }
     // 
     .banner1,
@@ -12,8 +12,9 @@
         }
     }
     .banner1 {
-        background: url(../img/Block1/bg_m.jpg) center;
-        min-height: 700px;
+        background: url(../img/Block1/bg_m.jpg);
+        background-size: cover;
+        min-height: 800px;
         &>img {
             width: 50%;
             top: 85%;
@@ -23,8 +24,9 @@
         }
     }
     .banner2 {
-        background: url(../img/Block2/bg_m.jpg) center;
-        min-height: 700px;
+        background: url(../img/Block2/bg_m.jpg);
+        background-size: cover;
+        height: 1100px;
         .title {
             top: $position;
         }
@@ -42,6 +44,7 @@
     }
     // 
     .classification {
+        min-height: 1150px;
         .data {
             .person {
                 @include LRcenter();
@@ -58,10 +61,11 @@
     }
     //
     .wall {
+        min-height: 1150px;
         .wPhone {
             // width:100%;
             @include LRcenter();
-            top: $position + 15%;
+            top: $position + 25%;
             @include animation(wPhone_bottomIn $dur forwards);
         }
         .title {
@@ -72,10 +76,13 @@
     }
     //
     .dots {
+        min-height: 1150px;
         background: url(../img/Block5/bg_m.jpg) center 75% no-repeat;
         .dot1,
         .dot2 {
             font-size: 1.2em;
+            width:150px;
+            height:150px;
         }
         .title {
             @include LRcenter();

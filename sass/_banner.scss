@@ -15,7 +15,7 @@
 @mixin title_h1() {
     font-size: 2em;
     line-height: 1.5em;
-    font-family:'微軟正黑體';
+    font-family: '微軟正黑體';
 }
 
 @mixin title_p() {
@@ -40,15 +40,15 @@
             @include title_h1();
         }
         p {
-            @include TextDefault($delay);
+            @include TextDefault($delay - 1s);
             @include title_p();
         }
         a {
-            @include TextDefault($delay + 1s);
+            @include TextDefault($delay - 1s);
             @include title_a();
         }
         img {
-            @include myAnimation(bund, 1.5s, $delay - 0.5s);
+            @include myAnimation(bund, 1.5s, $delay - 1s);
             width: 50%;
         }
     }
@@ -70,7 +70,9 @@
     background: url(../img/Block2/bg.jpg) center;
     background-size: cover;
     @include animation(bottomIn $dur - 0.3s);
-    color: #fff;
+    .title {
+        color: #fff;
+    }
 }
 
 .banner3 {
@@ -80,9 +82,9 @@
         text-align: center;
         @include LRcenter();
     }
-    .cancel{
-        position:absolute;
+    .cancel {
+        position: absolute;
         @include LRcenter();
-        top:35%;
+        top: 35%;
     }
 }

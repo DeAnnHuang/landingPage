@@ -23,11 +23,11 @@
                 @include title_h1();
             }
             p {
-                @include TextDefault($delay);
+                @include TextDefault($delay - 1s);
                 @include title_p();
             }
             a {
-                @include TextDefault($delay + 1s);
+                @include TextDefault($delay - 1s);
                 @include title_a();
             }
         }
