@@ -493,7 +493,7 @@ a:hover {
   opacity: 0;
 }
 
-/* line 26, ../sass/_banner.scss */
+/* line 27, ../sass/_banner.scss */
 .banner1,
 .banner2,
 .banner3 {
@@ -503,7 +503,7 @@ a:hover {
   overflow: hidden;
   background-size: cover;
 }
-/* line 31, ../sass/_banner.scss */
+/* line 32, ../sass/_banner.scss */
 .banner1 .title,
 .banner2 .title,
 .banner3 .title {
@@ -513,7 +513,7 @@ a:hover {
   left: 5%;
   width: 35%;
 }
-/* line 37, ../sass/_banner.scss */
+/* line 38, ../sass/_banner.scss */
 .banner1 .title h1,
 .banner2 .title h1,
 .banner3 .title h1 {
@@ -528,8 +528,9 @@ a:hover {
   font-size: 1.2em;
   font-size: 2em;
   line-height: 1.5em;
+  font-family: '微軟正黑體';
 }
-/* line 41, ../sass/_banner.scss */
+/* line 42, ../sass/_banner.scss */
 .banner1 .title p,
 .banner2 .title p,
 .banner3 .title p {
@@ -546,7 +547,7 @@ a:hover {
   line-height: 1.8em;
   margin: 20px auto;
 }
-/* line 45, ../sass/_banner.scss */
+/* line 46, ../sass/_banner.scss */
 .banner1 .title a,
 .banner2 .title a,
 .banner3 .title a {
@@ -577,7 +578,7 @@ a:hover {
 .banner3 .title a:hover {
   letter-spacing: 0.4em;
 }
-/* line 49, ../sass/_banner.scss */
+/* line 50, ../sass/_banner.scss */
 .banner1 .title img,
 .banner2 .title img,
 .banner3 .title img {
@@ -591,7 +592,7 @@ a:hover {
   width: 50%;
 }
 
-/* line 56, ../sass/_banner.scss */
+/* line 57, ../sass/_banner.scss */
 .banner1 {
   background: url(../img/Block1/bg.jpg) center;
   background-size: cover;
@@ -599,7 +600,7 @@ a:hover {
   -webkit-animation: fadein 1.8s;
   animation: fadein 1.8s;
 }
-/* line 60, ../sass/_banner.scss */
+/* line 61, ../sass/_banner.scss */
 .banner1 > img {
   position: absolute;
   top: 80%;
@@ -612,7 +613,7 @@ a:hover {
   animation: 1.8s;
 }
 
-/* line 68, ../sass/_banner.scss */
+/* line 69, ../sass/_banner.scss */
 .banner2 {
   background: url(../img/Block2/bg.jpg) center;
   background-size: cover;
@@ -622,11 +623,11 @@ a:hover {
   color: #fff;
 }
 
-/* line 75, ../sass/_banner.scss */
+/* line 76, ../sass/_banner.scss */
 .banner3 {
   background-color: #fafafa;
 }
-/* line 78, ../sass/_banner.scss */
+/* line 79, ../sass/_banner.scss */
 .banner3 .title {
   text-align: center;
   margin: auto;
@@ -634,7 +635,7 @@ a:hover {
   right: 0;
   text-align: center;
 }
-/* line 82, ../sass/_banner.scss */
+/* line 83, ../sass/_banner.scss */
 .banner3 .cancel {
   position: absolute;
   margin: auto;
@@ -692,6 +693,7 @@ a:hover {
   font-size: 1.2em;
   font-size: 2em;
   line-height: 1.5em;
+  font-family: '微軟正黑體';
 }
 /* line 25, ../sass/_classification.scss */
 .classification .data .title p {
@@ -829,6 +831,7 @@ a:hover {
   font-size: 1.2em;
   font-size: 2em;
   line-height: 1.5em;
+  font-family: '微軟正黑體';
 }
 /* line 49, ../sass/_wall.scss */
 .wall .title p {
@@ -1101,6 +1104,7 @@ a:hover {
   font-size: 1.2em;
   font-size: 2em;
   line-height: 1.5em;
+  font-family: '微軟正黑體';
 }
 /* line 118, ../sass/_dot.scss */
 .dots .title p {
@@ -1235,40 +1239,43 @@ h1 {
   /* line 14, ../sass/_mobile.scss */
   .banner1 {
     background: url(../img/Block1/bg_m.jpg) center;
+    min-height: 700px;
   }
-  /* line 16, ../sass/_mobile.scss */
+  /* line 17, ../sass/_mobile.scss */
   .banner1 > img {
     width: 50%;
+    top: 85%;
   }
-  /* line 19, ../sass/_mobile.scss */
+  /* line 21, ../sass/_mobile.scss */
   .banner1 .title {
     top: 10%;
   }
 
-  /* line 23, ../sass/_mobile.scss */
+  /* line 25, ../sass/_mobile.scss */
   .banner2 {
     background: url(../img/Block2/bg_m.jpg) center;
+    min-height: 700px;
   }
-  /* line 25, ../sass/_mobile.scss */
+  /* line 28, ../sass/_mobile.scss */
   .banner2 .title {
     top: 20%;
   }
 
-  /* line 29, ../sass/_mobile.scss */
+  /* line 32, ../sass/_mobile.scss */
   .banner3 {
     min-height: 600px;
   }
-  /* line 32, ../sass/_mobile.scss */
+  /* line 35, ../sass/_mobile.scss */
   .banner3 .title {
     top: 20%;
   }
-  /* line 35, ../sass/_mobile.scss */
+  /* line 38, ../sass/_mobile.scss */
   .banner3 .cancel {
     top: 45%;
     width: 100%;
   }
 
-  /* line 43, ../sass/_mobile.scss */
+  /* line 46, ../sass/_mobile.scss */
   .classification .data .person {
     margin: auto;
     left: 0;
@@ -1277,7 +1284,7 @@ h1 {
     width: 100%;
     top: 40%;
   }
-  /* line 49, ../sass/_mobile.scss */
+  /* line 52, ../sass/_mobile.scss */
   .classification .data .title {
     margin: auto;
     left: 0;
@@ -1298,7 +1305,7 @@ h1 {
     width: 40%;
   }
 
-  /* line 58, ../sass/_mobile.scss */
+  /* line 61, ../sass/_mobile.scss */
   .wall .wPhone {
     margin: auto;
     left: 0;
@@ -1309,7 +1316,7 @@ h1 {
     -webkit-animation: wPhone_bottomIn 0.8s forwards;
     animation: wPhone_bottomIn 0.8s forwards;
   }
-  /* line 64, ../sass/_mobile.scss */
+  /* line 67, ../sass/_mobile.scss */
   .wall .title {
     margin: auto;
     left: 0;
@@ -1330,16 +1337,16 @@ h1 {
     width: 40%;
   }
 
-  /* line 71, ../sass/_mobile.scss */
+  /* line 74, ../sass/_mobile.scss */
   .dots {
     background: url(../img/Block5/bg_m.jpg) center 75% no-repeat;
   }
-  /* line 73, ../sass/_mobile.scss */
+  /* line 76, ../sass/_mobile.scss */
   .dots .dot1,
   .dots .dot2 {
     font-size: 1.2em;
   }
-  /* line 77, ../sass/_mobile.scss */
+  /* line 80, ../sass/_mobile.scss */
   .dots .title {
     margin: auto;
     left: 0;
