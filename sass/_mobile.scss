@@ -13,22 +13,25 @@
     }
     .banner1 {
         background: url(../img/Block1/bg_m.jpg) center;
+        min-height: 700px;
         &>img {
             width: 50%;
+            top: 85%;
         }
         .title {
             top: $position - 10%;
         }
     }
     .banner2 {
-         background: url(../img/Block2/bg_m.jpg) center;
+        background: url(../img/Block2/bg_m.jpg) center;
+        min-height: 700px;
         .title {
             top: $position;
         }
     }
     .banner3 {
         // background: url(../img/Block6/bg_m.jpg) center;
-        min-height:600px;
+        min-height: 600px;
         .title {
             top: $position;
         }
