@@ -9,6 +9,23 @@
     <link rel="stylesheet" href="sass/screen.css">
     <link rel="stylesheet" href="library/bootstrap.min.css">
     <link rel="stylesheet" href="stylesheets/screen.css">
+    <!-- GA_m -->
+    <script src="library/event_ga.js"></script>
+    <script type="text/javascript">
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-32211794-3']);
+    _gaq.push(['_setDomainName', 'mymusic.net.tw']);
+    _gaq.push(['_trackPageview']);
+
+    (function() {
+        var ga = document.createElement('script');
+        ga.type = 'text/javascript';
+        ga.async = true;
+        ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ga, s);
+    })();
+    </script>
 </head>
 
 <body ng-controller="Controller as c">
@@ -19,7 +36,7 @@
             <p>個人化設計，比你還了解你的音樂品味。
                 <br> 一個帳號即可手機、平板、電腦盡情聆聽。
             </p>
-            <a href="#">免費試聽30天</a>
+            <a href="https://www.mymusic.net.tw/creditCard/chargeConfirmed3?priceplan=CreditCard_MONTHLY&payCycle=true" target="blank" onclick="ga_event_mobile('<免費30天>產品宣傳頁','Click_免費30天','畫面_懂你想聽的_免費30天')">免費試聽30天</a>
         </div>
     </div>
     <div class="banner2Box">
@@ -28,7 +45,7 @@
             <p>天天上新歌，300萬豐富曲庫聽到飽。
                 <br> 還有專業音樂編輯為你推薦好歌。
             </p>
-            <a href="#">免費試聽30天</a>
+            <a href="https://www.mymusic.net.tw/creditCard/chargeConfirmed3?priceplan=CreditCard_MONTHLY&payCycle=true" target="blank" onclick="ga_event_mobile('<免費30天>產品宣傳頁','Click_免費30天','畫面_300萬曲庫_免費30天')">免費試聽30天</a>
         </div>
     </div>
     <div class="bottomInBox">
@@ -38,7 +55,7 @@
                 <div class="title">
                     <h1 ng-bind-html="item.title"></h1>
                     <p>{{item.detail}}</p>
-                    <a href="＃">{{item.btn_text}}</a>
+                    <a ng-href="https://www.mymusic.net.tw/creditCard/chargeConfirmed3?priceplan=CreditCard_MONTHLY&payCycle=true" target="blank" ng-click="{{item.GA}}">{{item.btn_text}}</a>
                 </div>
             </div>
         </div>
@@ -55,7 +72,7 @@
                 <p>為你量身打造，隨時隨地懂你想聽的，
                     <br> 更多個人化體驗歡迎試用。
                 </p>
-                <a href="#">免費試聽30天</a>
+                <a href="https://www.mymusic.net.tw/creditCard/chargeConfirmed3?priceplan=CreditCard_MONTHLY&payCycle=true" target="blank" onclick="ga_event_mobile('<免費30天>產品宣傳頁','Click_免費30天','畫面_個人牆_免費30天')">免費試聽30天</a>
             </div>
         </div>
     </div>
@@ -82,13 +99,13 @@
                 <p>史上第一款結合遊戲引擎、超好玩的挑歌
                     <br> 神器，三步驟挑你所愛，越挑越有默契。
                 </p>
-                <a href="#">免費試聽30天</a>
+                <a href="https://www.mymusic.net.tw/creditCard/chargeConfirmed3?priceplan=CreditCard_MONTHLY&payCycle=true" target="blank" onclick="ga_event_mobile('<免費30天>產品宣傳頁','Click_免費30天','畫面_音樂頻道_免費30天')">免費試聽30天</a>
             </div>
         </div>
     </div>
     <div class="banner3">
         <div class="title">
-            <h1>試用期間，可隨時取消</h1>
+            <h1>不用綁約，可隨時取消</h1>
             <p>試聽後仍認為myMusic不適合你，
                 <br>可隨時到官網聯絡客服取消。
             </p>
@@ -109,4 +126,11 @@
     <script src="js/c.js"></script>
     <!-- js -->
     <script src="js/block.js"></script>
+    <script>
+    if ($(window).width() <= 768) {
+        $(".title").find('a').attr('href', 'https://www.mymusic.net.tw/creditCard/mIndex?priceplan=CreditCard_MONTHLY&payCycle=true'); //換小網link
+        $(".title").find('a').attr('ng-href', 'https://www.mymusic.net.tw/creditCard/mIndex?priceplan=CreditCard_MONTHLY&payCycle=true'); //換 小網 classication 區塊網址
+        console.log("ok!");
+    }
+    </script>
 </body>
