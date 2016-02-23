@@ -27,26 +27,33 @@ app.controller('Controller', function($scope) {
         title: '綜合分類<br>新歌不漏接',
         detail: '熱門新歌，經典金曲通通分類好了，依你的喜好語系曲風，快速找到你想聽的歌。',
         btn_text: '免費試聽30天',
-        img:'img/Block3/1.png'
+        img: 'img/Block3/1.png',
+        GA: setGA('<免費30天>產品宣傳頁', 'Click_免費30天', '畫面_綜合分類_免費30天')
     }, {
         title: '華語分類<br>最對我味',
         detail: '熱門新歌，經典金曲通通分類好了，依你的喜好語系曲風，快速找到你想聽的歌。',
         btn_text: '免費試聽30天',
-        img:'img/Block3/2.png'
+        img: 'img/Block3/2.png',
+        GA: setGA('<免費30天>產品宣傳頁', 'Click_免費30天', '畫面_華語分類_免費30天')
 
     }, {
         title: '西洋分類<br>最對我味',
         detail: '熱門新歌，經典金曲通通分類好了，依你的喜好語系曲風，快速找到你想聽的歌。',
         btn_text: '免費試聽30天',
-        img:'img/Block3/3.png'
+        img: 'img/Block3/3.png',
+        GA: setGA('<免費30天>產品宣傳頁', 'Click_免費30天', '畫面_西洋分類_免費30天')
 
     }, {
         title: '日韓分類<br>最對我味',
         detail: '熱門新歌，經典金曲通通分類好了，依你的喜好語系曲風，快速找到你想聽的歌。',
         btn_text: '免費試聽30天',
-        img:'img/Block3/4.png'
+        img: 'img/Block3/4.png',
+        GA: setGA('<免費30天>產品宣傳頁', 'Click_免費30天', '畫面_日韓分類_免費30天')
     }];
 
+    function setGA(a, b, c) {
+        return "ga_event_mobile(" + a + "," + b + "," + c + ");"
+    }
     /**
      * [DotList description]for Dots
      * @type {Array}
@@ -104,14 +111,14 @@ app.controller('Controller', function($scope) {
         left: '34%',
         click: false
 
-    },{
+    }, {
         content: '古典時期古典',
         color: '#0072bc',
         top: '50%',
         left: '60%',
         click: false
 
-    },  {
+    }, {
         content: '2010',
         color: '#004a80',
         top: '82%',
@@ -125,14 +132,14 @@ app.controller('Controller', function($scope) {
         left: '1%',
         click: false
 
-    },{
+    }, {
         content: '亞洲',
         color: '#60902a',
         top: '54%',
         left: '5%',
         click: false
 
-    },{
+    }, {
         content: '國語',
         color: '#406618',
         top: '74%',
@@ -159,7 +166,7 @@ app.controller('Controller', function($scope) {
         top: '60%',
         left: '70%',
         click: false
-    },{
+    }, {
         content: '平靜',
         color: '#630460',
         top: '70%',
