@@ -806,7 +806,7 @@ a:hover {
 .wall .wClick {
   position: absolute;
   top: 17%;
-  left: 72%;
+  left: 78%;
   overflow: hidden;
   -moz-animation: rotate 5s infinite;
   -webkit-animation: rotate 5s infinite;

@@ -29,95 +29,92 @@
 </head>
 
 <body ng-controller="Controller as c">
-    <div class="wrap">
-        <div class="main">
-            <div class="banner1">
-                <!-- <img src="img/Block1/CrossPlatform.png" alt="支援跨平台"> -->
-                <div class="title">
-                    <img src="img/Block1/logo.png" alt="">
-                    <p>個人化設計，比你還了解你的音樂品味。
-                        <br> 一個帳號即可在手機、平板、電腦聆聽。
-                    </p>
-                    <a href="https://www.mymusic.net.tw/creditCard/chargeConfirmed3?priceplan=CreditCard_MONTHLY&payCycle=true" target="blank" onclick="ga_event_mobile('<免費30天>產品宣傳頁','Click_免費30天','畫面_懂你想聽的_免費30天')">免費試聽30天</a>
-                </div>
+    <div class="main">
+        <div class="banner1">
+            <div class="title">
+                <img src="img/Block1/logo.png" alt="">
+                <p>個人化設計，比你還了解你的音樂品味。
+                    <br> 一個帳號即可在手機、平板、電腦聆聽。
+                </p>
+                <a href="https://www.mymusic.net.tw/creditCard/chargeConfirmed3?priceplan=CreditCard_MONTHLY&payCycle=true" target="blank" onclick="ga_event_mobile('<免費30天>產品宣傳頁','Click_免費30天','畫面_懂你想聽的_免費30天')">免費試聽30天</a>
             </div>
-            <div class="banner2Box">
-                <div class="title">
-                    <h1>300萬曲庫<br>免費試聽</h1>
-                    <p>天天上新歌，300萬豐富曲庫聽到飽。
-                        <br> 還有專業音樂編輯為你推薦好歌。
-                    </p>
-                    <a href="https://www.mymusic.net.tw/creditCard/chargeConfirmed3?priceplan=CreditCard_MONTHLY&payCycle=true" target="blank" onclick="ga_event_mobile('<免費30天>產品宣傳頁','Click_免費30天','畫面_300萬曲庫_免費30天')">免費試聽30天</a>
-                </div>
+        </div>
+        <div class="banner2Box">
+            <div class="title">
+                <h1>300萬曲庫<br>免費試聽</h1>
+                <p>天天上新歌，300萬豐富曲庫聽到飽。
+                    <br> 還有專業音樂編輯為你推薦好歌。
+                </p>
+                <a href="https://www.mymusic.net.tw/creditCard/chargeConfirmed3?priceplan=CreditCard_MONTHLY&payCycle=true" target="blank" onclick="ga_event_mobile('<免費30天>產品宣傳頁','Click_免費30天','畫面_300萬曲庫_免費30天')">免費試聽30天</a>
             </div>
-            <div class="bottomInBox">
-                <div class="classification">
-                    <div class="data" ng-repeat="item in c.list" ng-hide="!c.isCurrentSlideIndex($index)">
-                        <img src="{{item.img}}" class="person">
-                        <div class="title">
-                            <h1 ng-bind-html="item.title"></h1>
-                            <p>{{item.detail}}</p>
-                            <a ng-href="https://www.mymusic.net.tw/creditCard/chargeConfirmed3?priceplan=CreditCard_MONTHLY&payCycle=true" target="blank" ng-click="{{item.GA}}">{{item.btn_text}}</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <div class="bottomInBox">
-                <div class="wallBox">
-                    <div class="wPhone">
-                        <img src="img/Block4/card2.jpg" class="wCard" ng-if="c.wClick">
-                        <img src="img/Block4/card1.jpg" class="wCard" ng-if="!c.wClick">
-                        <img src="img/Block4/cycle.png" class="wClick" ng-click="c.wClick = !c.wClick">
-                    </div>
+        </div>
+        <div class="bottomInBox">
+            <div class="classification">
+                <div class="data" ng-repeat="item in c.list" ng-hide="!c.isCurrentSlideIndex($index)">
+                    <img src="{{item.img}}" class="person">
                     <div class="title">
-                        <h1>個人牆<br>懂你想聽的</h1>
-                        <p>為你量身打造，隨時隨地懂你想聽的，
-                            <br> 更多個人化體驗歡迎試用。
-                        </p>
-                        <a href="https://www.mymusic.net.tw/creditCard/chargeConfirmed3?priceplan=CreditCard_MONTHLY&payCycle=true" target="blank" onclick="ga_event_mobile('<免費30天>產品宣傳頁','Click_免費30天','畫面_個人牆_免費30天')">免費試聽30天</a>
+                        <h1 ng-bind-html="item.title"></h1>
+                        <p>{{item.detail}}</p>
+                        <a ng-href="https://www.mymusic.net.tw/creditCard/chargeConfirmed3?priceplan=CreditCard_MONTHLY&payCycle=true" target="blank" ng-click="{{item.GA}}">{{item.btn_text}}</a>
                     </div>
                 </div>
             </div>
-            <div class="bottomInBox">
-                <div class="dotsBox">
-                    <div ng-if="c.w">
-                        <div class="dot2" ng-repeat="item in c.DotPCList" ng-if="!item.click" ng-style="{'background-color':item.color,'top':item.top,'left':item.left}" ng-click="item.click = !item.click">
-                            <span>{{item.content}}</span>
-                        </div>
-                        <div class="dot1" ng-repeat="item in c.DotPCList" ng-if="item.click" ng-style="{'background-color':item.color,'color':item.color,'top':item.top,'left':item.left,'box-shadow':'0 0 15px #aaa'}" ng-click="item.click = !item.click">
-                            <span>{{item.content}}</span>
-                        </div>
-                    </div>
-                    <div ng-if="!c.w">
-                        <div class="dot2" ng-repeat="item in c.DotMList" ng-if="!item.click" ng-style="{'background-color':item.color,'top':item.top,'left':item.left}" ng-click="item.click = !item.click">
-                            <span>{{item.content}}</span>
-                        </div>
-                        <div class="dot1" ng-repeat="item in c.DotMList" ng-if="item.click" ng-style="{'background-color':item.color,'color':item.color,'top':item.top,'left':item.left,'box-shadow':'0 0 15px #aaa'}" ng-click="item.click = !item.click">
-                            <span>{{item.content}}</span>
-                        </div>
-                    </div>
-                    <div class="title">
-                        <h1>音樂頻道<br>挑歌神器</h1>
-                        <p>史上第一款結合遊戲引擎、超好玩的挑歌
-                            <br> 神器，三步驟挑你所愛，越挑越有默契。
-                        </p>
-                        <a href="https://www.mymusic.net.tw/creditCard/chargeConfirmed3?priceplan=CreditCard_MONTHLY&payCycle=true" target="blank" onclick="ga_event_mobile('<免費30天>產品宣傳頁','Click_免費30天','畫面_音樂頻道_免費30天')">免費試聽30天</a>
-                    </div>
+        </div>
+        <div class="bottomInBox">
+            <div class="wallBox">
+                <div class="wPhone">
+                    <img src="img/Block4/card1.jpg" class="wCard" ng-if="c.wClick">
+                    <img src="img/Block4/card2.jpg" class="wCard" ng-if="!c.wClick">
+                    <img src="img/Block4/cycle.png" class="wClick" ng-click="c.wClick = !c.wClick">
                 </div>
-            </div>
-            <div class="banner3">
                 <div class="title">
-                    <h1>免費試聽，可隨時取消</h1>
-                    <p>試聽後仍認為myMusic不適合你，
-                        <br>可隨時到官網聯絡客服取消。
+                    <h1>個人牆<br>懂你想聽的</h1>
+                    <p>為你量身打造，隨時隨地懂你想聽的，
+                        <br> 更多個人化體驗歡迎試用。
                     </p>
+                    <a href="https://www.mymusic.net.tw/creditCard/chargeConfirmed3?priceplan=CreditCard_MONTHLY&payCycle=true" target="blank" onclick="ga_event_mobile('<免費30天>產品宣傳頁','Click_免費30天','畫面_個人牆_免費30天')">免費試聽30天</a>
                 </div>
-                <img src="img/Block6/cancel.png" class="cancel">
             </div>
-            <div id="footer">
-                <p>台灣酷樂時代 版權所有© 2015 Taiwan Kuro Times Co., Ltd.
-                    <br><span ng-if="c.w">建議使用 Internet Explorer 11.0 以上版本，以達網頁最佳瀏覽效果</span></p>
+        </div>
+        <div class="bottomInBox">
+            <div class="dotsBox">
+                <div ng-if="c.w">
+                    <div class="dot2" ng-repeat="item in c.DotPCList" ng-if="!item.click" ng-style="{'background-color':item.color,'top':item.top,'left':item.left}" ng-click="item.click = !item.click">
+                        <span>{{item.content}}</span>
+                    </div>
+                    <div class="dot1" ng-repeat="item in c.DotPCList" ng-if="item.click" ng-style="{'background-color':item.color,'color':item.color,'top':item.top,'left':item.left,'box-shadow':'0 0 15px #aaa'}" ng-click="item.click = !item.click">
+                        <span>{{item.content}}</span>
+                    </div>
+                </div>
+                <div ng-if="!c.w">
+                    <div class="dot2" ng-repeat="item in c.DotMList" ng-if="!item.click" ng-style="{'background-color':item.color,'top':item.top,'left':item.left}" ng-click="item.click = !item.click">
+                        <span>{{item.content}}</span>
+                    </div>
+                    <div class="dot1" ng-repeat="item in c.DotMList" ng-if="item.click" ng-style="{'background-color':item.color,'color':item.color,'top':item.top,'left':item.left,'box-shadow':'0 0 15px #aaa'}" ng-click="item.click = !item.click">
+                        <span>{{item.content}}</span>
+                    </div>
+                </div>
+                <div class="title">
+                    <h1>音樂頻道<br>挑歌神器</h1>
+                    <p>史上第一款結合遊戲引擎、超好玩的挑歌
+                        <br> 神器，三步驟挑你所愛，越挑越有默契。
+                    </p>
+                    <a href="https://www.mymusic.net.tw/creditCard/chargeConfirmed3?priceplan=CreditCard_MONTHLY&payCycle=true" target="blank" onclick="ga_event_mobile('<免費30天>產品宣傳頁','Click_免費30天','畫面_音樂頻道_免費30天')">免費試聽30天</a>
+                </div>
             </div>
+        </div>
+        <div class="banner3">
+            <div class="title">
+                <h1>免費試聽，可隨時取消</h1>
+                <p>試聽後仍認為myMusic不適合你，
+                    <br>可隨時到官網聯絡客服取消。
+                </p>
+            </div>
+            <img src="img/Block6/cancel.png" class="cancel">
+        </div>
+        <div id="footer">
+            <p>台灣酷樂時代 版權所有© 2015 Taiwan Kuro Times Co., Ltd.
+                <br><span ng-if="c.w">建議使用 Internet Explorer 11.0 以上版本，以達網頁最佳瀏覽效果</span></p>
         </div>
     </div>
     <!-- JS -->
