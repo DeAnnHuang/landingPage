@@ -32,7 +32,7 @@
         }
     }
     .wClick {
-        @include wDefault(17%, 72%);
+        @include wDefault(17%, 78%);
         @include animation(rotate 5s infinite);
         cursor: pointer;
     }
