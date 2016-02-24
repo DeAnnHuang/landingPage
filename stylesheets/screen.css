@@ -1243,7 +1243,7 @@ h1 {
   .banner1 {
     background: url(../img/Block1/bg_m.jpg);
     background-size: cover;
-    min-height: 800px;
+    min-height: 1150px;
   }
   /* line 18, ../sass/_mobile.scss */
   .banner1 > img {
@@ -1268,7 +1268,7 @@ h1 {
 
   /* line 34, ../sass/_mobile.scss */
   .banner3 {
-    min-height: 600px;
+    min-height: 1150px;
   }
   /* line 37, ../sass/_mobile.scss */
   .banner3 .title {

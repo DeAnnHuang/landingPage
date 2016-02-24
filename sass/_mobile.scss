@@ -14,7 +14,7 @@
     .banner1 {
         background: url(../img/Block1/bg_m.jpg);
         background-size: cover;
-        min-height: 800px;
+        min-height: 1150px;
         &>img {
             width: 50%;
             top: 85%;
@@ -33,7 +33,7 @@
     }
     .banner3 {
         // background: url(../img/Block6/bg_m.jpg) center;
-        min-height: 600px;
+        min-height: 1150px;
         .title {
             top: $position;
         }
