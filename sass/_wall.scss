@@ -6,7 +6,8 @@
         height: 603px;
         width: 400px;
         @include wDefault($position + 5%, $position - 5%);
-        @include animation(bottomIn $dur);
+        // @include animation(bottomIn $dur);
+        @include myAnimation(bottomIn, $dur + 1, 0);
     }
     .wCard {
         @include wDefault(16%, 8%);

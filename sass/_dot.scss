@@ -16,7 +16,7 @@ $dot:100px;
     background-color: #fff;
     border-color: #fff;
     color: #fff;
-    font-size:1.2em;
+    font-size: 1em;
     span {
         font-weight: lighter;
         // font-size: 1.2em;
@@ -56,59 +56,73 @@ $dot:100px;
 
 .dots {
     @include blockDefault();
-    background: url(../img/Block5/bg.jpg) center 75% no-repeat;
+    // background: url(../img/Block5/bg.jpg) center 75% no-repeat;
     // background-size: cover;
-    background-color:#fafafa;
-    .dot1 {
-        @include dotDefault();
-        // ====
-        box-shadow: 0 0 0 3px #fff;
-        @include transition(color 0.3s);
-        &:after {
-            @include dotAfterDefault();
-            // ====
-            top: -2px;
-            left: -2px;
-            padding: 2px;
-            z-index: -1;
-            background: #fff;
-            @include transition(transform 0.2s, opacity 0.2s);
-        }
-        &:hover {
-            &:after {
-                @include transform(scale(0.9));
+    background-color: #fafafa;
+    .wPhone {
+        background: url(../img/Block5/phone_bg1.png);
+        height: 603px;
+        width: 400px;
+        @include wDefault($position + 5%, $position - 5%);
+        @include myAnimation(bottomIn, $dur + 1, 0);
+        .dotContainer {
+            position: relative;
+            height: 410px;
+            width: 360px;
+            margin: auto;
+            margin-top: 190px;
+            .dot1 {
+                @include dotDefault();
+                // ====
+                box-shadow: 0 0 0 3px #fff;
+                @include transition(color 0.3s);
+                &:after {
+                    @include dotAfterDefault();
+                    // ====
+                    top: -2px;
+                    left: -2px;
+                    padding: 2px;
+                    z-index: -1;
+                    background: #fff;
+                    @include transition(transform 0.2s, opacity 0.2s);
+                }
+                &:hover {
+                    &:after {
+                        @include transform(scale(0.9));
+                    }
+                }
+                @include dotNg(1, 1.2);
+            }
+            .dot2 {
+                @include dotDefault();
+                // =====
+                @include transition(background 0.2s, color 0.2s);
+                &:after {
+                    @include dotAfterDefault();
+                    // ====
+                    top: -7px;
+                    left: -7px;
+                    padding: 7px;
+                    box-shadow: 0 0 0 4px #fff;
+                    @include transition(transform 0.2s, opacity 0.2s);
+                    @include transform(scale(1.2));
+                    opacity: 0;
+                }
+                &:hover {
+                    background: rgba(255, 255, 255, 1);
+                    &:after {
+                        @include transform(scale(1));
+                        opacity: 1;
+                    }
+                }
+                @include dotNg(1.2, 1);
             }
         }
-        @include dotNg(1, 1.2);
-    }
-    .dot2 {
-        @include dotDefault();
-        // =====
-        @include transition(background 0.2s, color 0.2s);
-        &:after {
-            @include dotAfterDefault();
-            // ====
-            top: -7px;
-            left: -7px;
-            padding: 7px;
-            box-shadow: 0 0 0 4px #fff;
-            @include transition(transform 0.2s, opacity 0.2s);
-            @include transform(scale(1.2));
-            opacity: 0;
-        }
-        &:hover {
-            background: rgba(255, 255, 255, 1);
-            &:after {
-                @include transform(scale(1));
-                opacity: 1;
-            }
-        }
-        @include dotNg(1.2, 1);
     }
     .title {
         position: absolute;
         z-index: 2;
-        top: $position - 15%;
+        top: $position + 5%;
         right: $position - 15%;
         width: $Twidth;
         h1 {
