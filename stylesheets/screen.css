@@ -758,11 +758,15 @@ a:hover {
   top: 25%;
   left: 15%;
   overflow: hidden;
-  -moz-animation: bottomIn 0.8s;
-  -webkit-animation: bottomIn 0.8s;
-  animation: bottomIn 0.8s;
+  opacity: 0;
+  -moz-animation: bottomIn 1.8s forwards;
+  -webkit-animation: bottomIn 1.8s forwards;
+  animation: bottomIn 1.8s forwards;
+  -moz-animation-delay: 0;
+  -webkit-animation-delay: 0;
+  animation-delay: 0;
 }
-/* line 11, ../sass/_wall.scss */
+/* line 12, ../sass/_wall.scss */
 .wall .wCard {
   position: absolute;
   top: 16%;
@@ -770,7 +774,7 @@ a:hover {
   overflow: hidden;
   width: 335px;
 }
-/* line 14, ../sass/_wall.scss */
+/* line 15, ../sass/_wall.scss */
 .wall .wCard.ng-enter {
   opacity: 0;
   -moz-transition: ease 0.5s all;
@@ -782,7 +786,7 @@ a:hover {
   -webkit-transform: translateY(-100%);
   transform: translateY(-100%);
 }
-/* line 18, ../sass/_wall.scss */
+/* line 19, ../sass/_wall.scss */
 .wall .wCard.ng-enter.ng-enter-active {
   opacity: 1;
   -moz-transform: translateY(0);
@@ -790,7 +794,7 @@ a:hover {
   -webkit-transform: translateY(0);
   transform: translateY(0);
 }
-/* line 24, ../sass/_wall.scss */
+/* line 25, ../sass/_wall.scss */
 .wall .wCard.ng-leave {
   opacity: 1;
   -moz-transition: ease 0.5s all;
@@ -798,11 +802,11 @@ a:hover {
   -webkit-transition: ease 0.5s all;
   transition: ease 0.5s all;
 }
-/* line 28, ../sass/_wall.scss */
+/* line 29, ../sass/_wall.scss */
 .wall .wCard.ng-leave.ng-leave-active {
   opacity: 0;
 }
-/* line 34, ../sass/_wall.scss */
+/* line 35, ../sass/_wall.scss */
 .wall .wClick {
   position: absolute;
   top: 17%;
@@ -813,7 +817,7 @@ a:hover {
   animation: rotate 5s infinite;
   cursor: pointer;
 }
-/* line 39, ../sass/_wall.scss */
+/* line 40, ../sass/_wall.scss */
 .wall .title {
   position: absolute;
   z-index: 2;
@@ -821,7 +825,7 @@ a:hover {
   right: 5%;
   width: 35%;
 }
-/* line 45, ../sass/_wall.scss */
+/* line 46, ../sass/_wall.scss */
 .wall .title h1 {
   margin: 10px 0;
   opacity: 0;
@@ -836,7 +840,7 @@ a:hover {
   line-height: 1.5em;
   font-family: '微軟正黑體';
 }
-/* line 49, ../sass/_wall.scss */
+/* line 50, ../sass/_wall.scss */
 .wall .title p {
   margin: 10px 0;
   opacity: 0;
@@ -851,7 +855,7 @@ a:hover {
   line-height: 1.8em;
   margin: 20px auto;
 }
-/* line 53, ../sass/_wall.scss */
+/* line 54, ../sass/_wall.scss */
 .wall .title a {
   margin: 10px 0;
   opacity: 0;
@@ -885,11 +889,35 @@ a:hover {
   min-height: 800px;
   height: 100%;
   overflow: hidden;
-  background: url(../img/Block5/bg.jpg) center 75% no-repeat;
   background-color: #fafafa;
 }
 /* line 62, ../sass/_dot.scss */
-.dots .dot1 {
+.dots .wPhone {
+  background: url(../img/Block5/phone_bg1.png);
+  height: 603px;
+  width: 400px;
+  position: absolute;
+  top: 25%;
+  left: 15%;
+  overflow: hidden;
+  opacity: 0;
+  -moz-animation: bottomIn 1.8s forwards;
+  -webkit-animation: bottomIn 1.8s forwards;
+  animation: bottomIn 1.8s forwards;
+  -moz-animation-delay: 0;
+  -webkit-animation-delay: 0;
+  animation-delay: 0;
+}
+/* line 68, ../sass/_dot.scss */
+.dots .wPhone .dotContainer {
+  position: relative;
+  height: 410px;
+  width: 360px;
+  margin: auto;
+  margin-top: 190px;
+}
+/* line 74, ../sass/_dot.scss */
+.dots .wPhone .dotContainer .dot1 {
   height: 100px;
   width: 100px;
   padding: 10px;
@@ -908,7 +936,7 @@ a:hover {
   background-color: #fff;
   border-color: #fff;
   color: #fff;
-  font-size: 1.2em;
+  font-size: 1em;
   box-shadow: 0 0 0 3px #fff;
   -moz-transition: color 0.3s;
   -o-transition: color 0.3s;
@@ -920,11 +948,11 @@ a:hover {
   transform: scale(1.2);
 }
 /* line 20, ../sass/_dot.scss */
-.dots .dot1 span {
+.dots .wPhone .dotContainer .dot1 span {
   font-weight: lighter;
 }
-/* line 67, ../sass/_dot.scss */
-.dots .dot1:after {
+/* line 79, ../sass/_dot.scss */
+.dots .wPhone .dotContainer .dot1:after {
   pointer-events: none;
   position: absolute;
   width: 100%;
@@ -944,15 +972,15 @@ a:hover {
   -webkit-transition: -webkit-transform 0.2s, opacity 0.2s;
   transition: transform 0.2s, opacity 0.2s;
 }
-/* line 78, ../sass/_dot.scss */
-.dots .dot1:hover:after {
+/* line 90, ../sass/_dot.scss */
+.dots .wPhone .dotContainer .dot1:hover:after {
   -moz-transform: scale(0.9);
   -ms-transform: scale(0.9);
   -webkit-transform: scale(0.9);
   transform: scale(0.9);
 }
 /* line 29, ../sass/_dot.scss */
-.dots .dot1.ng-enter {
+.dots .wPhone .dotContainer .dot1.ng-enter {
   opacity: 0;
   -moz-transition: ease 0.3s all;
   -o-transition: ease 0.3s all;
@@ -964,7 +992,7 @@ a:hover {
   transform: translateY(10px) rotate(0) scale(1);
 }
 /* line 33, ../sass/_dot.scss */
-.dots .dot1.ng-enter.ng-enter-active {
+.dots .wPhone .dotContainer .dot1.ng-enter.ng-enter-active {
   opacity: 1;
   -moz-transform: translateY(0) rotate(360deg) scale(1.2);
   -ms-transform: translateY(0) rotate(360deg) scale(1.2);
@@ -972,7 +1000,7 @@ a:hover {
   transform: translateY(0) rotate(360deg) scale(1.2);
 }
 /* line 38, ../sass/_dot.scss */
-.dots .dot1.ng-leave {
+.dots .wPhone .dotContainer .dot1.ng-leave {
   opacity: 1;
   -moz-transition: ease 0.3s all;
   -o-transition: ease 0.3s all;
@@ -980,11 +1008,11 @@ a:hover {
   transition: ease 0.3s all;
 }
 /* line 41, ../sass/_dot.scss */
-.dots .dot1.ng-leave.ng-leave-active {
+.dots .wPhone .dotContainer .dot1.ng-leave.ng-leave-active {
   opacity: 0;
 }
-/* line 84, ../sass/_dot.scss */
-.dots .dot2 {
+/* line 96, ../sass/_dot.scss */
+.dots .wPhone .dotContainer .dot2 {
   height: 100px;
   width: 100px;
   padding: 10px;
@@ -1003,7 +1031,7 @@ a:hover {
   background-color: #fff;
   border-color: #fff;
   color: #fff;
-  font-size: 1.2em;
+  font-size: 1em;
   -moz-transition: background 0.2s, color 0.2s;
   -o-transition: background 0.2s, color 0.2s;
   -webkit-transition: background 0.2s, color 0.2s;
@@ -1014,11 +1042,11 @@ a:hover {
   transform: scale(1);
 }
 /* line 20, ../sass/_dot.scss */
-.dots .dot2 span {
+.dots .wPhone .dotContainer .dot2 span {
   font-weight: lighter;
 }
-/* line 88, ../sass/_dot.scss */
-.dots .dot2:after {
+/* line 100, ../sass/_dot.scss */
+.dots .wPhone .dotContainer .dot2:after {
   pointer-events: none;
   position: absolute;
   width: 100%;
@@ -1042,12 +1070,12 @@ a:hover {
   transform: scale(1.2);
   opacity: 0;
 }
-/* line 99, ../sass/_dot.scss */
-.dots .dot2:hover {
+/* line 111, ../sass/_dot.scss */
+.dots .wPhone .dotContainer .dot2:hover {
   background: white;
 }
-/* line 101, ../sass/_dot.scss */
-.dots .dot2:hover:after {
+/* line 113, ../sass/_dot.scss */
+.dots .wPhone .dotContainer .dot2:hover:after {
   -moz-transform: scale(1);
   -ms-transform: scale(1);
   -webkit-transform: scale(1);
@@ -1055,7 +1083,7 @@ a:hover {
   opacity: 1;
 }
 /* line 29, ../sass/_dot.scss */
-.dots .dot2.ng-enter {
+.dots .wPhone .dotContainer .dot2.ng-enter {
   opacity: 0;
   -moz-transition: ease 0.3s all;
   -o-transition: ease 0.3s all;
@@ -1067,7 +1095,7 @@ a:hover {
   transform: translateY(10px) rotate(0) scale(1.2);
 }
 /* line 33, ../sass/_dot.scss */
-.dots .dot2.ng-enter.ng-enter-active {
+.dots .wPhone .dotContainer .dot2.ng-enter.ng-enter-active {
   opacity: 1;
   -moz-transform: translateY(0) rotate(360deg) scale(1);
   -ms-transform: translateY(0) rotate(360deg) scale(1);
@@ -1075,7 +1103,7 @@ a:hover {
   transform: translateY(0) rotate(360deg) scale(1);
 }
 /* line 38, ../sass/_dot.scss */
-.dots .dot2.ng-leave {
+.dots .wPhone .dotContainer .dot2.ng-leave {
   opacity: 1;
   -moz-transition: ease 0.3s all;
   -o-transition: ease 0.3s all;
@@ -1083,18 +1111,18 @@ a:hover {
   transition: ease 0.3s all;
 }
 /* line 41, ../sass/_dot.scss */
-.dots .dot2.ng-leave.ng-leave-active {
+.dots .wPhone .dotContainer .dot2.ng-leave.ng-leave-active {
   opacity: 0;
 }
-/* line 108, ../sass/_dot.scss */
+/* line 122, ../sass/_dot.scss */
 .dots .title {
   position: absolute;
   z-index: 2;
-  top: 5%;
+  top: 25%;
   right: 5%;
   width: 35%;
 }
-/* line 114, ../sass/_dot.scss */
+/* line 128, ../sass/_dot.scss */
 .dots .title h1 {
   margin: 10px 0;
   opacity: 0;
@@ -1109,7 +1137,7 @@ a:hover {
   line-height: 1.5em;
   font-family: '微軟正黑體';
 }
-/* line 118, ../sass/_dot.scss */
+/* line 132, ../sass/_dot.scss */
 .dots .title p {
   margin: 10px 0;
   opacity: 0;
@@ -1124,7 +1152,7 @@ a:hover {
   line-height: 1.8em;
   margin: 20px auto;
 }
-/* line 122, ../sass/_dot.scss */
+/* line 136, ../sass/_dot.scss */
 .dots .title a {
   margin: 10px 0;
   opacity: 0;
@@ -1356,13 +1384,22 @@ h1 {
     background: url(../img/Block5/bg_m.jpg) center 75% no-repeat;
   }
   /* line 81, ../sass/_mobile.scss */
-  .dots .dot1,
-  .dots .dot2 {
-    font-size: 1.2em;
-    width: 150px;
-    height: 150px;
+  .dots .wPhone {
+    margin: auto;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 45%;
+    -moz-animation: wPhone_bottomIn 0.8s forwards;
+    -webkit-animation: wPhone_bottomIn 0.8s forwards;
+    animation: wPhone_bottomIn 0.8s forwards;
   }
   /* line 87, ../sass/_mobile.scss */
+  .dots .wPhone .dotContainer .dot1,
+  .dots .wPhone .dotContainer .dot2 {
+    font-size: 0.8em;
+  }
+  /* line 93, ../sass/_mobile.scss */
   .dots .title {
     margin: auto;
     left: 0;

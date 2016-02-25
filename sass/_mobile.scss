@@ -78,11 +78,17 @@
     .dots {
         min-height: 1150px;
         background: url(../img/Block5/bg_m.jpg) center 75% no-repeat;
-        .dot1,
-        .dot2 {
-            font-size: 1.2em;
-            width:150px;
-            height:150px;
+        .wPhone {
+            // width:100%;
+            @include LRcenter();
+            top: $position + 25%;
+            @include animation(wPhone_bottomIn $dur forwards);
+            .dotContainer {
+                .dot1,
+                .dot2 {
+                    font-size: 0.8em;
+                }
+            }
         }
         .title {
             @include LRcenter();

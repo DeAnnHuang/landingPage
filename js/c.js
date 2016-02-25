@@ -59,238 +59,224 @@ app.controller('Controller', function($scope) {
      * @type {Array}
      */
 
-    c.DotPCList = [{
-        content: '流行',
-        color: '#f24922',
-        top: '20%',
-        left: '40%',
-        click: true
-    }, {
-        content: 'R&B',
-        color: '#f24922',
-        top: '2%',
-        left: '20%',
-        click: false
-    }, {
-        content: '電音',
-        color: '#f27a22',
-        top: '8%',
-        left: '5%',
-        click: false
-    }, {
-        content: '藍調',
-        color: '#f2b022',
-        top: '34%',
-        left: '22%',
-        click: true
+    // c.DotPCList = [{
+    //     content: '流行',
+    //     color: '#f24922',
+    //     top: '20%',
+    //     left: '40%',
+    //     click: true
+    // }, {
+    //     content: 'R&B',
+    //     color: '#f24922',
+    //     top: '2%',
+    //     left: '20%',
+    //     click: false
+    // }, {
+    //     content: '電音',
+    //     color: '#f27a22',
+    //     top: '8%',
+    //     left: '5%',
+    //     click: false
+    // }, {
+    //     content: '藍調',
+    //     color: '#f2b022',
+    //     top: '34%',
+    //     left: '22%',
+    //     click: true
 
-    }, {
-        content: '美聲',
-        color: 'darkorange',
-        top: '40%',
-        left: '35%',
-        click: false
-    }, {
-        content: '爵士',
-        color: '#f24922',
-        top: '40%',
-        left: '0%',
-        click: false
+    // }, {
+    //     content: '美聲',
+    //     color: 'darkorange',
+    //     top: '40%',
+    //     left: '35%',
+    //     click: false
+    // }, {
+    //     content: '爵士',
+    //     color: '#f24922',
+    //     top: '40%',
+    //     left: '0%',
+    //     click: false
 
-    }, {
-        content: '巴洛克古典樂',
-        color: '#0072bc',
-        top: '58%',
-        left: '23%',
-        click: false
+    // }, {
+    //     content: '巴洛克古典樂',
+    //     color: '#0072bc',
+    //     top: '58%',
+    //     left: '23%',
+    //     click: false
 
-    }, {
-        content: '20世紀前古典',
-        color: '#00aeef',
-        top: '75%',
-        left: '34%',
-        click: false
+    // }, {
+    //     content: '20世紀前古典',
+    //     color: '#00aeef',
+    //     top: '75%',
+    //     left: '34%',
+    //     click: false
 
-    }, {
-        content: '古典時期古典',
-        color: '#0072bc',
-        top: '50%',
-        left: '60%',
-        click: false
+    // }, {
+    //     content: '古典時期古典',
+    //     color: '#0072bc',
+    //     top: '50%',
+    //     left: '60%',
+    //     click: false
 
-    }, {
-        content: '2010',
-        color: '#004a80',
-        top: '82%',
-        left: '45%',
-        click: false
+    // }, {
+    //     content: '2010',
+    //     color: '#004a80',
+    //     top: '82%',
+    //     left: '45%',
+    //     click: false
 
-    }, {
-        content: '西洋',
-        color: '#406618',
-        top: '80%',
-        left: '1%',
-        click: false
+    // }, {
+    //     content: '西洋',
+    //     color: '#406618',
+    //     top: '80%',
+    //     left: '1%',
+    //     click: false
 
-    }, {
-        content: '亞洲',
-        color: '#60902a',
-        top: '54%',
-        left: '5%',
-        click: false
+    // }, {
+    //     content: '亞洲',
+    //     color: '#60902a',
+    //     top: '54%',
+    //     left: '5%',
+    //     click: false
 
-    }, {
-        content: '國語',
-        color: '#406618',
-        top: '74%',
-        left: '15%',
-        click: true
+    // }, {
+    //     content: '國語',
+    //     color: '#406618',
+    //     top: '74%',
+    //     left: '15%',
+    //     click: true
 
-    }, {
-        content: '韓語',
-        color: '#406618',
-        top: '89%',
-        left: '-12%',
-        click: false
+    // }, {
+    //     content: '韓語',
+    //     color: '#406618',
+    //     top: '89%',
+    //     left: '-12%',
+    //     click: false
 
-    }, {
-        content: '日語',
-        color: '#406618',
-        top: '83%',
-        left: '25%',
-        click: false
+    // }, {
+    //     content: '日語',
+    //     color: '#406618',
+    //     top: '83%',
+    //     left: '25%',
+    //     click: false
 
-    }, {
-        content: '雀躍',
-        color: '#92278f',
-        top: '60%',
-        left: '70%',
-        click: false
-    }, {
-        content: '平靜',
-        color: '#630460',
-        top: '70%',
-        left: '89%',
-        click: false
-    }, {
-        content: '性感',
-        color: '#440e62',
-        top: '50%',
-        left: '86%',
-        click: false
-    }, {
-        content: '輕快',
-        color: '#440e62',
-        top: '78%',
-        left: '74%',
-        click: true
-    }, {
-        content: '抒情',
-        color: '#92278f',
-        top: '82%',
-        left: '60%',
-        click: false
-    }, {
-        content: '浪漫時期古典',
-        color: '#00aeef',
-        top: '63%',
-        left: '45%',
-        click: true
+    // }, {
+    //     content: '雀躍',
+    //     color: '#92278f',
+    //     top: '60%',
+    //     left: '70%',
+    //     click: false
+    // }, {
+    //     content: '平靜',
+    //     color: '#630460',
+    //     top: '70%',
+    //     left: '89%',
+    //     click: false
+    // }, {
+    //     content: '性感',
+    //     color: '#440e62',
+    //     top: '50%',
+    //     left: '86%',
+    //     click: false
+    // }, {
+    //     content: '輕快',
+    //     color: '#440e62',
+    //     top: '78%',
+    //     left: '74%',
+    //     click: true
+    // }, {
+    //     content: '抒情',
+    //     color: '#92278f',
+    //     top: '82%',
+    //     left: '60%',
+    //     click: false
+    // }, {
+    //     content: '浪漫時期古典',
+    //     color: '#00aeef',
+    //     top: '63%',
+    //     left: '45%',
+    //     click: true
 
-    }, {
-        content: '搖滾',
-        color: 'darkred',
-        top: '27%',
-        left: '10%',
-        click: false
+    // }, {
+    //     content: '搖滾',
+    //     color: 'darkred',
+    //     top: '27%',
+    //     left: '10%',
+    //     click: false
 
-    }, {
-        content: '沙發',
-        color: '#f27a22',
-        top: '35%',
-        left: '48%',
-        click: false
+    // }, {
+    //     content: '沙發',
+    //     color: '#f27a22',
+    //     top: '35%',
+    //     left: '48%',
+    //     click: false
 
-    }, {
-        content: '亞洲',
-        color: 'darkorange',
-        top: '10%',
-        left: '30%',
-        click: false
-    }];
+    // }, {
+    //     content: '亞洲',
+    //     color: 'darkorange',
+    //     top: '10%',
+    //     left: '30%',
+    //     click: false
+    // }];
 
 
     c.DotMList = [{
         content: '流行',
         color: '#f24922',
-        top: '35%',
-        left: '-12%',
+        top: '5%',
+        left: '0%',
         click: true
     }, {
         content: '藍調',
         color: '#f2b022',
-        top: '41%',
-        left: '16%',
+        top: '40%',
+        left: '-3%',
         click: false
 
     }, {
         content: '爵士',
         color: '#f24922',
-        top: '60%',
-        left: '-15%',
+        top: '0%',
+        left: '60%',
         click: false
-
-    }, {
-        content: '巴洛克古典樂',
-        color: '#0072bc',
-        top: '55%',
-        left: '30%',
-        click: true
 
     }, {
         content: '國語',
         color: '#406618',
-        top: '70%',
-        left: '19%',
+        top: '57%',
+        left: '20%',
         click: false
 
     }, {
         content: '韓語',
         color: '#406618',
         top: '81%',
-        left: '-12%',
+        left: '-2%',
         click: false
-
-    }, {
-        content: '日語',
-        color: '#406618',
-        top: '85%',
-        left: '25%',
-        click: true
 
     }, {
         content: '雀躍',
         color: '#92278f',
-        top: '60%',
-        left: '76%',
-        click: false
+        top: '58%',
+        left: '55%',
+        click: true
     }, {
         content: '輕快',
         color: '#440e62',
-        top: '73%',
-        left: '54%',
+        top: '86%',
+        left: '48%',
         click: false
     }, {
         content: '抒情',
         color: '#92278f',
-        top: '88%',
-        left: '70%',
+        top: '28%',
+        left: '59%',
         click: false
     }, {
         content: '浪漫時期古典樂',
         color: '#00aeef',
-        top: '40%',
-        left: '53%',
+        top: '20%',
+        left: '30%',
         click: false
 
     }];
