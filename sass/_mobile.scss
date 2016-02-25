@@ -39,7 +39,7 @@
         }
         .cancel {
             top: 45%;
-            width: 100%;
+            width: 80%;
         }
     }
     // 
@@ -77,7 +77,7 @@
     //
     .dots {
         min-height: 1150px;
-        background: url(../img/Block5/bg_m.jpg) center 75% no-repeat;
+        // background: url(../img/Block5/bg_m.jpg) center 75% no-repeat;
         .wPhone {
             // width:100%;
             @include LRcenter();
