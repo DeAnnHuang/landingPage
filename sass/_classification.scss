@@ -4,12 +4,21 @@
     background-size: cover;
     @include animation(Slider 32s infinite linear);
     .data {
+        &.ng-hide{
+            opacity: 0;
+        }
+        &.ng-hide-remove,
+        &.ng-hide-add{
+            display: block !important;
+            transition: all linear 0.5s;
+        }
+
         .person {
             position: absolute;
             top: $position;
             left: $position - 12%;
             overflow: hidden;
-            @include myAnimation(bottomIn, $dur + 1s, 0);
+            @include myAnimation(fadein, $dur + 1s, 1s);
         }
         .title {
             position: absolute;

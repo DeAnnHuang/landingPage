@@ -48,3 +48,7 @@ function send_ga(key, category, action, label) {
     ga('require', 'linkid', 'linkid.js');
     ga('send', 'event', category, action, label);
 }
+
+function sayHI(name) {
+    console.log(name + "hihihihihihi");
+}

@@ -1,4 +1,4 @@
-$dot:100px;
+$dot:90px;
 @mixin dotDefault() {
     height: $dot;
     width: $dot;
@@ -91,7 +91,7 @@ $dot:100px;
                         @include transform(scale(0.9));
                     }
                 }
-                @include dotNg(1, 1.2);
+                @include dotNg(1, 1.1);
             }
             .dot2 {
                 @include dotDefault();
@@ -115,7 +115,7 @@ $dot:100px;
                         opacity: 1;
                     }
                 }
-                @include dotNg(1.2, 1);
+                @include dotNg(1.1, 1);
             }
         }
     }

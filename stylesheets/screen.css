@@ -256,6 +256,30 @@ a:hover {
     opacity: 1;
   }
 }
+@-moz-keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes fadeout {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
 @-moz-keyframes bottomIn {
   from {
     opacity: 0;
@@ -484,7 +508,7 @@ a:hover {
     transform: scale(1);
   }
 }
-/* line 175, ../sass/_setting.scss */
+/* line 184, ../sass/_setting.scss */
 .banner2Box,
 .banner3Box,
 .bottomInBox,
@@ -661,20 +685,29 @@ a:hover {
   animation: Slider 32s infinite linear;
 }
 /* line 7, ../sass/_classification.scss */
+.classification .data.ng-hide {
+  opacity: 0;
+}
+/* line 10, ../sass/_classification.scss */
+.classification .data.ng-hide-remove, .classification .data.ng-hide-add {
+  display: block !important;
+  transition: all linear 0.5s;
+}
+/* line 16, ../sass/_classification.scss */
 .classification .data .person {
   position: absolute;
   top: 20%;
   left: 8%;
   overflow: hidden;
   opacity: 0;
-  -moz-animation: bottomIn 1.8s forwards;
-  -webkit-animation: bottomIn 1.8s forwards;
-  animation: bottomIn 1.8s forwards;
-  -moz-animation-delay: 0;
-  -webkit-animation-delay: 0;
-  animation-delay: 0;
+  -moz-animation: fadein 1.8s forwards;
+  -webkit-animation: fadein 1.8s forwards;
+  animation: fadein 1.8s forwards;
+  -moz-animation-delay: 1s;
+  -webkit-animation-delay: 1s;
+  animation-delay: 1s;
 }
-/* line 14, ../sass/_classification.scss */
+/* line 23, ../sass/_classification.scss */
 .classification .data .title {
   position: absolute;
   z-index: 2;
@@ -683,7 +716,7 @@ a:hover {
   width: 35%;
   color: #fff;
 }
-/* line 21, ../sass/_classification.scss */
+/* line 30, ../sass/_classification.scss */
 .classification .data .title h1 {
   margin: 10px 0;
   opacity: 0;
@@ -698,7 +731,7 @@ a:hover {
   line-height: 1.5em;
   font-family: '微軟正黑體';
 }
-/* line 25, ../sass/_classification.scss */
+/* line 34, ../sass/_classification.scss */
 .classification .data .title p {
   margin: 10px 0;
   opacity: 0;
@@ -713,7 +746,7 @@ a:hover {
   line-height: 1.8em;
   margin: 20px auto;
 }
-/* line 29, ../sass/_classification.scss */
+/* line 38, ../sass/_classification.scss */
 .classification .data .title a {
   margin: 10px 0;
   opacity: 0;
@@ -918,9 +951,9 @@ a:hover {
 }
 /* line 74, ../sass/_dot.scss */
 .dots .wPhone .dotContainer .dot1 {
-  height: 100px;
-  width: 100px;
-  padding: 10px;
+  height: 90px;
+  width: 90px;
+  padding: 9px;
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
@@ -942,10 +975,10 @@ a:hover {
   -o-transition: color 0.3s;
   -webkit-transition: color 0.3s;
   transition: color 0.3s;
-  -moz-transform: scale(1.2);
-  -ms-transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
+  -moz-transform: scale(1.1);
+  -ms-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
 }
 /* line 20, ../sass/_dot.scss */
 .dots .wPhone .dotContainer .dot1 span {
@@ -994,10 +1027,10 @@ a:hover {
 /* line 33, ../sass/_dot.scss */
 .dots .wPhone .dotContainer .dot1.ng-enter.ng-enter-active {
   opacity: 1;
-  -moz-transform: translateY(0) rotate(360deg) scale(1.2);
-  -ms-transform: translateY(0) rotate(360deg) scale(1.2);
-  -webkit-transform: translateY(0) rotate(360deg) scale(1.2);
-  transform: translateY(0) rotate(360deg) scale(1.2);
+  -moz-transform: translateY(0) rotate(360deg) scale(1.1);
+  -ms-transform: translateY(0) rotate(360deg) scale(1.1);
+  -webkit-transform: translateY(0) rotate(360deg) scale(1.1);
+  transform: translateY(0) rotate(360deg) scale(1.1);
 }
 /* line 38, ../sass/_dot.scss */
 .dots .wPhone .dotContainer .dot1.ng-leave {
@@ -1013,9 +1046,9 @@ a:hover {
 }
 /* line 96, ../sass/_dot.scss */
 .dots .wPhone .dotContainer .dot2 {
-  height: 100px;
-  width: 100px;
-  padding: 10px;
+  height: 90px;
+  width: 90px;
+  padding: 9px;
   display: -webkit-flex;
   display: flex;
   -webkit-align-items: center;
@@ -1089,10 +1122,10 @@ a:hover {
   -o-transition: ease 0.3s all;
   -webkit-transition: ease 0.3s all;
   transition: ease 0.3s all;
-  -moz-transform: translateY(10px) rotate(0) scale(1.2);
-  -ms-transform: translateY(10px) rotate(0) scale(1.2);
-  -webkit-transform: translateY(10px) rotate(0) scale(1.2);
-  transform: translateY(10px) rotate(0) scale(1.2);
+  -moz-transform: translateY(10px) rotate(0) scale(1.1);
+  -ms-transform: translateY(10px) rotate(0) scale(1.1);
+  -webkit-transform: translateY(10px) rotate(0) scale(1.1);
+  transform: translateY(10px) rotate(0) scale(1.1);
 }
 /* line 33, ../sass/_dot.scss */
 .dots .wPhone .dotContainer .dot2.ng-enter.ng-enter-active {
