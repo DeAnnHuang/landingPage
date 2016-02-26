@@ -81,10 +81,13 @@
     .title {
         text-align: center;
         @include LRcenter();
+        a{
+            margin:auto;
+        }
     }
     .cancel {
         position: absolute;
         @include LRcenter();
-        top: 35%;
+        top: 45%;
     }
 }

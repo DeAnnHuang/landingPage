@@ -663,14 +663,18 @@ a:hover {
   right: 0;
   text-align: center;
 }
-/* line 85, ../sass/_banner.scss */
+/* line 84, ../sass/_banner.scss */
+.banner3 .title a {
+  margin: auto;
+}
+/* line 88, ../sass/_banner.scss */
 .banner3 .cancel {
   position: absolute;
   margin: auto;
   left: 0;
   right: 0;
   text-align: center;
-  top: 35%;
+  top: 45%;
 }
 
 /* line 1, ../sass/_classification.scss */
@@ -1337,7 +1341,7 @@ h1 {
   }
   /* line 37, ../sass/_mobile.scss */
   .banner3 .title {
-    top: 20%;
+    top: 10%;
   }
   /* line 40, ../sass/_mobile.scss */
   .banner3 .cancel {
