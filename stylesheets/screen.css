@@ -650,6 +650,9 @@ a:hover {
 .banner2 {
   background: url(../img/Block2/bg.jpg) center;
   background-size: cover;
+  -moz-animation: fadein 0.8s;
+  -webkit-animation: fadein 0.8s;
+  animation: fadein 0.8s;
 }
 /* line 47, ../sass/_banner.scss */
 .banner2 .title {
