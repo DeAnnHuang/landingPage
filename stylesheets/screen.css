@@ -3,32 +3,29 @@
  * In this file you should write your main styles. (or centralize your imports)
  * Import this file using the following HTML or equivalent:
  * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
-@font-face {
-  font-family: "文鼎中圓";
-  src: url('../fonts/bGTR00M.ttf?1456107123') format('truetype');
-}
 /* line 3, ../sass/_common.scss */
 body {
   margin: 0;
   padding: 0;
-  font-family: Helvetica, Arial, "文鼎中圓", "LiHei Pro", "Meiryo", "微軟正黑體";
+  font-family: 'PingFang TC', "Helvetica Neue", Helvetica, Arial, "LiHei Pro", "Meiryo", "微軟正黑體";
   height: 100%;
   width: 100%;
   background: #ddd;
   letter-spacing: 1px;
+  font-weight: 400;
 }
 
-/* line 13, ../sass/_common.scss */
+/* line 14, ../sass/_common.scss */
 a:hover {
   text-decoration: none;
 }
 
-/* line 17, ../sass/_common.scss */
+/* line 18, ../sass/_common.scss */
 .clear {
   zoom: 1;
   clear: both;
 }
-/* line 20, ../sass/_common.scss */
+/* line 21, ../sass/_common.scss */
 .clear:after {
   content: '';
   display: block;
@@ -38,7 +35,7 @@ a:hover {
 }
 
 /* Left */
-/* line 32, ../sass/_common.scss */
+/* line 33, ../sass/_common.scss */
 .left {
   float: left;
   display: inline-flex;
@@ -47,7 +44,7 @@ a:hover {
 }
 
 /* Right */
-/* line 42, ../sass/_common.scss */
+/* line 43, ../sass/_common.scss */
 .right {
   float: right;
   display: -webkit-inline-flex;
@@ -58,24 +55,24 @@ a:hover {
   align-items: center;
 }
 
-/* line 50, ../sass/_common.scss */
+/* line 51, ../sass/_common.scss */
 .container {
   width: 1000px;
   margin: auto;
   padding: 0;
 }
 
-/* line 56, ../sass/_common.scss */
+/* line 57, ../sass/_common.scss */
 .container2 {
   width: 100%;
 }
 
-/* line 60, ../sass/_common.scss */
+/* line 61, ../sass/_common.scss */
 .highlight {
   color: darkred;
 }
 
-/* line 64, ../sass/_common.scss */
+/* line 65, ../sass/_common.scss */
 .area1_3 {
   display: -webkit-flex;
   display: flex;
@@ -84,7 +81,7 @@ a:hover {
   text-align: flex-end;
 }
 
-/* line 70, ../sass/_common.scss */
+/* line 71, ../sass/_common.scss */
 .area1_2 {
   display: -webkit-flex;
   display: flex;
@@ -96,42 +93,42 @@ a:hover {
   justify-content: space-between;
 }
 
-/* line 77, ../sass/_common.scss */
+/* line 78, ../sass/_common.scss */
 .withIcon {
   position: relative;
 }
 
-/* line 81, ../sass/_common.scss */
+/* line 82, ../sass/_common.scss */
 .icon {
   position: absolute;
 }
 
 @media screen and (max-width: 720px) {
-  /* line 86, ../sass/_common.scss */
+  /* line 87, ../sass/_common.scss */
   .container {
     width: 100%;
   }
 }
-/* line 91, ../sass/_common.scss */
+/* line 92, ../sass/_common.scss */
 ::-webkit-scrollbar {
   width: 8px;
   opacity: 0;
 }
 
-/* line 96, ../sass/_common.scss */
+/* line 97, ../sass/_common.scss */
 ::-webkit-scrollbar-track {
   -webkit-border-radius: 10px;
   border-radius: 10px;
 }
 
-/* line 101, ../sass/_common.scss */
+/* line 102, ../sass/_common.scss */
 ::-webkit-scrollbar-thumb {
   -webkit-border-radius: 10px;
   border-radius: 10px;
   background: rgba(0, 0, 0, 0.4);
 }
 
-/* line 107, ../sass/_common.scss */
+/* line 108, ../sass/_common.scss */
 ::-webkit-scrollbar-thumb:window-inactive {
   background: rgba(0, 0, 0, 0.4);
 }
@@ -552,8 +549,8 @@ a:hover {
   font-size: 1.2em;
   font-size: 2.3em;
   line-height: 1.5em;
-  font-family: "MHei", 'PingFang TC', "Helvetica Neue", "微軟正黑體";
-  font-weight: 200;
+  font-family: 'PingFang TC', "Helvetica Neue", "微軟正黑體";
+  font-weight: 400;
 }
 /* line 43, ../sass/_banner.scss */
 .banner1 .title p,
@@ -734,8 +731,8 @@ a:hover {
   font-size: 1.2em;
   font-size: 2.3em;
   line-height: 1.5em;
-  font-family: "MHei", 'PingFang TC', "Helvetica Neue", "微軟正黑體";
-  font-weight: 200;
+  font-family: 'PingFang TC', "Helvetica Neue", "微軟正黑體";
+  font-weight: 400;
 }
 /* line 34, ../sass/_classification.scss */
 .classification .data .title p {
@@ -877,8 +874,8 @@ a:hover {
   font-size: 1.2em;
   font-size: 2.3em;
   line-height: 1.5em;
-  font-family: "MHei", 'PingFang TC', "Helvetica Neue", "微軟正黑體";
-  font-weight: 200;
+  font-family: 'PingFang TC', "Helvetica Neue", "微軟正黑體";
+  font-weight: 400;
 }
 /* line 49, ../sass/_wall.scss */
 .wall .title p {
@@ -1175,8 +1172,8 @@ a:hover {
   font-size: 1.2em;
   font-size: 2.3em;
   line-height: 1.5em;
-  font-family: "MHei", 'PingFang TC', "Helvetica Neue", "微軟正黑體";
-  font-weight: 200;
+  font-family: 'PingFang TC', "Helvetica Neue", "微軟正黑體";
+  font-weight: 400;
 }
 /* line 132, ../sass/_dot.scss */
 .dots .title p {
@@ -1268,10 +1265,9 @@ html, body {
 body {
   background-color: #fff;
   font-size: 18px;
-  font-weight: lighter;
 }
 
-/* line 23, ../sass/screen.scss */
+/* line 22, ../sass/screen.scss */
 h1 {
   font-size: 28px;
 }
