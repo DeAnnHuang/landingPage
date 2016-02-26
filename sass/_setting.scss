@@ -99,6 +99,15 @@ $color:darkorange;
     }
 }
 
+@include keyframes(fadeout) {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+    }
+}
+
 @include keyframes(bottomIn) {
     from {
         opacity: 0;

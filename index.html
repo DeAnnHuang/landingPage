@@ -51,11 +51,11 @@
         <div class="bottomInBox">
             <div class="classification">
                 <div class="data" ng-repeat="item in c.list" ng-hide="!c.isCurrentSlideIndex($index)">
-                    <img src="{{item.img}}" class="person">
+                    <img ng-src="{{item.img}}" class="person">
                     <div class="title">
                         <h1 ng-bind-html="item.title"></h1>
                         <p>{{item.detail}}</p>
-                        <a ng-href="https://www.mymusic.net.tw/creditCard/chargeConfirmed3?priceplan=CreditCard_MONTHLY&payCycle=true" target="blank" ng-click="{{item.GA}}">{{item.btn_text}}</a>
+                        <a ng-href="https://www.mymusic.net.tw/creditCard/chargeConfirmed3?priceplan=CreditCard_MONTHLY&payCycle=true" target="blank" ng-click="ga(item.GA)">{{item.btn_text}}</a>
                     </div>
                 </div>
             </div>
@@ -80,22 +80,12 @@
             <div class="dotsBox">
                 <div class="wPhone">
                     <div class="dotContainer">
-                       
-                            <div class="dot2" ng-repeat="item in c.DotMList" ng-if="!item.click" ng-style="{'background-color':item.color,'top':item.top,'left':item.left}" ng-click="item.click = !item.click">
-                                <span>{{item.content}}</span>
-                            </div>
-                            <div class="dot1" ng-repeat="item in c.DotMList" ng-if="item.click" ng-style="{'background-color':item.color,'color':item.color,'top':item.top,'left':item.left,'box-shadow':'0 0 15px #aaa'}" ng-click="item.click = !item.click">
-                                <span>{{item.content}}</span>
-                            </div>
-                      
-                    <!--     <div ng-if="!c.w">
-                            <div class="dot2" ng-repeat="item in c.DotMList" ng-if="!item.click" ng-style="{'background-color':item.color,'top':item.top,'left':item.left}" ng-click="item.click = !item.click">
-                                <span>{{item.content}}</span>
-                            </div>
-                            <div class="dot1" ng-repeat="item in c.DotMList" ng-if="item.click" ng-style="{'background-color':item.color,'color':item.color,'top':item.top,'left':item.left,'box-shadow':'0 0 15px #aaa'}" ng-click="item.click = !item.click">
-                                <span>{{item.content}}</span>
-                            </div>
-                        </div> -->
+                        <div class="dot2" ng-repeat="item in c.DotMList" ng-if="!item.clicked" ng-style="{'background-color':item.color,'top':item.top,'left':item.left}" ng-click="item.clicked = !item.clicked">
+                            <span>{{item.content}}</span>
+                        </div>
+                        <div class="dot1" ng-repeat="item in c.DotMList" ng-if="item.clicked" ng-style="{'background-color':item.color,'color':item.color,'top':item.top,'left':item.left,'box-shadow':'0 0 15px #aaa'}" ng-click="item.clicked = !item.clicked">
+                            <span>{{item.content}}</span>
+                        </div>
                     </div>
                 </div>
                 <div class="title">
@@ -135,7 +125,6 @@
     if ($(window).width() <= 768) {
         $(".title").find('a').attr('href', 'https://www.mymusic.net.tw/creditCard/mIndex?priceplan=CreditCard_MONTHLY&payCycle=true'); //換小網link
         $(".title").find('a').attr('ng-href', 'https://www.mymusic.net.tw/creditCard/mIndex?priceplan=CreditCard_MONTHLY&payCycle=true'); //換 小網 classication 區塊網址
-        console.log("ok!");
     }
     </script>
 </body>
