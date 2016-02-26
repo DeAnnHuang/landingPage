@@ -43,7 +43,7 @@
 .banner2 {
     background: url(../img/Block2/bg.jpg) center;
     background-size: cover;
-    // @include animation(fadein $dur - 0.3s);
+    @include animation(fadein $dur);
     .title {
         color: #fff;
     }
