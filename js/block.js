@@ -11,6 +11,7 @@ $(document).ready(function() {
     show("banner1");
     $(document).on('scroll', function() {
         show("banner2");
+        show("fadeIn");
         show("bottomIn");
         show("wall");
         show("dots");
