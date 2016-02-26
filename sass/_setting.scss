@@ -87,7 +87,9 @@ $color:darkorange;
 .bottomIn {
     @include myAnimation(bottomIn, $dur - 0.3s, 0);
 }
-
+.fadeIn {
+    @include myAnimation(fadein, $dur - 0.3s, 0);
+}
 @include keyframes(bund) {
     0% {
         opacity: 0;

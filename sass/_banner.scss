@@ -36,14 +36,14 @@
         position: absolute;
         top: 80%;
         @include LRcenter();
-        @include animation( $dur + 1s);
+        @include animation($dur + 1s);
     }
 }
 
 .banner2 {
     background: url(../img/Block2/bg.jpg) center;
     background-size: cover;
-    @include animation(bottomIn $dur - 0.3s);
+    @include animation(fadein $dur - 0.3s);
     .title {
         color: #fff;
     }
@@ -51,6 +51,7 @@
 
 .banner3 {
     background-color: #fafafa;
+    @include animation(fadein $dur - 0.3s);
     .title {
         text-align: center;
         @include LRcenter();
