@@ -15,7 +15,8 @@
 @mixin title_h1() {
     font-size: 2.3em;
     line-height: 1.5em;
-    font-family: "Myriad Set Pro", "微軟正黑體";
+    font-family: "Myriad Set Pro", 'PingFang TC', "Helvetica Neue", "Helvetica", "Arial",  "微軟正黑體";
+    font-weight:lighter;    
 }
 
 @mixin title_p() {
