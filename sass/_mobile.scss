@@ -32,7 +32,6 @@
         }
     }
     .banner3 {
-        // background: url(../img/Block6/bg_m.jpg) center;
         min-height: 1150px;
         .title {
             top: $position - 10%;
@@ -50,7 +49,6 @@
                 @include LRcenter();
                 width: 100%;
                 top: $position + 20%;
-                // @include animation(wPhone_bottomIn $dur + 2s forwards);
             }
             .title {
                 @include LRcenter();
@@ -63,10 +61,10 @@
     .wall {
         min-height: 1150px;
         .wPhone {
-            // width:100%;
             @include LRcenter();
             top: $position + 25%;
             @include animation(wPhone_bottomIn $dur forwards);
+            @include animation-delay($delay - 1s);
         }
         .title {
             @include LRcenter();
@@ -77,12 +75,11 @@
     //
     .dots {
         min-height: 1150px;
-        // background: url(../img/Block5/bg_m.jpg) center 75% no-repeat;
         .wPhone {
-            // width:100%;
             @include LRcenter();
             top: $position + 25%;
             @include animation(wPhone_bottomIn $dur forwards);
+            @include animation-delay($delay - 1s);
             .dotContainer {
                 .dot1,
                 .dot2 {

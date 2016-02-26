@@ -18,7 +18,7 @@
             top: $position;
             left: $position - 12%;
             overflow: hidden;
-            @include myAnimation(fadein, $dur + 1s, 1s);
+            @include myAnimation(fadein, $dur + 1s, $delay - 1s);
         }
         .title {
             position: absolute;
