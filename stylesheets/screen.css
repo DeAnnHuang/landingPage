@@ -552,7 +552,7 @@ a:hover {
   font-size: 1.2em;
   font-size: 2.3em;
   line-height: 1.5em;
-  font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", "微軟正黑體";
+  font-family: "Myriad Set Pro", "微軟正黑體";
 }
 /* line 42, ../sass/_banner.scss */
 .banner1 .title p,
@@ -729,7 +729,7 @@ a:hover {
   font-size: 1.2em;
   font-size: 2.3em;
   line-height: 1.5em;
-  font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", "微軟正黑體";
+  font-family: "Myriad Set Pro", "微軟正黑體";
 }
 /* line 34, ../sass/_classification.scss */
 .classification .data .title p {
@@ -871,7 +871,7 @@ a:hover {
   font-size: 1.2em;
   font-size: 2.3em;
   line-height: 1.5em;
-  font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", "微軟正黑體";
+  font-family: "Myriad Set Pro", "微軟正黑體";
 }
 /* line 49, ../sass/_wall.scss */
 .wall .title p {
@@ -1168,7 +1168,7 @@ a:hover {
   font-size: 1.2em;
   font-size: 2.3em;
   line-height: 1.5em;
-  font-family: "Myriad Set Pro", "Helvetica Neue", "Helvetica", "Arial", "微軟正黑體";
+  font-family: "Myriad Set Pro", "微軟正黑體";
 }
 /* line 132, ../sass/_dot.scss */
 .dots .title p {
