@@ -650,9 +650,6 @@ a:hover {
 .banner2 {
   background: url(../img/Block2/bg.jpg) center;
   background-size: cover;
-  -moz-animation: fadein 0.5s;
-  -webkit-animation: fadein 0.5s;
-  animation: fadein 0.5s;
 }
 /* line 47, ../sass/_banner.scss */
 .banner2 .title {
@@ -662,11 +659,8 @@ a:hover {
 /* line 52, ../sass/_banner.scss */
 .banner3 {
   background-color: #fafafa;
-  -moz-animation: fadein 0.5s;
-  -webkit-animation: fadein 0.5s;
-  animation: fadein 0.5s;
 }
-/* line 55, ../sass/_banner.scss */
+/* line 54, ../sass/_banner.scss */
 .banner3 .title {
   text-align: center;
   margin: auto;
@@ -674,11 +668,11 @@ a:hover {
   right: 0;
   text-align: center;
 }
-/* line 58, ../sass/_banner.scss */
+/* line 57, ../sass/_banner.scss */
 .banner3 .title a {
   margin: auto;
 }
-/* line 62, ../sass/_banner.scss */
+/* line 61, ../sass/_banner.scss */
 .banner3 .cancel {
   position: absolute;
   margin: auto;
@@ -686,6 +680,13 @@ a:hover {
   right: 0;
   text-align: center;
   top: 45%;
+  opacity: 0;
+  -moz-animation: bottomIn 0.8s forwards;
+  -webkit-animation: bottomIn 0.8s forwards;
+  animation: bottomIn 0.8s forwards;
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 
 /* line 1, ../sass/_classification.scss */
