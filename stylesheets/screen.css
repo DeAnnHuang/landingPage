@@ -134,7 +134,7 @@ a:hover {
 }
 
 /**dynamic**/
-/* line 60, ../sass/_setting.scss */
+/* line 87, ../sass/_setting.scss */
 .bottomIn {
   opacity: 0;
   -moz-animation: bottomIn 0.5s forwards;
@@ -505,7 +505,7 @@ a:hover {
     transform: scale(1);
   }
 }
-/* line 184, ../sass/_setting.scss */
+/* line 211, ../sass/_setting.scss */
 .banner2Box,
 .banner3Box,
 .bottomInBox,
@@ -514,7 +514,7 @@ a:hover {
   opacity: 0;
 }
 
-/* line 28, ../sass/_banner.scss */
+/* line 1, ../sass/_banner.scss */
 .banner1,
 .banner2,
 .banner3 {
@@ -524,7 +524,7 @@ a:hover {
   overflow: hidden;
   background-size: cover;
 }
-/* line 33, ../sass/_banner.scss */
+/* line 6, ../sass/_banner.scss */
 .banner1 .title,
 .banner2 .title,
 .banner3 .title {
@@ -534,7 +534,7 @@ a:hover {
   left: 5%;
   width: 35%;
 }
-/* line 39, ../sass/_banner.scss */
+/* line 12, ../sass/_banner.scss */
 .banner1 .title h1,
 .banner2 .title h1,
 .banner3 .title h1 {
@@ -543,16 +543,16 @@ a:hover {
   -moz-animation: bottomIn 0.8s forwards;
   -webkit-animation: bottomIn 0.8s forwards;
   animation: bottomIn 0.8s forwards;
-  -moz-animation-delay: 1s;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
   font-size: 1.2em;
   font-size: 2.3em;
   line-height: 1.5em;
   font-family: 'PingFang TC', "Helvetica Neue", "微軟正黑體";
   font-weight: 400;
 }
-/* line 43, ../sass/_banner.scss */
+/* line 16, ../sass/_banner.scss */
 .banner1 .title p,
 .banner2 .title p,
 .banner3 .title p {
@@ -561,15 +561,15 @@ a:hover {
   -moz-animation: bottomIn 0.8s forwards;
   -webkit-animation: bottomIn 0.8s forwards;
   animation: bottomIn 0.8s forwards;
-  -moz-animation-delay: 1s;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
   font-size: 1.2em;
   font-size: 1.2em;
   line-height: 1.8em;
   margin: 20px auto;
 }
-/* line 47, ../sass/_banner.scss */
+/* line 20, ../sass/_banner.scss */
 .banner1 .title a,
 .banner2 .title a,
 .banner3 .title a {
@@ -578,9 +578,9 @@ a:hover {
   -moz-animation: bottomIn 0.8s forwards;
   -webkit-animation: bottomIn 0.8s forwards;
   animation: bottomIn 0.8s forwards;
-  -moz-animation-delay: 1s;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
   font-size: 1.2em;
   display: block;
   background-color: darkorange;
@@ -594,13 +594,13 @@ a:hover {
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
 }
-/* line 10, ../sass/_banner.scss */
+/* line 66, ../sass/_setting.scss */
 .banner1 .title a:hover,
 .banner2 .title a:hover,
 .banner3 .title a:hover {
   letter-spacing: 0.4em;
 }
-/* line 51, ../sass/_banner.scss */
+/* line 24, ../sass/_banner.scss */
 .banner1 .title img,
 .banner2 .title img,
 .banner3 .title img {
@@ -608,13 +608,13 @@ a:hover {
   -moz-animation: bund 1.5s forwards;
   -webkit-animation: bund 1.5s forwards;
   animation: bund 1.5s forwards;
-  -moz-animation-delay: 1s;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
   width: 50%;
 }
 
-/* line 58, ../sass/_banner.scss */
+/* line 31, ../sass/_banner.scss */
 .banner1 {
   background: url(../img/Block1/bg.jpg) center;
   background-size: cover;
@@ -622,7 +622,7 @@ a:hover {
   -webkit-animation: fadein 1.8s;
   animation: fadein 1.8s;
 }
-/* line 62, ../sass/_banner.scss */
+/* line 35, ../sass/_banner.scss */
 .banner1 > img {
   position: absolute;
   top: 80%;
@@ -635,7 +635,7 @@ a:hover {
   animation: 1.8s;
 }
 
-/* line 70, ../sass/_banner.scss */
+/* line 43, ../sass/_banner.scss */
 .banner2 {
   background: url(../img/Block2/bg.jpg) center;
   background-size: cover;
@@ -643,16 +643,16 @@ a:hover {
   -webkit-animation: bottomIn 0.5s;
   animation: bottomIn 0.5s;
 }
-/* line 74, ../sass/_banner.scss */
+/* line 47, ../sass/_banner.scss */
 .banner2 .title {
   color: #fff;
 }
 
-/* line 79, ../sass/_banner.scss */
+/* line 52, ../sass/_banner.scss */
 .banner3 {
   background-color: #fafafa;
 }
-/* line 81, ../sass/_banner.scss */
+/* line 54, ../sass/_banner.scss */
 .banner3 .title {
   text-align: center;
   margin: auto;
@@ -660,11 +660,11 @@ a:hover {
   right: 0;
   text-align: center;
 }
-/* line 84, ../sass/_banner.scss */
+/* line 57, ../sass/_banner.scss */
 .banner3 .title a {
   margin: auto;
 }
-/* line 88, ../sass/_banner.scss */
+/* line 61, ../sass/_banner.scss */
 .banner3 .cancel {
   position: absolute;
   margin: auto;
@@ -705,9 +705,9 @@ a:hover {
   -moz-animation: fadein 1.8s forwards;
   -webkit-animation: fadein 1.8s forwards;
   animation: fadein 1.8s forwards;
-  -moz-animation-delay: 1s;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 /* line 23, ../sass/_classification.scss */
 .classification .data .title {
@@ -725,9 +725,9 @@ a:hover {
   -moz-animation: bottomIn 0.8s forwards;
   -webkit-animation: bottomIn 0.8s forwards;
   animation: bottomIn 0.8s forwards;
-  -moz-animation-delay: 1s;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
   font-size: 1.2em;
   font-size: 2.3em;
   line-height: 1.5em;
@@ -741,9 +741,9 @@ a:hover {
   -moz-animation: bottomIn 0.8s forwards;
   -webkit-animation: bottomIn 0.8s forwards;
   animation: bottomIn 0.8s forwards;
-  -moz-animation-delay: 1s;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
   font-size: 1.2em;
   font-size: 1.2em;
   line-height: 1.8em;
@@ -756,9 +756,9 @@ a:hover {
   -moz-animation: bottomIn 0.8s forwards;
   -webkit-animation: bottomIn 0.8s forwards;
   animation: bottomIn 0.8s forwards;
-  -moz-animation-delay: 1s;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
   font-size: 1.2em;
   display: block;
   background-color: darkorange;
@@ -772,7 +772,7 @@ a:hover {
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
 }
-/* line 10, ../sass/_banner.scss */
+/* line 66, ../sass/_setting.scss */
 .classification .data .title a:hover {
   letter-spacing: 0.4em;
 }
@@ -795,12 +795,12 @@ a:hover {
   left: 15%;
   overflow: hidden;
   opacity: 0;
-  -moz-animation: bottomIn 1.8s forwards;
-  -webkit-animation: bottomIn 1.8s forwards;
-  animation: bottomIn 1.8s forwards;
-  -moz-animation-delay: 0;
-  -webkit-animation-delay: 0;
-  animation-delay: 0;
+  -moz-animation: bottomIn 0.8s forwards;
+  -webkit-animation: bottomIn 0.8s forwards;
+  animation: bottomIn 0.8s forwards;
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 /* line 11, ../sass/_wall.scss */
 .wall .wCard {
@@ -868,9 +868,9 @@ a:hover {
   -moz-animation: bottomIn 0.8s forwards;
   -webkit-animation: bottomIn 0.8s forwards;
   animation: bottomIn 0.8s forwards;
-  -moz-animation-delay: 1s;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
   font-size: 1.2em;
   font-size: 2.3em;
   line-height: 1.5em;
@@ -884,9 +884,9 @@ a:hover {
   -moz-animation: bottomIn 0.8s forwards;
   -webkit-animation: bottomIn 0.8s forwards;
   animation: bottomIn 0.8s forwards;
-  -moz-animation-delay: 1s;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
   font-size: 1.2em;
   font-size: 1.2em;
   line-height: 1.8em;
@@ -899,9 +899,9 @@ a:hover {
   -moz-animation: bottomIn 0.8s forwards;
   -webkit-animation: bottomIn 0.8s forwards;
   animation: bottomIn 0.8s forwards;
-  -moz-animation-delay: 1s;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
   font-size: 1.2em;
   display: block;
   background-color: darkorange;
@@ -915,7 +915,7 @@ a:hover {
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
 }
-/* line 10, ../sass/_banner.scss */
+/* line 66, ../sass/_setting.scss */
 .wall .title a:hover {
   letter-spacing: 0.4em;
 }
@@ -938,12 +938,12 @@ a:hover {
   left: 15%;
   overflow: hidden;
   opacity: 0;
-  -moz-animation: bottomIn 1.8s forwards;
-  -webkit-animation: bottomIn 1.8s forwards;
-  animation: bottomIn 1.8s forwards;
-  -moz-animation-delay: 0;
-  -webkit-animation-delay: 0;
-  animation-delay: 0;
+  -moz-animation: bottomIn 0.8s forwards;
+  -webkit-animation: bottomIn 0.8s forwards;
+  animation: bottomIn 0.8s forwards;
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
 }
 /* line 67, ../sass/_dot.scss */
 .dots .wPhone .dotContainer {
@@ -1158,9 +1158,9 @@ a:hover {
   -moz-animation: bottomIn 0.8s forwards;
   -webkit-animation: bottomIn 0.8s forwards;
   animation: bottomIn 0.8s forwards;
-  -moz-animation-delay: 1s;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
   font-size: 1.2em;
   font-size: 2.3em;
   line-height: 1.5em;
@@ -1174,9 +1174,9 @@ a:hover {
   -moz-animation: bottomIn 0.8s forwards;
   -webkit-animation: bottomIn 0.8s forwards;
   animation: bottomIn 0.8s forwards;
-  -moz-animation-delay: 1s;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
   font-size: 1.2em;
   font-size: 1.2em;
   line-height: 1.8em;
@@ -1189,9 +1189,9 @@ a:hover {
   -moz-animation: bottomIn 0.8s forwards;
   -webkit-animation: bottomIn 0.8s forwards;
   animation: bottomIn 0.8s forwards;
-  -moz-animation-delay: 1s;
-  -webkit-animation-delay: 1s;
-  animation-delay: 1s;
+  -moz-animation-delay: 0.5s;
+  -webkit-animation-delay: 0.5s;
+  animation-delay: 0.5s;
   font-size: 1.2em;
   display: block;
   background-color: darkorange;
@@ -1205,7 +1205,7 @@ a:hover {
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
 }
-/* line 10, ../sass/_banner.scss */
+/* line 66, ../sass/_setting.scss */
 .dots .title a:hover {
   letter-spacing: 0.4em;
 }
@@ -1327,21 +1327,21 @@ h1 {
   .banner3 {
     min-height: 1150px;
   }
-  /* line 37, ../sass/_mobile.scss */
+  /* line 36, ../sass/_mobile.scss */
   .banner3 .title {
     top: 10%;
   }
-  /* line 40, ../sass/_mobile.scss */
+  /* line 39, ../sass/_mobile.scss */
   .banner3 .cancel {
     top: 45%;
     width: 80%;
   }
 
-  /* line 46, ../sass/_mobile.scss */
+  /* line 45, ../sass/_mobile.scss */
   .classification {
     min-height: 1150px;
   }
-  /* line 49, ../sass/_mobile.scss */
+  /* line 48, ../sass/_mobile.scss */
   .classification .data .person {
     margin: auto;
     left: 0;
@@ -1350,7 +1350,7 @@ h1 {
     width: 100%;
     top: 40%;
   }
-  /* line 55, ../sass/_mobile.scss */
+  /* line 53, ../sass/_mobile.scss */
   .classification .data .title {
     margin: auto;
     left: 0;
@@ -1371,11 +1371,11 @@ h1 {
     width: 40%;
   }
 
-  /* line 63, ../sass/_mobile.scss */
+  /* line 61, ../sass/_mobile.scss */
   .wall {
     min-height: 1150px;
   }
-  /* line 65, ../sass/_mobile.scss */
+  /* line 63, ../sass/_mobile.scss */
   .wall .wPhone {
     margin: auto;
     left: 0;
@@ -1385,8 +1385,11 @@ h1 {
     -moz-animation: wPhone_bottomIn 0.8s forwards;
     -webkit-animation: wPhone_bottomIn 0.8s forwards;
     animation: wPhone_bottomIn 0.8s forwards;
+    -moz-animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
   }
-  /* line 71, ../sass/_mobile.scss */
+  /* line 69, ../sass/_mobile.scss */
   .wall .title {
     margin: auto;
     left: 0;
@@ -1407,11 +1410,11 @@ h1 {
     width: 40%;
   }
 
-  /* line 78, ../sass/_mobile.scss */
+  /* line 76, ../sass/_mobile.scss */
   .dots {
     min-height: 1150px;
   }
-  /* line 81, ../sass/_mobile.scss */
+  /* line 78, ../sass/_mobile.scss */
   .dots .wPhone {
     margin: auto;
     left: 0;
@@ -1421,13 +1424,16 @@ h1 {
     -moz-animation: wPhone_bottomIn 0.8s forwards;
     -webkit-animation: wPhone_bottomIn 0.8s forwards;
     animation: wPhone_bottomIn 0.8s forwards;
+    -moz-animation-delay: 0.5s;
+    -webkit-animation-delay: 0.5s;
+    animation-delay: 0.5s;
   }
-  /* line 87, ../sass/_mobile.scss */
+  /* line 84, ../sass/_mobile.scss */
   .dots .wPhone .dotContainer .dot1,
   .dots .wPhone .dotContainer .dot2 {
     font-size: 0.8em;
   }
-  /* line 93, ../sass/_mobile.scss */
+  /* line 90, ../sass/_mobile.scss */
   .dots .title {
     margin: auto;
     left: 0;

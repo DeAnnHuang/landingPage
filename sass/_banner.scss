@@ -1,30 +1,3 @@
-@mixin title_a() {
-    display: block;
-    background-color: $color;
-    color: white;
-    padding: 15px 20px;
-    text-align: center;
-    width: 85%;
-    letter-spacing: 0.2em;
-    @include transition(all .8s);
-    &:hover {
-        letter-spacing: 0.4em;
-    }
-}
-
-@mixin title_h1() {
-    font-size: 2.3em;
-    line-height: 1.5em;
-    font-family: 'PingFang TC', "Helvetica Neue", "微軟正黑體";
-    font-weight:400;
-}
-
-@mixin title_p() {
-    font-size: 1.2em;
-    line-height: 1.8em;
-    margin: 20px auto;
-}
-
 .banner1,
 .banner2,
 .banner3 {
@@ -81,8 +54,8 @@
     .title {
         text-align: center;
         @include LRcenter();
-        a{
-            margin:auto;
+        a {
+            margin: auto;
         }
     }
     .cancel {

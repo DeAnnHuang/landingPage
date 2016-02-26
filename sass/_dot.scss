@@ -63,7 +63,7 @@ $dot:90px;
         height: 603px;
         width: 400px;
         @include wDefault($position + 5%, $position - 5%);
-        @include myAnimation(bottomIn, $dur + 1, 0);
+        @include myAnimation(bottomIn, $dur, $delay - 1s);
         .dotContainer {
             position: relative;
             height: 410px;
