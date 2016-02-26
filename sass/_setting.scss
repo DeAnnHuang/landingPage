@@ -2,7 +2,7 @@ $Twidth:35%;
 $position:20%;
 $margin:10px;
 $dur:.8s;
-$delay:1.5s;
+$delay:1s;
 $distance:25px;
 $color:darkorange;
 @mixin TextDefault($delay) {
@@ -10,7 +10,6 @@ $color:darkorange;
     margin: $margin 0;
     opacity: 0;
     @include animation(bottomIn $dur forwards);
-    @include animation-delay($delay);
     font-size: 1.2em;
 }
 
