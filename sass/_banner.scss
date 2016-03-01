@@ -57,11 +57,12 @@
         a {
             margin: auto;
         }
+        top:10%;
     }
     .cancel {
         position: absolute;
         @include LRcenter();
-        top: 45%;
+        top: 50%;
         @include myAnimation(bottomIn, $dur, $delay - 1s);
     }
 }

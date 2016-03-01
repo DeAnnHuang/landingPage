@@ -555,7 +555,7 @@ a:hover {
   -webkit-animation: bottomIn 0.8s forwards;
   animation: bottomIn 0.8s forwards;
   font-size: 0.8em;
-  font-size: 1.5em;
+  font-size: 38px;
   line-height: 1.5em;
   font-family: 'PingFang TC', "Helvetica Neue", "微軟正黑體";
   font-weight: 400;
@@ -570,7 +570,7 @@ a:hover {
   -webkit-animation: bottomIn 0.8s forwards;
   animation: bottomIn 0.8s forwards;
   font-size: 0.8em;
-  font-size: 0.8em;
+  font-size: 22px;
   line-height: 1.8em;
   margin: 20px auto;
 }
@@ -661,19 +661,20 @@ a:hover {
   left: 0;
   right: 0;
   text-align: center;
+  top: 10%;
 }
 /* line 57, ../sass/_banner.scss */
 .banner3 .title a {
   margin: auto;
 }
-/* line 61, ../sass/_banner.scss */
+/* line 62, ../sass/_banner.scss */
 .banner3 .cancel {
   position: absolute;
   margin: auto;
   left: 0;
   right: 0;
   text-align: center;
-  top: 45%;
+  top: 50%;
   opacity: 0;
   -moz-animation: bottomIn 0.8s forwards;
   -webkit-animation: bottomIn 0.8s forwards;
@@ -738,7 +739,7 @@ a:hover {
   -webkit-animation: bottomIn 0.8s forwards;
   animation: bottomIn 0.8s forwards;
   font-size: 0.8em;
-  font-size: 1.5em;
+  font-size: 38px;
   line-height: 1.5em;
   font-family: 'PingFang TC', "Helvetica Neue", "微軟正黑體";
   font-weight: 400;
@@ -751,7 +752,7 @@ a:hover {
   -webkit-animation: bottomIn 0.8s forwards;
   animation: bottomIn 0.8s forwards;
   font-size: 0.8em;
-  font-size: 0.8em;
+  font-size: 22px;
   line-height: 1.8em;
   margin: 20px auto;
 }
@@ -872,7 +873,7 @@ a:hover {
   -webkit-animation: bottomIn 0.8s forwards;
   animation: bottomIn 0.8s forwards;
   font-size: 0.8em;
-  font-size: 1.5em;
+  font-size: 38px;
   line-height: 1.5em;
   font-family: 'PingFang TC', "Helvetica Neue", "微軟正黑體";
   font-weight: 400;
@@ -885,7 +886,7 @@ a:hover {
   -webkit-animation: bottomIn 0.8s forwards;
   animation: bottomIn 0.8s forwards;
   font-size: 0.8em;
-  font-size: 0.8em;
+  font-size: 22px;
   line-height: 1.8em;
   margin: 20px auto;
 }
@@ -1153,7 +1154,7 @@ a:hover {
   -webkit-animation: bottomIn 0.8s forwards;
   animation: bottomIn 0.8s forwards;
   font-size: 0.8em;
-  font-size: 1.5em;
+  font-size: 38px;
   line-height: 1.5em;
   font-family: 'PingFang TC', "Helvetica Neue", "微軟正黑體";
   font-weight: 400;
@@ -1166,7 +1167,7 @@ a:hover {
   -webkit-animation: bottomIn 0.8s forwards;
   animation: bottomIn 0.8s forwards;
   font-size: 0.8em;
-  font-size: 0.8em;
+  font-size: 22px;
   line-height: 1.8em;
   margin: 20px auto;
 }
@@ -1236,6 +1237,7 @@ html, body {
 #footer p {
   margin: auto;
   letter-spacing: 0px;
+  font-size: 0.8em;
 }
 
 /* line 16, ../sass/screen.scss */
@@ -1259,13 +1261,13 @@ body {
   .banner1 .title h1,
   .banner2 .title h1,
   .banner3 .title h1 {
-    font-size: 2em;
+    font-size: 50px;
   }
   /* line 48, ../sass/_setting.scss */
   .banner1 .title p,
   .banner2 .title p,
   .banner3 .title p {
-    font-size: 1em;
+    font-size: 25px;
   }
   /* line 51, ../sass/_setting.scss */
   .banner1 .title a,
@@ -1348,11 +1350,11 @@ body {
   }
   /* line 45, ../sass/_setting.scss */
   .classification .data .title h1 {
-    font-size: 2em;
+    font-size: 50px;
   }
   /* line 48, ../sass/_setting.scss */
   .classification .data .title p {
-    font-size: 1em;
+    font-size: 25px;
   }
   /* line 51, ../sass/_setting.scss */
   .classification .data .title a {
@@ -1395,11 +1397,11 @@ body {
   }
   /* line 45, ../sass/_setting.scss */
   .wall .title h1 {
-    font-size: 2em;
+    font-size: 50px;
   }
   /* line 48, ../sass/_setting.scss */
   .wall .title p {
-    font-size: 1em;
+    font-size: 25px;
   }
   /* line 51, ../sass/_setting.scss */
   .wall .title a {
@@ -1447,11 +1449,11 @@ body {
   }
   /* line 45, ../sass/_setting.scss */
   .dots .title h1 {
-    font-size: 2em;
+    font-size: 50px;
   }
   /* line 48, ../sass/_setting.scss */
   .dots .title p {
-    font-size: 1em;
+    font-size: 25px;
   }
   /* line 51, ../sass/_setting.scss */
   .dots .title a {
