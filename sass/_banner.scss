@@ -6,7 +6,7 @@
     .title {
         position: absolute;
         z-index: 2;
-        top: $position - 15%;
+        top: $position - 7%;
         left: $position - 15%;
         width: $Twidth;
         h1 {
@@ -57,11 +57,12 @@
         a {
             margin: auto;
         }
+        top:10%;
     }
     .cancel {
         position: absolute;
         @include LRcenter();
-        top: 45%;
+        top: 50%;
         @include myAnimation(bottomIn, $dur, $delay - 1s);
     }
 }

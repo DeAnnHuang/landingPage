@@ -134,7 +134,7 @@ a:hover {
 }
 
 /**dynamic**/
-/* line 86, ../sass/_setting.scss */
+/* line 92, ../sass/_setting.scss */
 .bottomIn {
   opacity: 0;
   -moz-animation: bottomIn 0.5s forwards;
@@ -145,7 +145,7 @@ a:hover {
   animation-delay: 0;
 }
 
-/* line 89, ../sass/_setting.scss */
+/* line 96, ../sass/_setting.scss */
 .fadeIn {
   opacity: 0;
   -moz-animation: fadein 0.5s forwards;
@@ -516,7 +516,7 @@ a:hover {
     transform: scale(1);
   }
 }
-/* line 212, ../sass/_setting.scss */
+/* line 220, ../sass/_setting.scss */
 .banner2Box,
 .banner3Box,
 .bottomInBox,
@@ -541,7 +541,7 @@ a:hover {
 .banner3 .title {
   position: absolute;
   z-index: 2;
-  top: 5%;
+  top: 13%;
   left: 5%;
   width: 35%;
 }
@@ -554,8 +554,8 @@ a:hover {
   -moz-animation: bottomIn 0.8s forwards;
   -webkit-animation: bottomIn 0.8s forwards;
   animation: bottomIn 0.8s forwards;
-  font-size: 1.2em;
-  font-size: 2.3em;
+  font-size: 0.8em;
+  font-size: 38px;
   line-height: 1.5em;
   font-family: 'PingFang TC', "Helvetica Neue", "微軟正黑體";
   font-weight: 400;
@@ -569,8 +569,8 @@ a:hover {
   -moz-animation: bottomIn 0.8s forwards;
   -webkit-animation: bottomIn 0.8s forwards;
   animation: bottomIn 0.8s forwards;
-  font-size: 1.2em;
-  font-size: 1.2em;
+  font-size: 0.8em;
+  font-size: 22px;
   line-height: 1.8em;
   margin: 20px auto;
 }
@@ -583,7 +583,7 @@ a:hover {
   -moz-animation: bottomIn 0.8s forwards;
   -webkit-animation: bottomIn 0.8s forwards;
   animation: bottomIn 0.8s forwards;
-  font-size: 1.2em;
+  font-size: 0.8em;
   display: block;
   background-color: darkorange;
   color: white;
@@ -596,7 +596,7 @@ a:hover {
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
 }
-/* line 65, ../sass/_setting.scss */
+/* line 71, ../sass/_setting.scss */
 .banner1 .title a:hover,
 .banner2 .title a:hover,
 .banner3 .title a:hover {
@@ -661,19 +661,20 @@ a:hover {
   left: 0;
   right: 0;
   text-align: center;
+  top: 10%;
 }
 /* line 57, ../sass/_banner.scss */
 .banner3 .title a {
   margin: auto;
 }
-/* line 61, ../sass/_banner.scss */
+/* line 62, ../sass/_banner.scss */
 .banner3 .cancel {
   position: absolute;
   margin: auto;
   left: 0;
   right: 0;
   text-align: center;
-  top: 45%;
+  top: 50%;
   opacity: 0;
   -moz-animation: bottomIn 0.8s forwards;
   -webkit-animation: bottomIn 0.8s forwards;
@@ -702,9 +703,12 @@ a:hover {
 /* line 10, ../sass/_classification.scss */
 .classification .data.ng-hide-remove, .classification .data.ng-hide-add {
   display: block !important;
-  transition: all linear 0.5s;
+  -moz-transition: all 0.5s ease-out;
+  -o-transition: all 0.5s ease-out;
+  -webkit-transition: all 0.5s ease-out;
+  transition: all 0.5s ease-out;
 }
-/* line 16, ../sass/_classification.scss */
+/* line 15, ../sass/_classification.scss */
 .classification .data .person {
   position: absolute;
   top: 20%;
@@ -718,7 +722,7 @@ a:hover {
   -webkit-animation-delay: 0s;
   animation-delay: 0s;
 }
-/* line 23, ../sass/_classification.scss */
+/* line 22, ../sass/_classification.scss */
 .classification .data .title {
   position: absolute;
   z-index: 2;
@@ -727,39 +731,39 @@ a:hover {
   width: 35%;
   color: #fff;
 }
-/* line 30, ../sass/_classification.scss */
+/* line 29, ../sass/_classification.scss */
 .classification .data .title h1 {
   margin: 10px 0;
   opacity: 0;
   -moz-animation: bottomIn 0.8s forwards;
   -webkit-animation: bottomIn 0.8s forwards;
   animation: bottomIn 0.8s forwards;
-  font-size: 1.2em;
-  font-size: 2.3em;
+  font-size: 0.8em;
+  font-size: 38px;
   line-height: 1.5em;
   font-family: 'PingFang TC', "Helvetica Neue", "微軟正黑體";
   font-weight: 400;
 }
-/* line 34, ../sass/_classification.scss */
+/* line 33, ../sass/_classification.scss */
 .classification .data .title p {
   margin: 10px 0;
   opacity: 0;
   -moz-animation: bottomIn 0.8s forwards;
   -webkit-animation: bottomIn 0.8s forwards;
   animation: bottomIn 0.8s forwards;
-  font-size: 1.2em;
-  font-size: 1.2em;
+  font-size: 0.8em;
+  font-size: 22px;
   line-height: 1.8em;
   margin: 20px auto;
 }
-/* line 38, ../sass/_classification.scss */
+/* line 37, ../sass/_classification.scss */
 .classification .data .title a {
   margin: 10px 0;
   opacity: 0;
   -moz-animation: bottomIn 0.8s forwards;
   -webkit-animation: bottomIn 0.8s forwards;
   animation: bottomIn 0.8s forwards;
-  font-size: 1.2em;
+  font-size: 0.8em;
   display: block;
   background-color: darkorange;
   color: white;
@@ -772,7 +776,7 @@ a:hover {
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
 }
-/* line 65, ../sass/_setting.scss */
+/* line 71, ../sass/_setting.scss */
 .classification .data .title a:hover {
   letter-spacing: 0.4em;
 }
@@ -868,8 +872,8 @@ a:hover {
   -moz-animation: bottomIn 0.8s forwards;
   -webkit-animation: bottomIn 0.8s forwards;
   animation: bottomIn 0.8s forwards;
-  font-size: 1.2em;
-  font-size: 2.3em;
+  font-size: 0.8em;
+  font-size: 38px;
   line-height: 1.5em;
   font-family: 'PingFang TC', "Helvetica Neue", "微軟正黑體";
   font-weight: 400;
@@ -881,8 +885,8 @@ a:hover {
   -moz-animation: bottomIn 0.8s forwards;
   -webkit-animation: bottomIn 0.8s forwards;
   animation: bottomIn 0.8s forwards;
-  font-size: 1.2em;
-  font-size: 1.2em;
+  font-size: 0.8em;
+  font-size: 22px;
   line-height: 1.8em;
   margin: 20px auto;
 }
@@ -893,7 +897,7 @@ a:hover {
   -moz-animation: bottomIn 0.8s forwards;
   -webkit-animation: bottomIn 0.8s forwards;
   animation: bottomIn 0.8s forwards;
-  font-size: 1.2em;
+  font-size: 0.8em;
   display: block;
   background-color: darkorange;
   color: white;
@@ -906,7 +910,7 @@ a:hover {
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
 }
-/* line 65, ../sass/_setting.scss */
+/* line 71, ../sass/_setting.scss */
 .wall .title a:hover {
   letter-spacing: 0.4em;
 }
@@ -1149,8 +1153,8 @@ a:hover {
   -moz-animation: bottomIn 0.8s forwards;
   -webkit-animation: bottomIn 0.8s forwards;
   animation: bottomIn 0.8s forwards;
-  font-size: 1.2em;
-  font-size: 2.3em;
+  font-size: 0.8em;
+  font-size: 38px;
   line-height: 1.5em;
   font-family: 'PingFang TC', "Helvetica Neue", "微軟正黑體";
   font-weight: 400;
@@ -1162,8 +1166,8 @@ a:hover {
   -moz-animation: bottomIn 0.8s forwards;
   -webkit-animation: bottomIn 0.8s forwards;
   animation: bottomIn 0.8s forwards;
-  font-size: 1.2em;
-  font-size: 1.2em;
+  font-size: 0.8em;
+  font-size: 22px;
   line-height: 1.8em;
   margin: 20px auto;
 }
@@ -1174,7 +1178,7 @@ a:hover {
   -moz-animation: bottomIn 0.8s forwards;
   -webkit-animation: bottomIn 0.8s forwards;
   animation: bottomIn 0.8s forwards;
-  font-size: 1.2em;
+  font-size: 0.8em;
   display: block;
   background-color: darkorange;
   color: white;
@@ -1187,7 +1191,7 @@ a:hover {
   -webkit-transition: all 0.8s;
   transition: all 0.8s;
 }
-/* line 65, ../sass/_setting.scss */
+/* line 71, ../sass/_setting.scss */
 .dots .title a:hover {
   letter-spacing: 0.4em;
 }
@@ -1223,8 +1227,6 @@ html, body {
   display: flex;
   -webkit-align-items: center;
   align-items: center;
-  -webkit-justify-content: center;
-  justify-content: center;
   background: #999;
   color: white;
   text-align: center;
@@ -1233,26 +1235,34 @@ html, body {
 #footer p {
   margin: auto;
   letter-spacing: 0px;
+  font-size: 0.8em;
 }
 
 /* line 16, ../sass/screen.scss */
 body {
   background-color: #fff;
-  font-size: 18px;
+  font-size: 26px;
 }
 
 /* line 22, ../sass/screen.scss */
-h1 {
-  font-size: 28px;
+.header1 {
+  background: #fff;
+  height: 91px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px #ebe9e9 solid;
+}
+/* line 31, ../sass/screen.scss */
+.header1 .logo {
+  width: 233px;
+  margin-top: 10px;
 }
 
 @media screen and (max-width: 768px) {
-  /* line 2, ../sass/_mobile.scss */
-  body {
-    font-size: 22px;
-  }
-
-  /* line 9, ../sass/_mobile.scss */
+  /* line 6, ../sass/_mobile.scss */
   .banner1 .title,
   .banner2 .title,
   .banner3 .title {
@@ -1263,67 +1273,79 @@ h1 {
     width: 85%;
   }
   /* line 45, ../sass/_setting.scss */
+  .banner1 .title h1,
+  .banner2 .title h1,
+  .banner3 .title h1 {
+    font-size: 50px;
+  }
+  /* line 48, ../sass/_setting.scss */
+  .banner1 .title p,
+  .banner2 .title p,
+  .banner3 .title p {
+    font-size: 25px;
+  }
+  /* line 51, ../sass/_setting.scss */
   .banner1 .title a,
   .banner2 .title a,
   .banner3 .title a {
     margin: auto;
     width: 70%;
     padding: 15px;
-    font-size: 1.2em;
+    font-size: 1em;
   }
-  /* line 51, ../sass/_setting.scss */
+  /* line 57, ../sass/_setting.scss */
   .banner1 .title img,
   .banner2 .title img,
   .banner3 .title img {
     width: 40%;
   }
 
-  /* line 14, ../sass/_mobile.scss */
+  /* line 11, ../sass/_mobile.scss */
   .banner1 {
     background: url(../img/Block1/bg_m.jpg);
     background-size: cover;
     min-height: 1150px;
   }
-  /* line 18, ../sass/_mobile.scss */
+  /* line 15, ../sass/_mobile.scss */
   .banner1 > img {
     width: 50%;
     top: 85%;
   }
-  /* line 22, ../sass/_mobile.scss */
+  /* line 19, ../sass/_mobile.scss */
   .banner1 .title {
     top: 10%;
   }
 
-  /* line 26, ../sass/_mobile.scss */
+  /* line 23, ../sass/_mobile.scss */
   .banner2 {
     background: url(../img/Block2/bg_m.jpg);
     background-size: cover;
     height: 1100px;
   }
-  /* line 30, ../sass/_mobile.scss */
+  /* line 27, ../sass/_mobile.scss */
   .banner2 .title {
     top: 20%;
   }
 
-  /* line 34, ../sass/_mobile.scss */
+  /* line 31, ../sass/_mobile.scss */
   .banner3 {
     min-height: 1150px;
   }
-  /* line 36, ../sass/_mobile.scss */
+  /* line 33, ../sass/_mobile.scss */
   .banner3 .title {
     top: 10%;
   }
-  /* line 39, ../sass/_mobile.scss */
+  /* line 36, ../sass/_mobile.scss */
   .banner3 .cancel {
     top: 45%;
     width: 80%;
   }
 
-  /* line 45, ../sass/_mobile.scss */
+  /* line 42, ../sass/_mobile.scss */
   .classification {
     min-height: 1150px;
   }
-  /* line 48, ../sass/_mobile.scss */
+  /* line 45, ../sass/_mobile.scss */
   .classification .data .person {
     margin: auto;
     left: 0;
@@ -1332,7 +1354,7 @@ h1 {
     width: 100%;
     top: 40%;
   }
-  /* line 53, ../sass/_mobile.scss */
+  /* line 50, ../sass/_mobile.scss */
   .classification .data .title {
     margin: auto;
     left: 0;
@@ -1342,22 +1364,30 @@ h1 {
     width: 85%;
   }
   /* line 45, ../sass/_setting.scss */
+  .classification .data .title h1 {
+    font-size: 50px;
+  }
+  /* line 48, ../sass/_setting.scss */
+  .classification .data .title p {
+    font-size: 25px;
+  }
+  /* line 51, ../sass/_setting.scss */
   .classification .data .title a {
     margin: auto;
     width: 70%;
     padding: 15px;
-    font-size: 1.2em;
+    font-size: 1em;
   }
-  /* line 51, ../sass/_setting.scss */
+  /* line 57, ../sass/_setting.scss */
   .classification .data .title img {
     width: 40%;
   }
 
-  /* line 61, ../sass/_mobile.scss */
+  /* line 58, ../sass/_mobile.scss */
   .wall {
     min-height: 1150px;
   }
-  /* line 63, ../sass/_mobile.scss */
+  /* line 60, ../sass/_mobile.scss */
   .wall .wPhone {
     margin: auto;
     left: 0;
@@ -1371,7 +1401,7 @@ h1 {
     -webkit-animation-delay: 0s;
     animation-delay: 0s;
   }
-  /* line 69, ../sass/_mobile.scss */
+  /* line 66, ../sass/_mobile.scss */
   .wall .title {
     margin: auto;
     left: 0;
@@ -1381,22 +1411,30 @@ h1 {
     width: 85%;
   }
   /* line 45, ../sass/_setting.scss */
+  .wall .title h1 {
+    font-size: 50px;
+  }
+  /* line 48, ../sass/_setting.scss */
+  .wall .title p {
+    font-size: 25px;
+  }
+  /* line 51, ../sass/_setting.scss */
   .wall .title a {
     margin: auto;
     width: 70%;
     padding: 15px;
-    font-size: 1.2em;
+    font-size: 1em;
   }
-  /* line 51, ../sass/_setting.scss */
+  /* line 57, ../sass/_setting.scss */
   .wall .title img {
     width: 40%;
   }
 
-  /* line 76, ../sass/_mobile.scss */
+  /* line 73, ../sass/_mobile.scss */
   .dots {
     min-height: 1150px;
   }
-  /* line 78, ../sass/_mobile.scss */
+  /* line 75, ../sass/_mobile.scss */
   .dots .wPhone {
     margin: auto;
     left: 0;
@@ -1410,12 +1448,12 @@ h1 {
     -webkit-animation-delay: 0s;
     animation-delay: 0s;
   }
-  /* line 84, ../sass/_mobile.scss */
+  /* line 81, ../sass/_mobile.scss */
   .dots .wPhone .dotContainer .dot1,
   .dots .wPhone .dotContainer .dot2 {
     font-size: 0.8em;
   }
-  /* line 90, ../sass/_mobile.scss */
+  /* line 87, ../sass/_mobile.scss */
   .dots .title {
     margin: auto;
     left: 0;
@@ -1425,13 +1463,21 @@ h1 {
     width: 85%;
   }
   /* line 45, ../sass/_setting.scss */
+  .dots .title h1 {
+    font-size: 50px;
+  }
+  /* line 48, ../sass/_setting.scss */
+  .dots .title p {
+    font-size: 25px;
+  }
+  /* line 51, ../sass/_setting.scss */
   .dots .title a {
     margin: auto;
     width: 70%;
     padding: 15px;
-    font-size: 1.2em;
+    font-size: 1em;
   }
-  /* line 51, ../sass/_setting.scss */
+  /* line 57, ../sass/_setting.scss */
   .dots .title img {
     width: 40%;
   }

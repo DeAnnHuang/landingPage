@@ -16,11 +16,22 @@
 body {
     background-color: #fff;
     // overflow-x: hidden;
-    font-size: 18px;
+    font-size: 26px;
 }
 
-h1 {
-    font-size: 28px;
+.header1 {
+    background: #fff;
+    height: 91px;
+    position: fixed;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    text-align: center;
+    border-bottom:2px #ebe9e9 solid;
+    .logo {
+        width: 233px;
+        margin-top:10px;
+    }
 }
 
 @import "mobile.scss";
