@@ -1246,6 +1246,23 @@ body {
   font-size: 26px;
 }
 
+/* line 22, ../sass/screen.scss */
+.header1 {
+  background: #fff;
+  height: 91px;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+  text-align: center;
+  border-bottom: 2px #ebe9e9 solid;
+}
+/* line 31, ../sass/screen.scss */
+.header1 .logo {
+  width: 233px;
+  margin-top: 10px;
+}
+
 @media screen and (max-width: 768px) {
   /* line 6, ../sass/_mobile.scss */
   .banner1 .title,
