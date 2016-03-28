@@ -1,12 +1,13 @@
 @media screen and (min-width: 769px) {
     .appDownload {
         display: inline-block;
-        width: 15%;
+        // width: 15%;
         img {
             width: 100%;
             border-radius: 8px;
             opacity: 1;
             max-height: 64px;
+            width: auto;
         }
     }
 }
