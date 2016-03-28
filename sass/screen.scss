@@ -27,11 +27,22 @@ body {
     z-index: 10;
     width: 100%;
     text-align: center;
-    border-bottom:2px #ebe9e9 solid;
+    border-bottom: 2px #ebe9e9 solid;
     .logo {
         width: 233px;
-        margin-top:10px;
+        margin-top: 10px;
     }
+}
+
+.appDownloadBox {
+    width: 100%;
+    text-align: center;
+    z-index: 999;
+    position: fixed;
+    bottom: -1px;
+    left: 0;
+    padding: 15px 0;
+    background-color: rgba(216, 215, 216, .8);
 }
 
 @import "mobile.scss";

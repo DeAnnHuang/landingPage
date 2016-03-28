@@ -30,6 +30,11 @@
 
 <body ng-controller="Controller as c">
     <div class="main">
+        <div class="appDownloadBox">
+            <a href="https://play.google.com/store/apps/details?id=com.ezpeer.ezpeerplus.v4&amp;hl=zh_TW" class="appDownload" onclick="ga_event_mobile('軟體下載頁','Click_下載','軟體下載頁_下載_googleplay');"><img src="img/androidApp.png"></a>
+            <a href="http://itunes.apple.com/tw/app/ezpeer-ge-ming-ban/id451116784?mt=8" class="appDownload" onclick="ga_event_mobile('軟體下載頁','Click_下載','軟體下載頁_下載_appstore');"><img src="img/appleApp.svg"></a>
+            <a href="http://img.mymusic.net.tw/upload/AppDownloadFile/myMusic_pc_Setup.exe" class="appDownload pcDownload"><img src="img/pc-icon.jpg"></a>
+        </div>
         <div class="header1">
             <img src="img/logo.svg" alt="" class="logo">
         </div>
@@ -111,7 +116,7 @@
             <img src="img/Block6/cancel.png" class="cancel">
         </div>
         <div id="footer">
-            <p>台灣酷樂時代 版權所有© 2015 Taiwan Kuro Times Co., Ltd.
+            <p>台灣酷樂時代 版權所有© 2016 Taiwan Kuro Times Co., Ltd.
                 <br><span ng-if="c.w">建議使用 Internet Explorer 11.0 以上版本，以達網頁最佳瀏覽效果</span></p>
         </div>
     </div>
